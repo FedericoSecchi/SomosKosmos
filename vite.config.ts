@@ -5,10 +5,9 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const repoBase = "/Agencia-Studio/";
 
   return {
-    base: mode === "production" ? repoBase : "/",
+    base: "/",
     server: {
       host: "::",
       port: 8080,

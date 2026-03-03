@@ -1,7 +1,7 @@
 {
   "project_overview": {
-    "name": "Bold Canvas Studio",
-    "type": "Creative Studio Portfolio Website",
+    "name": "Somos Kosmos",
+    "type": "Somos Kosmos Portfolio Website",
     "purpose": "Portfolio and marketing website for a creative studio specializing in branding, websites, and digital experiences",
     "maturity_level": "Production-ready",
     "tech_stack": {
@@ -142,7 +142,7 @@
     "contact_ctas": [
       {
         "element": "Write us",
-        "action": "Opens mailto:hello@boldcanvas.studio",
+        "action": "Opens mailto:hello@somoskosmos.com",
         "implementation": "Button with window.location.href = 'mailto:...'"
       },
       {
@@ -153,7 +153,7 @@
       },
       {
         "element": "Email link",
-        "action": "Opens mailto:hello@boldcanvas.studio",
+        "action": "Opens mailto:hello@somoskosmos.com",
         "implementation": "Anchor tag with mailto: href"
       }
     ],
@@ -180,7 +180,7 @@
       },
       {
         "element": "Get in touch",
-        "action": "Opens mailto:hello@boldcanvas.studio",
+        "action": "Opens mailto:hello@somoskosmos.com",
         "implementation": "Anchor tag with mailto: href"
       },
       {
@@ -288,7 +288,7 @@
     "code_quality": {
       "unused_code": "✅ Cleaned - removed unused ScrollFloat, NavLink, empty CSS files",
       "dead_code": "✅ Removed - deleted empty aboutAnimations.ts",
-      "consistency": "✅ Email addresses standardized to hello@boldcanvas.studio",
+      "consistency": "✅ Email addresses standardized to hello@somoskosmos.com",
       "structure": "✅ Clear component separation and responsibilities"
     },
     "performance": {

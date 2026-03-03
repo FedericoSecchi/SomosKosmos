@@ -1,8 +1,8 @@
 export const es = {
   brand: {
-    name: "studio",
+    name: "kosmos",
     dot: ".",
-    fullName: "Creative Studio",
+    fullName: "Somos Kosmos",
   },
   aria: {
     openMenu: "Abrir menú",
@@ -148,16 +148,16 @@ export const es = {
       "Contanos en qué estás trabajando y respondemos con un plan simple, tiempos y presupuesto.",
     ctaWrite: "Escribinos",
     ctaBrief: "Iniciá tu brief",
-    email: "hello@boldcanvas.studio",
+    email: "hello@somoskosmos.com",
   },
   footer: {
-    description: "Creative Studio — branding, sitios web y contenido visual.",
+    description: "Somos Kosmos — branding, sitios web y contenido visual.",
     navigation: "Navegación",
     collaborate: "Colaborar",
     collaborateDescription:
       "Diseñadores, desarrolladores y fotógrafos — envianos tu portfolio.",
     cta: "Ponete en contacto",
-    copyright: "© 2025 Creative Studio. Todos los derechos reservados.",
+    copyright: "© 2025 Somos Kosmos. Todos los derechos reservados.",
     socials: {
       twitter: "Twitter",
       instagram: "Instagram",
@@ -187,18 +187,18 @@ export const es = {
     cta: "Volver al inicio",
   },
   meta: {
-    homeTitle: "Estudio de branding y diseño web | Creative Studio Agencia",
+    homeTitle: "Somos Kosmos — Branding, sitios web y experiencias",
     homeDescription:
       "Estudio de diseño y desarrollo para marcas y sitios web. Alineamos estrategia, identidad y ejecución para vender con claridad.",
-    projectNotFoundTitle: "Proyecto no encontrado | Casos de Creative Studio",
+    projectNotFoundTitle: "Proyecto no encontrado | Somos Kosmos",
     projectNotFoundDescription:
-      "Ese proyecto no existe o se movió. Podés ver los casos de Creative Studio para conocer proceso, criterio y resultados.",
+      "Ese proyecto no existe o se movió. Podés ver los casos de Somos Kosmos para conocer proceso, criterio y resultados.",
     projectDescriptionPrefix: "Caso de estudio con contexto, enfoque y resultado.",
     projectDescriptionSuffix: "Leé el proceso completo y el resultado.",
     projectDescriptionFallback:
       "Caso de estudio con contexto, enfoque y resultado. Leé el proceso completo y el resultado.",
-    projectTitleSuffix: "Caso de estudio | Creative Studio",
-    notFoundTitle: "Página no encontrada | Creative Studio Diseño y Web",
+    projectTitleSuffix: "Caso de estudio | Somos Kosmos",
+    notFoundTitle: "Página no encontrada | Somos Kosmos",
     notFoundDescription:
       "Esa página no existe. Volvé al inicio o revisá los casos para ver proceso, criterio y resultados.",
   },

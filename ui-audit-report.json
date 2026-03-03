@@ -145,12 +145,12 @@
     {
       "file": "src/components/ContactCTA.tsx",
       "element": "Email link",
-      "status": "funciona correctamente - mailto:hello@studio.com"
+      "status": "funciona correctamente - mailto:hello@somoskosmos.com"
     },
     {
       "file": "src/components/Footer.tsx",
       "element": "Email links",
-      "status": "funcionan correctamente - mailto:hello@studio.com"
+      "status": "funcionan correctamente - mailto:hello@somoskosmos.com"
     },
     {
       "file": "src/components/Footer.tsx",

@@ -1,8 +1,8 @@
 export const en = {
   brand: {
-    name: "studio",
+    name: "kosmos",
     dot: ".",
-    fullName: "Creative Studio",
+    fullName: "Somos Kosmos",
   },
   aria: {
     openMenu: "Open menu",
@@ -147,16 +147,16 @@ export const en = {
       "Tell us what you're working on and we'll reply with a simple plan, timeline and budget.",
     ctaWrite: "Write us",
     ctaBrief: "Start your brief",
-    email: "hello@boldcanvas.studio",
+    email: "hello@somoskosmos.com",
   },
   footer: {
-    description: "Creative Studio — branding, websites and visual content.",
+    description: "Somos Kosmos — branding, websites and visual content.",
     navigation: "Navigation",
     collaborate: "Collaborate",
     collaborateDescription:
       "Designers, developers, photographers — send us your portfolio.",
     cta: "Get in touch",
-    copyright: "© 2025 Creative Studio. All rights reserved.",
+    copyright: "© 2025 Somos Kosmos. All rights reserved.",
     socials: {
       twitter: "Twitter",
       instagram: "Instagram",
@@ -186,21 +186,21 @@ export const en = {
     cta: "Return to Home",
   },
   meta: {
-    homeTitle: "Branding & Web Design Studio | Creative Studio Agency",
+    homeTitle: "Somos Kosmos — Branding, Websites & Experiences",
     homeDescription:
       "Design and development studio for branding and websites. We align strategy, identity, and execution so teams sell with clarity and confidence.",
     projectNotFoundTitle:
-      "Project Not Found | Creative Studio Case Study Portfolio",
+      "Project Not Found | Somos Kosmos Case Studies",
     projectNotFoundDescription:
-      "This project page is missing or has moved. Explore Creative Studio case studies to understand our process, context, and outcomes.",
+      "This project page is missing or has moved. Explore Somos Kosmos case studies to understand our process, context, and outcomes.",
     projectDescriptionPrefix: "Case study covering context, approach, and outcome.",
     projectDescriptionSuffix: "Read the full process and results.",
     projectDescriptionFallback:
       "Case study covering context, approach, and outcome. Read the full process and results.",
-    projectTitleSuffix: "Case Study | Creative Studio",
-    notFoundTitle: "Page Not Found | Creative Studio Design & Web Portfolio",
+    projectTitleSuffix: "Case Study | Somos Kosmos",
+    notFoundTitle: "Page Not Found | Somos Kosmos",
     notFoundDescription:
-      "The page you're looking for doesn't exist. Visit the Creative Studio home or browse case studies for process, context, and results.",
+      "The page you're looking for doesn't exist. Visit Somos Kosmos home or browse case studies for process, context, and results.",
   },
   brands: {
     "security-alliance": "Security Alliance",

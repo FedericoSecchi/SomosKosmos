@@ -1,0 +1,9 @@
+{
+  "name": "Somos Kosmos",
+  "short_name": "Somos Kosmos",
+  "description": "Estudio de diseño y desarrollo para marcas y sitios web. Branding, websites y experiencias digitales.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a"
+}

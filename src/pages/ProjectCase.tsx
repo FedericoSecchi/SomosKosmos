@@ -6,8 +6,6 @@ import Footer from "@/components/Footer";
 import { projectsData, getProjectById } from "@/data/projects";
 import { useScrollAnimations } from "@/hooks/useScrollAnimations";
 import { useI18n } from "@/i18n/context";
-import redGuildGallery5 from "@/assets/projects/the-red-guild/gallery-5.jpg";
-import redGuildGallery6 from "@/assets/projects/the-red-guild/gallery-6.jpg";
 
 const ProjectCase = () => {
   const { projectId } = useParams<{ projectId: string }>();
@@ -194,7 +192,7 @@ const ProjectCase = () => {
                 />
               </div>
             )}
-            {isPremium && galleries[2] && project.id !== "the-red-guild" && (
+            {isPremium && galleries[2] && galleries.length < 6 && (
               <div className="mt-20 w-full rounded-2xl overflow-hidden">
                 <img
                   src={galleries[2]}
@@ -242,7 +240,7 @@ const ProjectCase = () => {
                 })()}
               </div>
             </div>
-            {galleries[3] && project.id !== "the-red-guild" && (
+            {galleries[3] && galleries.length < 6 && (
               <div className="mt-20 w-full rounded-2xl overflow-hidden">
                 <img
                   src={galleries[3]}
@@ -258,8 +256,8 @@ const ProjectCase = () => {
         </section>
       )}
 
-      {/* Galleries 3, 4, 5 below Solución (the-red-guild only), no spacing between images */}
-      {isPremium && project.id === "the-red-guild" && (
+      {/* Galleries 3–6 block (premium with 6 galleries only) */}
+      {isPremium && galleries.length >= 6 && (
         <div className="section-container">
           <div className="w-full max-w-[1200px] mx-auto">
           {galleries[2] && (
@@ -280,13 +278,15 @@ const ProjectCase = () => {
               />
             </div>
           )}
-          <div className="w-full rounded-2xl overflow-hidden">
-            <img
-              src={redGuildGallery5}
-              alt={`${t(`projects.${project.id}.title`)} Gallery 5`}
-              className="w-full h-auto object-contain"
-            />
-          </div>
+          {galleries[4] && (
+            <div className="w-full rounded-2xl overflow-hidden">
+              <img
+                src={galleries[4]}
+                alt={`${t(`projects.${project.id}.title`)} Gallery 5`}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          )}
           </div>
         </div>
       )}
@@ -312,12 +312,12 @@ const ProjectCase = () => {
         </section>
       )}
 
-      {/* Gallery 6 (the-red-guild only, below Resultado) */}
-      {isPremium && project.id === "the-red-guild" && (
+      {/* Gallery 6 (premium with 6 galleries only, below Resultado) */}
+      {isPremium && galleries.length >= 6 && galleries[5] && (
         <section className="section-container">
           <div className="mt-20 w-full rounded-2xl overflow-hidden">
             <img
-              src={redGuildGallery6}
+              src={galleries[5]}
               alt={`${t(`projects.${project.id}.title`)} Gallery 6`}
               className="w-full h-auto object-contain"
             />

@@ -16,12 +16,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://somoskosmos.com/#/project/outdoor-gear</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://somoskosmos.com/#/project/wellness-space</loc>
+    <loc>https://somoskosmos.com/#/project/orbita</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

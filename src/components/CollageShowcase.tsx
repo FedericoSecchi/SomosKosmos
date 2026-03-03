@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
-import workImage3 from "@/assets/work/work-3.jpg";
 import { getProjectById } from "@/data/projects";
 import { useI18n } from "@/i18n/context";
 
 const securityAllianceImage = getProjectById("security-alliance")?.image ?? "";
-
-// Mapping collage images to project IDs (security-alliance cards use securityAllianceImage from projects data)
 const theRedGuildImage = getProjectById("the-red-guild")?.image ?? "";
+const orbitaImage = getProjectById("orbita")?.image ?? "";
 
 const collageProjectMap: Record<string, string> = {
   [theRedGuildImage]: "the-red-guild",
-  [workImage3]: "outdoor-gear",
+  [orbitaImage]: "orbita",
 };
 
 const CollageShowcase = () => {
@@ -70,13 +68,13 @@ const CollageShowcase = () => {
 
             {/* Small image center */}
             <Link
-              to={`/project/${collageProjectMap[workImage3]}`}
+              to={`/project/${collageProjectMap[orbitaImage]}`}
               className="collage-card absolute top-[40%] left-[30%] w-[35%] md:w-[25%] h-[30%] rounded-2xl overflow-hidden shadow-xl cursor-pointer z-10 block"
               style={{ transform: "rotate(-1deg)" }}
               data-parallax="0.2"
             >
               <img
-                src={workImage3}
+                src={orbitaImage}
                 alt={t("work.collageAltWebsiteDesign")}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
               />

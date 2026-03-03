@@ -205,8 +205,7 @@ export const es = {
   brands: {
     "security-alliance": "Security Alliance",
     "the-red-guild": "The Red Guild",
-    "outdoor-gear": "Outdoor Gear",
-    "wellness-space": "Wellness Space",
+    "orbita": "Orbita",
     "shawarmaz": "Shawarmaz",
     "swap-coffee": "Swap Coffee",
     "fmag": "FMAG",
@@ -248,31 +247,15 @@ export const es = {
       result:
         "The Red Guild ahora se ve y se siente claramente distinta dentro del ecosistema de seguridad y educación en cripto, sin perder rigor técnico. La experiencia web acompaña mejor su manera de trabajar: práctica, comunitaria y orientada a desafíos, facilitando que nuevas personas entiendan qué hacen y se animen a participar en sus iniciativas.",
     },
-    "outdoor-gear": {
-      title: "Outdoor Gear",
-      type: "Landing de lanzamiento · Kit de contenido",
-      tag: "Retail",
-      miniDescription:
-        "Campaña y landing de lanzamiento para una nueva marca outdoor.",
-      task:
-        "Una marca nueva necesitaba credibilidad y tracción en un mercado competitivo.",
-      idea:
-        "Definimos un lenguaje audaz y aventurero con mensajes claros e imágenes potentes.",
-      solution:
-        "Creamos una landing de alta conversión y un kit de lanzamiento que posicionó la marca desde el día uno.",
-    },
-    "wellness-space": {
-      title: "Wellness Space",
-      type: "Sitio Webflow · Kit social",
-      tag: "Studios",
-      miniDescription:
-        "Presencia digital serena y profesional para un estudio de bienestar.",
-      task:
-        "El estudio debía destacarse en wellness y transmitir confianza y expertise.",
-      idea:
-        "Diseñamos un sistema sereno con color suave, tipografía limpia e imágenes conscientes.",
-      solution:
-        "Construimos un sitio en Webflow con reservas, kit social y guías de marca cohesionadas.",
+    "orbita": {
+      title: "Orbita",
+      type: "Contenido en preparación.",
+      tag: "En preparación",
+      miniDescription: "Contenido en preparación.",
+      task: "Contenido en preparación.",
+      idea: "Contenido en preparación.",
+      solution: "Contenido en preparación.",
+      result: "Contenido en preparación.",
     },
   },
 };

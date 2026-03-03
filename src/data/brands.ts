@@ -13,12 +13,8 @@ export const brandsData: Brand[] = [
     // logo: "/logos/the-red-guild.svg",
   },
   {
-    id: "outdoor-gear",
-    // logo: "/logos/outdoor-gear.svg",
-  },
-  {
-    id: "wellness-space",
-    // logo: "/logos/wellness-space.svg",
+    id: "orbita",
+    // logo: "/logos/orbita.svg",
   },
   {
     id: "shawarmaz",

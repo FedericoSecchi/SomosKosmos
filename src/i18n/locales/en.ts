@@ -205,8 +205,7 @@ export const en = {
   brands: {
     "security-alliance": "Security Alliance",
     "the-red-guild": "The Red Guild",
-    "outdoor-gear": "Outdoor Gear",
-    "wellness-space": "Wellness Space",
+    "orbita": "Orbita",
     "shawarmaz": "Shawarmaz",
     "swap-coffee": "Swap Coffee",
     "fmag": "FMAG",
@@ -248,31 +247,15 @@ export const en = {
       result:
         "The Red Guild now looks and feels clearly distinct within the crypto security and education ecosystem, without losing technical rigor. The web experience better reflects the way they work: practical, community-driven and challenge-oriented, making it easier for new people to understand what they do and feel encouraged to participate in their initiatives.",
     },
-    "outdoor-gear": {
-      title: "Outdoor Gear",
-      type: "Launch landing · Content kit",
-      tag: "Retail",
-      miniDescription:
-        "Launch campaign and landing page for a new outdoor brand.",
-      task:
-        "A new entrant needed credibility and excitement in a crowded market.",
-      idea:
-        "We shaped a bold, adventure-first language with clear messaging and strong imagery.",
-      solution:
-        "Produced a high-converting landing page and launch kit that positioned the brand as serious from day one.",
-    },
-    "wellness-space": {
-      title: "Wellness Space",
-      type: "Webflow site · Social kit",
-      tag: "Studios",
-      miniDescription:
-        "A calm, professional digital presence for a wellness studio.",
-      task:
-        "The studio needed to stand out in wellness while projecting trust and expertise.",
-      idea:
-        "We designed a serene system with soft color, clean type, and mindful imagery.",
-      solution:
-        "Built a Webflow site with booking plus a cohesive social kit and brand guidelines.",
+    "orbita": {
+      title: "Orbita",
+      type: "Content in preparation.",
+      tag: "In preparation",
+      miniDescription: "Content in preparation.",
+      task: "Content in preparation.",
+      idea: "Content in preparation.",
+      solution: "Content in preparation.",
+      result: "Content in preparation.",
     },
   },
 };

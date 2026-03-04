@@ -29,7 +29,7 @@ const CollageShowcase = () => {
         </div>
 
         {/* Collage Grid */}
-        <div className="relative h-[800px] md:h-[900px]" data-animate="scale">
+        <div className="relative h-[800px] md:h-[900px] isolate" data-animate="scale">
             {/* Large image */}
             <Link
               to="/project/security-alliance"
@@ -108,15 +108,15 @@ const CollageShowcase = () => {
               </span>
             </div>
 
-            {/* Floating elements */}
+            {/* Floating elements — low z-index so they don't overlap Works section below */}
             <div
-              className="absolute top-[20%] right-[30%] text-5xl animate-float"
+              className="absolute top-[20%] right-[30%] text-5xl animate-float z-0"
               style={{ animationDelay: "0.3s" }}
             >
               👀
             </div>
             <div
-              className="absolute bottom-[30%] left-[60%] text-4xl animate-float"
+              className="absolute bottom-[30%] left-[60%] text-4xl animate-float z-0"
               style={{ animationDelay: "0.8s" }}
             >
               🌟

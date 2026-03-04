@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-background overflow-hidden flex items-center pt-20 md:pt-28 lg:pt-32">
+    <section className="relative min-h-screen bg-background overflow-hidden flex items-center pt-20 md:pt-28 lg:pt-32 isolate">
       <div className="section-container w-full pt-8 pb-16 md:pt-20 md:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Text content */}
@@ -114,16 +114,16 @@ const Hero = () => {
               />
             </div>
 
-            {/* Decorative elements */}
-            <div className="absolute top-20 left-10 w-16 h-16 bg-primary rounded-full animate-bounce-subtle" />
+            {/* Decorative elements — low z-index so they don't overlap following sections */}
+            <div className="absolute top-20 left-10 w-16 h-16 bg-primary rounded-full animate-bounce-subtle z-0" />
             <div
-              className="absolute bottom-40 right-0 text-6xl animate-float"
+              className="absolute bottom-40 right-0 text-6xl animate-float z-0"
               style={{ animationDelay: "0.5s" }}
             >
               😎
             </div>
             <div
-              className="absolute top-40 right-20 text-4xl animate-float"
+              className="absolute top-40 right-20 text-4xl animate-float z-0"
               style={{ animationDelay: "1s" }}
             >
               ✨
@@ -133,7 +133,7 @@ const Hero = () => {
       </div>
 
       {/* Background grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] z-0">
         <div
           className="w-full h-full"
           style={{

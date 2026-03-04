@@ -252,10 +252,14 @@ export const es = {
       type: "Contenido en preparación.",
       tag: "En preparación",
       miniDescription: "Contenido en preparación.",
-      task: "Contenido en preparación.",
-      idea: "Contenido en preparación.",
-      solution: "Contenido en preparación.",
-      result: "Contenido en preparación.",
+      task:
+        "Rediseñar la identidad de Órbita Comms, una agencia de PR y growth marketing fundada por dos profesionales con años de carrera que se unieron para acompañar proyectos Web3. El objetivo era construir una marca sólida y coherente que pudiera extenderse a web, materiales comerciales y presencia en redes sociales.",
+      idea:
+        "Tomar la metáfora de \"entrar en órbita\" como eje de la marca: una agencia que ayuda a que los proyectos Web3 despeguen y ganen visibilidad sostenida. La identidad debía equilibrar la calidez y cercanía de sus fundadoras con un posicionamiento nítido como equipo especializado en industria Web3 y frontier tech.",
+      solution:
+        "Diseñamos una identidad visual completa —logo, paleta, tipografías y sistema gráfico— pensada para escalar a todos sus puntos de contacto. Aplicamos la marca a sitio web, presentaciones comerciales, piezas de ventas y contenidos para social media, creando un universo visual unificado que refuerza su mensaje de PR + growth marketing para proyectos Web3.",
+      result:
+        "Diseñamos una identidad visual completa —logo, paleta, tipografías y sistema gráfico— pensada para escalar a todos sus puntos de contacto. Aplicamos la marca a sitio web, presentaciones comerciales, piezas de ventas y contenidos para social media, creando un universo visual unificado que refuerza su mensaje de PR + growth marketing para proyectos Web3.",
     },
   },
 };

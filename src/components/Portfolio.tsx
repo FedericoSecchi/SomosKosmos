@@ -56,8 +56,8 @@ const Portfolio = () => {
                   </svg>
                 </div>
 
-                {/* Badge always visible; title revealed on hover */}
-                <div className="absolute bottom-6 left-6 right-6 z-10 flex flex-col items-start">
+                {/* Badge always visible, anchored bottom-left; title revealed on hover */}
+                <div className="absolute bottom-4 left-4 z-10 flex flex-col items-start">
                   <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full mb-3">
                     {t(`projects.${project.id}.tag`)}
                   </span>

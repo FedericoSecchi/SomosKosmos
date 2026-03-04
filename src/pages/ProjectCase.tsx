@@ -97,11 +97,11 @@ const ProjectCase = () => {
             </Link>
           </div>
 
-          <div className="mb-12">
-            <span className="label-text text-primary mb-4 block">
+          <div className="mb-12 flex flex-col items-center text-center space-y-4">
+            <span className="label-text text-primary block">
               {t(`projects.${project.id}.tag`)}
             </span>
-            <h1 className="headline-large mb-4">
+            <h1 className="headline-large">
               {isPremium
                 ? t(`projects.${project.id}.title`)
                 : `${t("caseStudy.h1Prefix")} ${t(`projects.${project.id}.title`)}`}

@@ -55,14 +55,16 @@ const Portfolio = () => {
                 </svg>
               </div>
 
-              {/* Green badge — normal: bottom edge; hover: same as before (bottom-4) + counter-translate */}
-              <div className="absolute left-4 bottom-0 z-10 flex flex-col items-start pb-2 transition-all duration-500 group-hover:bottom-4 group-hover:pb-0 group-hover:translate-y-2">
-                <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full mb-3">
+              {/* Project title — above badge, revealed on hover */}
+              <h3 className="absolute left-4 bottom-14 z-10 font-display text-2xl md:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {t(`projects.${project.id}.title`)}
+              </h3>
+
+              {/* Green badge — bottom-left; normal: muy abajo; hover: bottom-4 + counter-translate */}
+              <div className="absolute left-4 bottom-0 z-10 flex flex-col items-start pb-1 transition-all duration-500 group-hover:bottom-4 group-hover:pb-0 group-hover:translate-y-2">
+                <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full">
                   {t(`projects.${project.id}.tag`)}
                 </span>
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {t(`projects.${project.id}.title`)}
-                </h3>
               </div>
             </Link>
           ))}

@@ -72,10 +72,10 @@ const ProjectCase = () => {
   return (
     <div className="relative min-h-screen bg-background">
       <Header />
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background">
+      {/* Hero Section — mobile-first vertical spacing */}
+      <section className="pt-24 pb-12 md:pt-32 md:pb-20 bg-background">
         <div className="section-container">
-          <div className="mb-8">
+          <div className="mb-6 md:mb-8">
             <Link
               to="/#work"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
@@ -97,7 +97,7 @@ const ProjectCase = () => {
             </Link>
           </div>
 
-          <div className="mb-12 flex flex-col items-center text-center space-y-4">
+          <div className="mb-8 md:mb-12 flex flex-col items-center text-center space-y-4">
             <span className="label-text text-primary block">
               {t(`projects.${project.id}.tag`)}
             </span>
@@ -106,7 +106,7 @@ const ProjectCase = () => {
                 ? t(`projects.${project.id}.title`)
                 : `${t("caseStudy.h1Prefix")} ${t(`projects.${project.id}.title`)}`}
             </h1>
-            <p className="body-large text-muted-foreground max-w-2xl">
+            <p className="body-large text-muted-foreground max-w-prose mx-auto">
               {t(`projects.${project.id}.miniDescription`)}
             </p>
           </div>
@@ -126,7 +126,7 @@ const ProjectCase = () => {
 
       {/* Task Block */}
       {t(`projects.${project.id}.task`) && (
-        <section className="py-20 bg-background" data-animate="fade-up">
+        <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
               <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16 lg:gap-24 items-center">
@@ -148,7 +148,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[0] && !isOrbitaNarrative && (
-              <div className="full-bleed mt-12">
+              <div className="full-bleed mt-8 md:mt-12">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
@@ -159,7 +159,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isOrbitaNarrative && galleries[0] && galleries[1] && galleries[2] && (
-              <div className="full-bleed mt-12">
+              <div className="full-bleed mt-8 md:mt-12">
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
@@ -181,14 +181,14 @@ const ProjectCase = () => {
             )}
           </div>
           <div className="section-container">
-            <hr className="border-t border-border/30 mt-20" />
+            <hr className="border-t border-border/30 mt-12 md:mt-20" />
           </div>
         </section>
       )}
 
       {/* Idea Block */}
       {(isPremium || t(`projects.${project.id}.idea`)) && (
-        <section className="py-20 bg-background" data-animate="fade-up">
+        <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
               <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16 lg:gap-24 items-center">
@@ -210,7 +210,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[1] && !isOrbitaNarrative && (
-              <div className="full-bleed mt-20">
+              <div className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
@@ -221,7 +221,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isOrbitaNarrative && galleries[3] && (
-              <div className="full-bleed mt-20">
+              <div className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
@@ -232,7 +232,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[2] && galleries.length < 6 && (
-              <div className="full-bleed mt-20">
+              <div className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
@@ -244,14 +244,14 @@ const ProjectCase = () => {
             )}
           </div>
           <div className="section-container">
-            <hr className="border-t border-border/30 mt-20" />
+            <hr className="border-t border-border/30 mt-12 md:mt-20" />
           </div>
         </section>
       )}
 
       {/* Solución section (premium only) */}
       {isPremium && (
-        <section className="py-20 bg-background" data-animate="fade-up">
+        <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-16 lg:gap-32 items-center">
               <div className="flex items-center justify-start">
@@ -282,7 +282,7 @@ const ProjectCase = () => {
               </div>
             </div>
             {galleries[3] && galleries.length < 6 && !isOrbitaNarrative && (
-              <div className="full-bleed mt-20">
+              <div className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
@@ -293,7 +293,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isOrbitaNarrative && galleries[4] && (
-              <div className="full-bleed mt-20">
+              <div className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
@@ -305,7 +305,7 @@ const ProjectCase = () => {
             )}
           </div>
           <div className="section-container">
-            <hr className="border-t border-border/30 mt-20" />
+            <hr className="border-t border-border/30 mt-12 md:mt-20" />
           </div>
         </section>
       )}
@@ -315,7 +315,7 @@ const ProjectCase = () => {
         <div className="full-bleed">
           <div className="w-full">
             {galleries[2] && (
-              <div className="mt-20 w-full overflow-hidden">
+              <div className="mt-12 md:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
                   alt={`${t(`projects.${project.id}.title`)} Gallery 3`}
@@ -347,7 +347,7 @@ const ProjectCase = () => {
 
       {/* Resultado section (premium only) */}
       {isPremium && t(`projects.${project.id}.result`) && (
-        <section className="py-20 bg-background" data-animate="fade-up">
+        <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-16 lg:gap-32 items-center">
               <div className="flex items-center justify-start">
@@ -361,7 +361,7 @@ const ProjectCase = () => {
             </div>
           </div>
           <div className="section-container">
-            <hr className="border-t border-border/30 mt-20" />
+            <hr className="border-t border-border/30 mt-12 md:mt-20" />
           </div>
         </section>
       )}
@@ -369,7 +369,7 @@ const ProjectCase = () => {
       {/* Gallery 6 (premium with 6 galleries only, below Resultado) — full-bleed for all */}
       {isPremium && galleries.length >= 6 && galleries[5] && (
         <section className="full-bleed">
-          <div className="w-full overflow-hidden mt-20">
+          <div className="w-full overflow-hidden mt-12 md:mt-20">
             <img
               src={galleries[5]}
               alt={`${t(`projects.${project.id}.title`)} Gallery 6`}
@@ -381,7 +381,7 @@ const ProjectCase = () => {
 
       {/* Solution Block (default layout only) */}
       {!isPremium && t(`projects.${project.id}.solution`) && (
-        <section className="py-20 bg-background" data-animate="fade-up">
+        <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             <div className="max-w-4xl">
               <h2 className="headline-medium mb-6">{t("caseStudy.solution")}</h2>
@@ -391,14 +391,14 @@ const ProjectCase = () => {
             </div>
           </div>
           <div className="section-container">
-            <hr className="border-t border-border/30 mt-20" />
+            <hr className="border-t border-border/30 mt-12 md:mt-20" />
           </div>
         </section>
       )}
 
       {/* Visual Gallery Block (default layout only) — full-bleed */}
       {!isPremium && (
-        <section className="py-20 bg-background">
+        <section className="py-12 md:py-20 bg-background">
           <div className="full-bleed mb-6">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
@@ -438,7 +438,7 @@ const ProjectCase = () => {
 
       {/* Next Project Navigation (default layout only) */}
       {!isPremium && (
-        <section className="py-20 bg-background border-t">
+        <section className="py-12 md:py-20 bg-background border-t">
           <div className="section-container">
             <div className="max-w-4xl mx-auto text-center">
               <p className="body-regular text-muted-foreground mb-6">{t("caseStudy.nextProject")}</p>

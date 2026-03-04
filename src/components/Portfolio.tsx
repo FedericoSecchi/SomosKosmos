@@ -5,7 +5,7 @@ import { useI18n } from "@/i18n/context";
 const Portfolio = () => {
   const { t } = useI18n();
   return (
-    <section id="work" className="py-32 bg-secondary text-secondary-foreground">
+    <section id="work" className="py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
       <div className="section-container">
         <div className="mb-16" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>

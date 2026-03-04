@@ -293,9 +293,9 @@ html {
     transform: scaleX(1);
   }
 
-  /* Section container */
+  /* Section container — mobile-first horizontal padding */
   .section-container {
-    @apply max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20;
+    @apply max-w-[1600px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20;
   }
 
   /* Full-bleed: escape container to viewport edges (e.g. Orbita images) */

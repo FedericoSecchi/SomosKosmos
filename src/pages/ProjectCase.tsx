@@ -78,7 +78,7 @@ const ProjectCase = () => {
           <div className="mb-6 md:mb-8">
             <Link
               to="/#work"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 md:mb-8"
             >
               <svg
                 className="w-4 h-4"
@@ -129,7 +129,7 @@ const ProjectCase = () => {
         <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
-              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16 lg:gap-24 items-center">
+              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 md:gap-16 lg:gap-24 items-center">
                 <div className="flex items-center justify-start">
                   <h2 className="headline-medium">{t("caseStudy.task")}</h2>
                 </div>
@@ -191,7 +191,7 @@ const ProjectCase = () => {
         <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
-              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16 lg:gap-24 items-center">
+              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 md:gap-16 lg:gap-24 items-center">
                 <div className="flex items-center justify-start">
                   <h2 className="headline-medium">{t("caseStudy.sectionIdea")}</h2>
                 </div>
@@ -253,7 +253,7 @@ const ProjectCase = () => {
       {isPremium && (
         <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-16 lg:gap-32 items-center">
+            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 md:gap-16 lg:gap-32 items-center">
               <div className="flex items-center justify-start">
                 <h2 className="headline-medium">{t("caseStudy.sectionSolution")}</h2>
               </div>
@@ -349,7 +349,7 @@ const ProjectCase = () => {
       {isPremium && t(`projects.${project.id}.result`) && (
         <section className="py-12 md:py-20 bg-background" data-animate="fade-up">
           <div className="section-container">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-16 lg:gap-32 items-center">
+            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 md:gap-16 lg:gap-32 items-center">
               <div className="flex items-center justify-start">
                 <h2 className="headline-medium">{t("caseStudy.sectionResult")}</h2>
               </div>

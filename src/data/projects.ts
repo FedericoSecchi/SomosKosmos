@@ -10,11 +10,13 @@ import redGuildGallery3 from "@/assets/projects/the-red-guild/gallery-3.jpg";
 import redGuildGallery4 from "@/assets/projects/the-red-guild/gallery-4.jpg";
 import redGuildGallery5 from "@/assets/projects/the-red-guild/gallery-5.jpg";
 import redGuildGallery6 from "@/assets/projects/the-red-guild/gallery-6.jpg";
-import orbitaImage from "@/assets/projects/orbita/hero.jpg";
-import orbitaGallery1 from "@/assets/projects/orbita/gallery-1.jpg";
-import orbitaGallery2 from "@/assets/projects/orbita/gallery-2.jpg";
-import orbitaGallery3 from "@/assets/projects/orbita/gallery-3.jpg";
-import orbitaGallery4 from "@/assets/projects/orbita/gallery-4.jpg";
+import orbitaImage from "@/assets/projects/orbita/orbita-hero.png";
+import orbitaGallery1 from "@/assets/projects/orbita/orbita-01.png";
+import orbitaGallery2 from "@/assets/projects/orbita/orbita-02.png";
+import orbitaGallery3 from "@/assets/projects/orbita/orbita-03.png";
+import orbitaGallery4 from "@/assets/projects/orbita/orbita-04.png";
+import orbitaGallery5 from "@/assets/projects/orbita/orbita-05.png";
+import orbitaGallery6 from "@/assets/projects/orbita/orbita-06.png";
 
 export type ProjectLayout = "premium" | "default";
 
@@ -53,7 +55,14 @@ export const projectsData: Project[] = [
     image: orbitaImage,
     size: "large",
     layout: "premium",
-    galleries: [orbitaGallery1, orbitaGallery2, orbitaGallery3, orbitaGallery4],
+    galleries: [
+      orbitaGallery1,
+      orbitaGallery2,
+      orbitaGallery3,
+      orbitaGallery4,
+      orbitaGallery5,
+      orbitaGallery6,
+    ],
   },
 ];
 

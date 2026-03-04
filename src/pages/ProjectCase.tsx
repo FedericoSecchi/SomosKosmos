@@ -145,30 +145,31 @@ const ProjectCase = () => {
                 </p>
               </div>
             )}
-            {isPremium && galleries[0] && (
+            {isPremium && galleries[0] && !isOrbitaNarrative && (
               <div className="mt-12 w-full rounded-2xl overflow-hidden">
                 <img
                   src={galleries[0]}
                   alt={`${t(`projects.${project.id}.title`)} Gallery 1`}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain block"
                 />
               </div>
             )}
-            {isOrbitaNarrative && galleries[1] && (
-              <div className="mt-6 w-full rounded-2xl overflow-hidden">
+            {isOrbitaNarrative && galleries[0] && galleries[1] && galleries[2] && (
+              <div className="mt-12 w-full overflow-hidden rounded-2xl grid grid-cols-1 sm:grid-cols-3 gap-0">
+                <img
+                  src={galleries[0]}
+                  alt={`${t(`projects.${project.id}.title`)} Gallery 1`}
+                  className="w-full h-auto object-cover block"
+                />
                 <img
                   src={galleries[1]}
                   alt={`${t(`projects.${project.id}.title`)} Gallery 2`}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-cover block"
                 />
-              </div>
-            )}
-            {isOrbitaNarrative && galleries[2] && (
-              <div className="mt-6 w-full rounded-2xl overflow-hidden">
                 <img
                   src={galleries[2]}
                   alt={`${t(`projects.${project.id}.title`)} Gallery 3`}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-cover block"
                 />
               </div>
             )}

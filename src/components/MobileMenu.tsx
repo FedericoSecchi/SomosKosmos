@@ -9,7 +9,7 @@ interface MobileMenuProps {
 }
 
 const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
-  const { t } = useI18n();
+  const { t, language, setLanguage } = useI18n();
   const navItems = [
     { key: "nav.work", section: "work" },
     { key: "nav.capabilities", section: "capabilities" },
@@ -30,6 +30,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   const handleStartProject = () => {
     navigateToSection("#contact");
     onClose();
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "es" : "en");
   };
 
   if (!isOpen) return null;
@@ -78,6 +82,17 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
               </button>
             ))}
           </nav>
+
+          {/* Language switcher */}
+          <div className="mt-8 pt-6 border-t border-secondary-foreground/20">
+            <button
+              onClick={toggleLanguage}
+              className="w-full text-center font-body text-base font-medium text-secondary-foreground/80 hover:text-primary transition-colors uppercase py-2"
+              aria-label={t("language.toggleAria")}
+            >
+              {t("language.toggleLabel")}
+            </button>
+          </div>
 
           {/* CTA Button */}
           <div className="pt-8 border-t border-secondary-foreground/20">

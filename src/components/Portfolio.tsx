@@ -55,8 +55,8 @@ const Portfolio = () => {
                 </svg>
               </div>
 
-              {/* Green badge — true bottom-left of card, direct child (not in logo/overlay) */}
-              <div className="absolute bottom-0 left-0 z-10 flex flex-col items-start pb-3 pl-3">
+              {/* Green badge — anchored bottom-left, counter-translate so it doesn't move on card hover */}
+              <div className="absolute bottom-4 left-4 z-10 flex flex-col items-start transition-transform duration-500 group-hover:translate-y-2">
                 <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full mb-3">
                   {t(`projects.${project.id}.tag`)}
                 </span>

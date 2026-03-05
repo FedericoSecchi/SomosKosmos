@@ -75,10 +75,10 @@ const ProjectCase = () => {
       {/* Hero Section — mobile-first vertical spacing */}
       <section className="pt-24 pb-12 md:pt-32 md:pb-20 bg-background">
         <div className="section-container">
-          <div className="mb-6 md:mb-8">
+          <div className="mb-4 md:mb-6">
             <Link
               to="/#work"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 md:mb-8"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-4 md:mb-6"
             >
               <svg
                 className="w-4 h-4"

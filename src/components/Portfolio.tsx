@@ -24,9 +24,7 @@ const Portfolio = () => {
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className={`group relative flex flex-col h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl aspect-[2560/1400] ${
-                project.size === "large" ? "md:row-span-2" : ""
-              }`}
+              className="group relative flex flex-col h-full w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl aspect-[2560/1400]"
             >
               {/* Background layer: image + gradient (z-0, below content) */}
               <div className="absolute inset-0 z-0">
@@ -60,8 +58,8 @@ const Portfolio = () => {
                 {t(`projects.${project.id}.title`)}
               </h3>
 
-              {/* Green badge — 30px above bottom; hover: bottom-4 + counter-translate */}
-              <div className="absolute left-4 bottom-[30px] z-10 flex flex-col items-start transition-all duration-500 group-hover:bottom-4 group-hover:translate-y-2">
+              {/* Green badge — 30px above bottom, no layout shift on hover */}
+              <div className="absolute left-4 bottom-[30px] z-10 flex flex-col items-start">
                 <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full">
                   {t(`projects.${project.id}.tag`)}
                 </span>

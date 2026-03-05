@@ -1,11 +1,15 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/seo/SEO";
 import { projectsData, getProjectById } from "@/data/projects";
 import { useScrollAnimations } from "@/hooks/useScrollAnimations";
 import { useI18n } from "@/i18n/context";
+
+const SITE_URL = "https://somoskosmos.com";
 
 const ProjectCase = () => {
   const { projectId } = useParams<{ projectId: string }>();
@@ -16,27 +20,10 @@ const ProjectCase = () => {
   useScrollAnimations();
 
   useEffect(() => {
-    if (project) {
-      const title = t<string>(`projects.${project.id}.title`);
-      document.title = `${title} — ${t("meta.projectTitleSuffix")}`;
-    } else {
+    if (!project) {
       document.title = t("meta.projectNotFoundTitle");
     }
-    const description = project
-      ? `${t("meta.projectDescriptionPrefix")} ${t<string>(
-          `projects.${project.id}.miniDescription`
-        )} ${t("meta.projectDescriptionSuffix")}`
-      : t("meta.projectNotFoundDescription");
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", description);
-    } else {
-      const metaTag = document.createElement("meta");
-      metaTag.setAttribute("name", "description");
-      metaTag.setAttribute("content", description);
-      document.head.appendChild(metaTag);
-    }
-  }, [project, language, t]);
+  }, [project, t]);
 
   if (!project) {
     return (
@@ -65,12 +52,40 @@ const ProjectCase = () => {
 
   const currentIndex = projectsData.findIndex((p) => p.id === project.id);
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
+  const relatedProjects = projectsData.filter((p) => p.id !== project.id);
   const isPremium = project.layout === "premium";
   const galleries = project.galleries ?? [];
   const isOrbitaNarrative = project.id === "orbita" && galleries.length >= 6;
 
+  const canonicalUrl = `${SITE_URL}/project/${project.id}`;
+  const seoTitle = project.seoTitle ?? `${t<string>(`projects.${project.id}.title`)} — ${t("meta.projectTitleSuffix")}`;
+  const seoDescription = project.seoDescription ?? `${t("meta.projectDescriptionPrefix")} ${t<string>(`projects.${project.id}.miniDescription`)} ${t("meta.projectDescriptionSuffix")}`;
+  const seoImage = project.seoImage ?? project.image;
+  const imageFullUrl = seoImage.startsWith("http") ? seoImage : `${SITE_URL}${seoImage.startsWith("/") ? seoImage : `/${seoImage}`}`;
+
+  const creativeWorkJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: t<string>(`projects.${project.id}.title`),
+    description: seoDescription,
+    url: canonicalUrl,
+    image: imageFullUrl,
+    author: { "@type": "Organization", name: "Kosmos Studio" },
+  };
+
   return (
     <div className="relative min-h-screen bg-background">
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        image={seoImage}
+        url={canonicalUrl}
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(creativeWorkJsonLd)}
+        </script>
+      </Helmet>
       <Header />
       {/* Hero Section — mobile-first vertical spacing */}
       <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-background">
@@ -441,6 +456,30 @@ const ProjectCase = () => {
           </div>
         </section>
       )}
+
+      {/* Related projects — internal linking for all case studies */}
+      <section className="py-12 md:py-16 bg-muted/30 border-t" aria-labelledby="related-projects-heading">
+        <div className="section-container">
+          <h2 id="related-projects-heading" className="headline-medium mb-8">
+            {t("caseStudy.relatedProjects")}
+          </h2>
+          <ul className="flex flex-wrap gap-6 md:gap-8">
+            {relatedProjects.map((p) => (
+              <li key={p.id}>
+                <Link
+                  to={`/project/${p.id}`}
+                  className="body-large text-foreground hover:text-primary transition-colors underline underline-offset-4"
+                >
+                  {t(`projects.${p.id}.title`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link to="/" className="inline-block mt-6 body-regular text-muted-foreground hover:text-primary transition-colors">
+            {t("caseStudy.viewAll")}
+          </Link>
+        </div>
+      </section>
       <Footer />
     </div>
   );

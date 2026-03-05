@@ -166,6 +166,7 @@ export const en = {
   caseStudy: {
     backToPortfolio: "Back to Portfolio",
     nextProject: "Next Project",
+    relatedProjects: "Related projects",
     viewAll: "View All Projects",
     h1Prefix: "Case study:",
     task: "Task",

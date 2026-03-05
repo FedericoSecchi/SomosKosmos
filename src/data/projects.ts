@@ -26,6 +26,12 @@ export interface Project {
   size: "large" | "medium";
   layout?: ProjectLayout;
   galleries?: string[];
+  /** SEO: unique page title (e.g. "Project Name Case Study — Kosmos Studio") */
+  seoTitle?: string;
+  /** SEO: meta description for search and social */
+  seoDescription?: string;
+  /** SEO: absolute or path for og:image (defaults to project image) */
+  seoImage?: string;
 }
 
 export const projectsData: Project[] = [
@@ -35,6 +41,9 @@ export const projectsData: Project[] = [
     size: "large",
     layout: "premium",
     galleries: [securityGallery1, securityGallery2, securityGallery3, securityGallery4],
+    seoTitle: "Security Alliance Branding Case Study — Kosmos Studio",
+    seoDescription: "Brand identity and modular design system created for a global crypto security alliance.",
+    seoImage: securityAllianceImage,
   },
   {
     id: "the-red-guild",
@@ -49,6 +58,9 @@ export const projectsData: Project[] = [
       redGuildGallery5,
       redGuildGallery6,
     ],
+    seoTitle: "The Red Guild Branding & Web — Kosmos Studio",
+    seoDescription: "Visual identity and web experience for The Red Guild.",
+    seoImage: theRedGuildImage,
   },
   {
     id: "orbita",
@@ -63,6 +75,9 @@ export const projectsData: Project[] = [
       orbitaGallery5,
       orbitaGallery6,
     ],
+    seoTitle: "Orbita Case Study — Kosmos Studio",
+    seoDescription: "Brand and digital experience for Orbita.",
+    seoImage: orbitaImage,
   },
 ];
 

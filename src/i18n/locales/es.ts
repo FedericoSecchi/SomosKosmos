@@ -167,6 +167,7 @@ export const es = {
   caseStudy: {
     backToPortfolio: "Volver al portfolio",
     nextProject: "Siguiente proyecto",
+    relatedProjects: "Proyectos relacionados",
     viewAll: "Ver todos los proyectos",
     h1Prefix: "Caso de estudio:",
     task: "Tarea",

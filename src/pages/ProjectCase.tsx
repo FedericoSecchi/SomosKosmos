@@ -71,6 +71,18 @@ const ProjectCase = () => {
     url: canonicalUrl,
     image: imageFullUrl,
     author: { "@type": "Organization", name: "Kosmos Studio" },
+    datePublished: "2024-01-01",
+    publisher: { "@type": "Organization", name: "Kosmos Studio", url: SITE_URL },
+  };
+
+  const breadcrumbListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Work", item: `${SITE_URL}/#work` },
+      { "@type": "ListItem", position: 3, name: t<string>(`projects.${project.id}.title`), item: canonicalUrl },
+    ],
   };
 
   return (
@@ -85,8 +97,21 @@ const ProjectCase = () => {
         <script type="application/ld+json">
           {JSON.stringify(creativeWorkJsonLd)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbListJsonLd)}
+        </script>
       </Helmet>
       <Header />
+      {/* Invisible semantic nav for crawlers and screen readers — internal linking without layout change */}
+      <nav aria-label="Case studies" className="sr-only">
+        <ul>
+          {projectsData.map((p) => (
+            <li key={p.id}>
+              <Link to={`/project/${p.id}`}>{t(`projects.${p.id}.title`)}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       {/* Hero Section — mobile-first vertical spacing */}
       <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-background">
         <div className="section-container">
@@ -131,7 +156,7 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={t(`projects.${project.id}.title`)}
+                alt={(t as (key: string) => string)(`projects.${project.id}.coverImageAlt`) || t(`projects.${project.id}.title`)}
                 className="w-full h-full object-cover block"
               />
             </div>
@@ -167,7 +192,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 1`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -178,17 +203,17 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 1`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
                     className="w-full h-auto object-cover block"
                   />
                   <img
                     src={galleries[1]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 2`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
                     className="w-full h-auto object-cover block"
                   />
                   <img
                     src={galleries[2]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 3`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -226,7 +251,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 2`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -237,7 +262,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 4`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -248,7 +273,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 3`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -295,7 +320,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 4`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -306,7 +331,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
-                    alt={`${t(`projects.${project.id}.title`)} Gallery 5`}
+                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 5`}
                     className="w-full h-auto object-cover block"
                   />
                 </div>
@@ -324,7 +349,7 @@ const ProjectCase = () => {
               <div className="mt-12 md:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
-                  alt={`${t(`projects.${project.id}.title`)} Gallery 3`}
+                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
                   className="w-full h-auto object-cover block"
                 />
               </div>
@@ -333,7 +358,7 @@ const ProjectCase = () => {
               <div className="w-full overflow-hidden">
                 <img
                   src={galleries[3]}
-                  alt={`${t(`projects.${project.id}.title`)} Gallery 4`}
+                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
                   className="w-full h-auto object-cover block"
                 />
               </div>
@@ -342,7 +367,7 @@ const ProjectCase = () => {
               <div className="w-full overflow-hidden">
                 <img
                   src={galleries[4]}
-                  alt={`${t(`projects.${project.id}.title`)} Gallery 5`}
+                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 5`}
                   className="w-full h-auto object-cover block"
                 />
               </div>
@@ -375,7 +400,7 @@ const ProjectCase = () => {
           <div className="w-full overflow-hidden mt-12 md:mt-20">
             <img
               src={galleries[5]}
-              alt={`${t(`projects.${project.id}.title`)} Gallery 6`}
+              alt={`${t(`projects.${project.id}.title`)} branding and design work, image 6`}
               className="w-full h-auto object-cover block"
             />
           </div>
@@ -403,7 +428,7 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} - ${t("caseStudy.detailAlt")} 1`}
+                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
                 className="w-full h-full object-cover block"
               />
             </div>
@@ -412,14 +437,14 @@ const ProjectCase = () => {
             <div className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} - ${t("caseStudy.detailAlt")} 2`}
+                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
                 className="w-full h-full object-cover block"
               />
             </div>
             <div className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} - ${t("caseStudy.detailAlt")} 3`}
+                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
                 className="w-full h-full object-cover block"
               />
             </div>
@@ -428,7 +453,7 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} - ${t("caseStudy.detailAlt")} 4`}
+                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
                 className="w-full h-full object-cover block"
               />
             </div>

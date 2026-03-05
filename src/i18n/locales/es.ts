@@ -219,6 +219,7 @@ export const es = {
       tag: "Branding",
       miniDescription:
         "Branding vivo para una alianza global de seguridad en crypto.",
+      coverImageAlt: "Sistema de identidad de marca Security Alliance",
       task:
         "Security Alliance es una organización que impulsa iniciativas de seguridad para el ecosistema cripto, como SEAL 911, Safe Harbor, Wargames y SEAL Intel.\n\nYa contaban con un logo y una base visual, pero el sistema se quedaba corto frente a la velocidad con la que crecían sus proyectos.\n\nEl reto fue convertir ese punto de partida en un universo de marca coherente y flexible, capaz de adaptarse a nuevas iniciativas, formatos y audiencias sin perder identidad.",
       idea:
@@ -239,6 +240,7 @@ export const es = {
       tag: "BRANDING & WEB DESIGN",
       miniDescription:
         "Rediseño integral de marca y web para un guild de seguridad en el ecosistema cripto.",
+      coverImageAlt: "Identidad de marca y diseño web The Red Guild",
       task:
         "Rediseñar por completo la identidad de The Red Guild —logo, sistema visual y sitio web— para reflejar su rol como colectivo de seguridad y educación en el ecosistema cripto. La marca debía diferenciarse de otras organizaciones de seguridad, manteniendo credibilidad técnica pero con una personalidad más cercana y lúdica.",
       idea:
@@ -254,6 +256,7 @@ export const es = {
       tag: "Branding",
       miniDescription:
         "Identidad completa para Órbita Comms, agencia de PR y growth marketing en Web3.",
+      coverImageAlt: "Identidad de marca y experiencia digital Orbita Comms",
       task:
         "Rediseñar la identidad de Órbita Comms, una agencia de PR y growth marketing fundada por dos profesionales con años de carrera que se unieron para acompañar proyectos Web3. El objetivo era construir una marca sólida y coherente que pudiera extenderse a web, materiales comerciales y presencia en redes sociales.",
       idea:

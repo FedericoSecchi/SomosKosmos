@@ -7,13 +7,15 @@ export interface SEOProps {
   description: string;
   image?: string;
   url?: string;
+  /** Open Graph type (default: "website"; use "article" for project/case study pages) */
+  type?: "website" | "article";
 }
 
 /**
  * Injects dynamic title, meta description, canonical, Open Graph and Twitter tags.
  * Use absolute URLs for image and url when possible; relative paths are resolved against SITE_URL.
  */
-const SEO = ({ title, description, image, url }: SEOProps) => {
+const SEO = ({ title, description, image, url, type = "website" }: SEOProps) => {
   const canonicalUrl = url ? (url.startsWith("http") ? url : `${SITE_URL}${url.startsWith("/") ? url : `/${url}`}`) : SITE_URL;
   const imageUrl = image ? (image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`) : undefined;
 
@@ -22,7 +24,7 @@ const SEO = ({ title, description, image, url }: SEOProps) => {
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/seo/SEO";
+import { generateProjectSchema, generateBreadcrumbSchema } from "@/seo/projectSchema";
 import { projectsData, getProjectById } from "@/data/projects";
 import { useScrollAnimations } from "@/hooks/useScrollAnimations";
 import { useI18n } from "@/i18n/context";
@@ -63,27 +64,21 @@ const ProjectCase = () => {
   const seoImage = project.seoImage ?? project.image;
   const imageFullUrl = seoImage.startsWith("http") ? seoImage : `${SITE_URL}${seoImage.startsWith("/") ? seoImage : `/${seoImage}`}`;
 
-  const creativeWorkJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: t<string>(`projects.${project.id}.title`),
-    description: seoDescription,
-    url: canonicalUrl,
-    image: imageFullUrl,
-    author: { "@type": "Organization", name: "Kosmos Studio" },
-    datePublished: "2024-01-01",
-    publisher: { "@type": "Organization", name: "Kosmos Studio", url: SITE_URL },
-  };
+  const projectTitle = t<string>(`projects.${project.id}.title`);
+  const projectTag = t<string>(`projects.${project.id}.tag`);
 
-  const breadcrumbListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Work", item: `${SITE_URL}/#work` },
-      { "@type": "ListItem", position: 3, name: t<string>(`projects.${project.id}.title`), item: canonicalUrl },
-    ],
-  };
+  const creativeWorkJsonLd = generateProjectSchema({
+    title: projectTitle,
+    description: seoDescription,
+    coverImage: imageFullUrl,
+    slug: project.id,
+    tags: projectTag,
+  });
+
+  const breadcrumbListJsonLd = generateBreadcrumbSchema({
+    title: projectTitle,
+    slug: project.id,
+  });
 
   return (
     <div className="relative min-h-screen bg-background">
@@ -92,6 +87,7 @@ const ProjectCase = () => {
         description={seoDescription}
         image={seoImage}
         url={canonicalUrl}
+        type="article"
       />
       <Helmet>
         <script type="application/ld+json">

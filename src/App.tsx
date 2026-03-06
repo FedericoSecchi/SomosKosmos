@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import SeoSchema from "@/components/SeoSchema";
 import Index from "./pages/Index";
 import ProjectCase from "./pages/ProjectCase";
+import ProjectTopic from "./pages/ProjectTopic";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/project/:projectId/:topic" element={<ProjectTopic />} />
           <Route path="/project/:projectId" element={<ProjectCase />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

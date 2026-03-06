@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/seo/SEO";
 import { generateProjectSchema, generateBreadcrumbSchema } from "@/seo/projectSchema";
+import { projectTopics } from "@/seo/projectTopics";
+import { generateTopicContent } from "@/seo/generateTopicContent";
 import { projectsData, getProjectById } from "@/data/projects";
 import { useScrollAnimations } from "@/hooks/useScrollAnimations";
 import { useI18n } from "@/i18n/context";
@@ -13,7 +15,7 @@ import { useI18n } from "@/i18n/context";
 const SITE_URL = "https://somoskosmos.com";
 
 const ProjectCase = () => {
-  const { projectId } = useParams<{ projectId: string }>();
+  const { projectId, topic } = useParams<{ projectId: string; topic?: string }>();
   const navigate = useNavigate();
   const project = projectId ? getProjectById(projectId) : undefined;
   const { t, language } = useI18n();
@@ -58,13 +60,23 @@ const ProjectCase = () => {
   const galleries = project.galleries ?? [];
   const isOrbitaNarrative = project.id === "orbita" && galleries.length >= 6;
 
-  const canonicalUrl = `${SITE_URL}/project/${project.id}`;
-  const seoTitle = project.seoTitle ?? `${t<string>(`projects.${project.id}.title`)} — ${t("meta.projectTitleSuffix")}`;
-  const seoDescription = project.seoDescription ?? `${t("meta.projectDescriptionPrefix")} ${t<string>(`projects.${project.id}.miniDescription`)} ${t("meta.projectDescriptionSuffix")}`;
+  const isTopicPage = Boolean(topic && projectTopics.includes(topic));
+  const projectTitle = t<string>(`projects.${project.id}.title`);
+
+  const canonicalUrl = isTopicPage
+    ? `${SITE_URL}/project/${project.id}/${topic}`
+    : `${SITE_URL}/project/${project.id}`;
+
+  const topicContent = isTopicPage ? generateTopicContent(projectTitle, topic!) : null;
+  const seoTitle = isTopicPage
+    ? (topicContent?.title ?? projectTitle)
+    : (project.seoTitle ?? `${projectTitle} — ${t("meta.projectTitleSuffix")}`);
+  const seoDescription = isTopicPage
+    ? (topicContent?.description ?? project.seoDescription)
+    : (project.seoDescription ?? `${t("meta.projectDescriptionPrefix")} ${t<string>(`projects.${project.id}.miniDescription`)} ${t("meta.projectDescriptionSuffix")}`);
   const seoImage = project.seoImage ?? project.image;
   const imageFullUrl = seoImage.startsWith("http") ? seoImage : `${SITE_URL}${seoImage.startsWith("/") ? seoImage : `/${seoImage}`}`;
 
-  const projectTitle = t<string>(`projects.${project.id}.title`);
   const projectTag = t<string>(`projects.${project.id}.tag`);
 
   const creativeWorkJsonLd = generateProjectSchema({
@@ -73,12 +85,32 @@ const ProjectCase = () => {
     coverImage: imageFullUrl,
     slug: project.id,
     tags: projectTag,
+    topic: isTopicPage ? topic : undefined,
+    mainEntityOfPage: isTopicPage ? `${SITE_URL}/project/${project.id}` : undefined,
   });
 
   const breadcrumbListJsonLd = generateBreadcrumbSchema({
     title: projectTitle,
     slug: project.id,
+    topic: isTopicPage ? topic : undefined,
   });
+
+  const toFullUrl = (path: string) =>
+    path.startsWith("http") ? path : `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+  const allImageUrls = [
+    toFullUrl(project.image),
+    ...(galleries ?? []).map(toFullUrl),
+  ].filter((url, i, arr) => arr.indexOf(url) === i);
+  const imageObjectsJsonLd = allImageUrls.map((contentUrl) =>
+    generateImageObjectSchema(contentUrl, projectTitle)
+  );
+
+  const keywordsContent = [projectTag, "case study", "branding", "Kosmos Studio"].join(", ");
+  const SEO_LINK_TEXT: Record<string, string> = {
+    "security-alliance": "Security Alliance branding project",
+    "the-red-guild": "The Red Guild visual identity",
+    "orbita": "Orbita design system",
+  };
 
   return (
     <div className="relative min-h-screen bg-background">
@@ -90,12 +122,21 @@ const ProjectCase = () => {
         type="article"
       />
       <Helmet>
+        <meta name="keywords" content={[projectTag, "case study", "branding", "Kosmos Studio"].join(", ")} />
         <script type="application/ld+json">
           {JSON.stringify(creativeWorkJsonLd)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbListJsonLd)}
         </script>
+        {imageObjectsJsonLd.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": imageObjectsJsonLd,
+            })}
+          </script>
+        )}
       </Helmet>
       <Header />
       {/* Invisible semantic nav for crawlers and screen readers — internal linking without layout change */}
@@ -108,8 +149,12 @@ const ProjectCase = () => {
           ))}
         </ul>
       </nav>
-      {/* Hero Section — mobile-first vertical spacing */}
-      <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-background">
+      <article itemScope itemType="https://schema.org/CreativeWork">
+        <meta itemProp="author" content="Kosmos Studio" />
+        <meta itemProp="creator" content="Kosmos Studio" />
+        <meta itemProp="publisher" content="Kosmos Studio" />
+        {/* Hero Section — mobile-first vertical spacing */}
+        <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-background">
         <div className="section-container">
           <div className="mb-4 md:mb-6">
             <Link
@@ -148,15 +193,18 @@ const ProjectCase = () => {
           </div>
 
           {/* Cover Image — full-bleed for all projects */}
-          <div className="full-bleed">
+          <figure className="full-bleed">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={(t as (key: string) => string)(`projects.${project.id}.coverImageAlt`) || t(`projects.${project.id}.title`)}
+                alt={(t as (key: string) => string)(`projects.${project.id}.coverImageAlt`) || `${projectTitle} branding and visual identity design by Kosmos Studio`}
                 className="w-full h-full object-cover block"
               />
             </div>
-          </div>
+            <figcaption className="seo-hidden">
+              {projectTitle} branding and design system created by Kosmos Studio.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -184,36 +232,42 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[0] && !isOrbitaNarrative && (
-              <div className="full-bleed mt-8 md:mt-12">
+              <figure className="full-bleed mt-8 md:mt-12">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {isOrbitaNarrative && galleries[0] && galleries[1] && galleries[2] && (
-              <div className="full-bleed mt-8 md:mt-12">
+              <figure className="full-bleed mt-8 md:mt-12">
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                   <img
                     src={galleries[1]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                   <img
                     src={galleries[2]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
           </div>
         </section>
@@ -243,37 +297,43 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[1] && !isOrbitaNarrative && (
-              <div className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {isOrbitaNarrative && galleries[3] && (
-              <div className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {isPremium && galleries[2] && galleries.length < 6 && (
-              <div className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
           </div>
         </section>
@@ -312,26 +372,30 @@ const ProjectCase = () => {
               </div>
             </div>
             {galleries[3] && galleries.length < 6 && !isOrbitaNarrative && (
-              <div className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {isOrbitaNarrative && galleries[4] && (
-              <div className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 md:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
-                    alt={`${t(`projects.${project.id}.title`)} branding and design work, image 5`}
+                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 5`}
                     className="w-full h-auto object-cover block"
+                    loading="lazy"
                   />
                 </div>
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
           </div>
         </section>
@@ -342,31 +406,37 @@ const ProjectCase = () => {
         <div className="full-bleed">
           <div className="w-full">
             {galleries[2] && (
-              <div className="mt-12 md:mt-20 w-full overflow-hidden">
+              <figure className="mt-12 md:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
-                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
+                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
                   className="w-full h-auto object-cover block"
+                  loading="lazy"
                 />
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {galleries[3] && (
-              <div className="w-full overflow-hidden">
+              <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[3]}
-                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
+                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
                   className="w-full h-auto object-cover block"
+                  loading="lazy"
                 />
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
             {galleries[4] && (
-              <div className="w-full overflow-hidden">
+              <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[4]}
-                  alt={`${t(`projects.${project.id}.title`)} branding and design work, image 5`}
+                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 5`}
                   className="w-full h-auto object-cover block"
+                  loading="lazy"
                 />
-              </div>
+                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+              </figure>
             )}
           </div>
         </div>
@@ -392,15 +462,17 @@ const ProjectCase = () => {
 
       {/* Gallery 6 (premium with 6 galleries only, below Resultado) — full-bleed for all */}
       {isPremium && galleries.length >= 6 && galleries[5] && (
-        <section className="full-bleed">
+        <figure className="full-bleed">
           <div className="w-full overflow-hidden mt-12 md:mt-20">
             <img
               src={galleries[5]}
-              alt={`${t(`projects.${project.id}.title`)} branding and design work, image 6`}
+              alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 6`}
               className="w-full h-auto object-cover block"
+              loading="lazy"
             />
           </div>
-        </section>
+          <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+        </figure>
       )}
 
       {/* Solution Block (default layout only) */}
@@ -420,40 +492,48 @@ const ProjectCase = () => {
       {/* Visual Gallery Block (default layout only) — full-bleed */}
       {!isPremium && (
         <section className="py-12 md:py-20 bg-background">
-          <div className="full-bleed mb-6">
+          <figure className="full-bleed mb-6">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 1`}
+                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
                 className="w-full h-full object-cover block"
+                loading="lazy"
               />
             </div>
-          </div>
+            <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+          </figure>
           <div className="full-bleed grid grid-cols-1 md:grid-cols-2 gap-0 mb-6">
-            <div className="relative aspect-[2560/1400] overflow-hidden">
+            <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 2`}
+                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
                 className="w-full h-full object-cover block"
+                loading="lazy"
               />
-            </div>
-            <div className="relative aspect-[2560/1400] overflow-hidden">
+              <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+            </figure>
+            <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 3`}
+                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
                 className="w-full h-full object-cover block"
+                loading="lazy"
               />
-            </div>
+              <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+            </figure>
           </div>
-          <div className="full-bleed">
+          <figure className="full-bleed">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${t(`projects.${project.id}.title`)} branding and design work, image 4`}
+                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
                 className="w-full h-full object-cover block"
+                loading="lazy"
               />
             </div>
-          </div>
+            <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
+          </figure>
         </section>
       )}
 
@@ -501,6 +581,40 @@ const ProjectCase = () => {
           </Link>
         </div>
       </section>
+
+      {/* SEO: invisible semantic sections for crawlers — no layout change */}
+      <section className="seo-hidden">
+        <h2>Project overview</h2>
+        <p>{seoDescription}</p>
+      </section>
+      <section className="seo-hidden">
+        <h2>Design disciplines</h2>
+        <p>Brand identity, typography, visual system, digital experience.</p>
+      </section>
+      <section className="seo-hidden">
+        <h2>Creative process</h2>
+        <p>Concept exploration, visual language development, brand architecture and digital design implementation.</p>
+      </section>
+      <nav className="seo-hidden" aria-label="Portfolio projects">
+        {projectsData.map((p) => (
+          <a key={p.id} href={`/project/${p.id}`}>{SEO_LINK_TEXT[p.id] ?? t(`projects.${p.id}.title`)}</a>
+        ))}
+        {isTopicPage ? (
+          <>
+            <a href={`/project/${project.id}`}>{projectTitle} case study</a>
+            {projectTopics
+              .filter((t) => t !== topic)
+              .map((tpc) => (
+                <a key={tpc} href={`/project/${project.id}/${tpc}`}>{projectTitle} {tpc.replace(/-/g, " ")}</a>
+              ))}
+          </>
+        ) : (
+          projectTopics.map((tpc) => (
+            <a key={tpc} href={`/project/${project.id}/${tpc}`}>{projectTitle} {tpc.replace(/-/g, " ")}</a>
+          ))
+        )}
+      </nav>
+    </article>
       <Footer />
     </div>
   );

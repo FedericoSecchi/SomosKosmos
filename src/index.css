@@ -9,6 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* SEO: hide content visually but keep it crawlable by search engines */
+.seo-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 @layer base {
   :root {
     /* Editorial Creative Studio Color System */

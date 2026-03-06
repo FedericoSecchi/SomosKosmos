@@ -11,13 +11,19 @@ export interface ProjectSchemaInput {
   slug: string;
   /** Optional keywords (string or array) */
   tags?: string | string[];
+  /** Optional topic for topic pages (e.g. branding) */
+  topic?: string;
+  /** For topic pages: parent project URL as mainEntityOfPage */
+  mainEntityOfPage?: string;
 }
 
 /**
  * Generates Schema.org CreativeWork JSON-LD for a project/case study page.
  */
 export function generateProjectSchema(project: ProjectSchemaInput) {
-  const url = `${SITE_URL}/project/${project.slug}`;
+  const baseUrl = `${SITE_URL}/project/${project.slug}`;
+  const url = project.topic ? `${baseUrl}/${project.topic}` : baseUrl;
+  const mainEntityOfPage = project.mainEntityOfPage ?? url;
   const keywords =
     typeof project.tags === "string"
       ? project.tags
@@ -29,10 +35,11 @@ export function generateProjectSchema(project: ProjectSchemaInput) {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: project.title,
+    headline: project.title,
     description: project.description,
     image: project.coverImage,
     url,
-    mainEntityOfPage: url,
+    mainEntityOfPage,
     author: {
       "@type": "Organization",
       name: "Kosmos Studio",
@@ -53,31 +60,58 @@ export function generateProjectSchema(project: ProjectSchemaInput) {
 }
 
 /**
+ * Generates Schema.org ImageObject JSON-LD for Google Images SEO.
+ */
+export function generateImageObjectSchema(contentUrl: string, projectTitle: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl,
+    creator: { "@type": "Organization", name: "Kosmos Studio" },
+    creditText: "Kosmos Studio",
+    license: SITE_URL,
+    name: `${projectTitle} branding and visual identity design by Kosmos Studio`,
+  };
+}
+
+const TOPIC_LABELS: Record<string, string> = {
+  branding: "Branding",
+  "design-system": "Design system",
+  typography: "Typography",
+  "visual-language": "Visual language",
+  "case-study": "Case study",
+};
+
+/**
  * Generates Schema.org BreadcrumbList JSON-LD for project page hierarchy.
  */
-export function generateBreadcrumbSchema(project: { title: string; slug: string }) {
+export function generateBreadcrumbSchema(project: {
+  title: string;
+  slug: string;
+  topic?: string;
+}) {
+  const items = [
+    { "@type": "ListItem" as const, position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem" as const, position: 2, name: "Projects", item: SITE_URL + "/" },
+    {
+      "@type": "ListItem" as const,
+      position: 3,
+      name: project.title,
+      item: `${SITE_URL}/project/${project.slug}`,
+    },
+  ];
+  if (project.topic) {
+    const topicLabel = TOPIC_LABELS[project.topic] ?? project.topic;
+    items.push({
+      "@type": "ListItem",
+      position: 4,
+      name: topicLabel,
+      item: `${SITE_URL}/project/${project.slug}/${project.topic}`,
+    });
+  }
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: SITE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Projects",
-        item: SITE_URL + "/",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: project.title,
-        item: `${SITE_URL}/project/${project.slug}`,
-      },
-    ],
+    itemListElement: items,
   };
 }

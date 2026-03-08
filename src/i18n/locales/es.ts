@@ -28,6 +28,8 @@ export const es = {
       "Identidad visual, sitios web modernos y contenido digital para equipos que cuidan su imagen y lo que venden.",
     ctaStart: "Iniciar un proyecto",
     ctaWork: "Ver proyectos",
+    ctaProjects: "Ver proyectos",
+    ctaCall: "Agendar llamada",
     badgeNew: "Nuevo",
     collageAlt1: "Estudio creativo en su espacio",
     collageAlt2: "Diseñador bocetando",

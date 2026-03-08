@@ -48,22 +48,22 @@ const Hero = () => {
               {t("hero.description")}
             </p>
 
-            {/* CTA Buttons Container - Clean layout with proper spacing */}
+            {/* CTA Buttons Container - Ver proyectos (outline) + Agendar llamada (secondary) */}
             <div className="relative">
               <div className="flex flex-wrap gap-4">
-                <Button
-                  variant="hero"
-                  size="xl"
-                  onClick={() => scrollToSection("#contacto")}
-                >
-                  {t("hero.ctaStart")}
-                </Button>
                 <Button
                   variant="heroOutline"
                   size="xl"
                   onClick={() => scrollToSection("#trabajos")}
                 >
-                  {t("hero.ctaWork")}
+                  {t("hero.ctaProjects")}
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="xl"
+                  onClick={() => scrollToSection("#contacto")}
+                >
+                  {t("hero.ctaCall")}
                 </Button>
               </div>
               

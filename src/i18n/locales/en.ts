@@ -22,11 +22,11 @@ export const en = {
   },
   hero: {
     label: "STUDIO",
-    headline: "Design and development studio for branding and websites.",
+    headline: "Design and development for brands that want to sell better.",
     description:
       "A creative studio for visual identity, modern websites, and digital content for teams that care about how they look and what they sell.",
-    ctaStart: "Start a project",
-    ctaWork: "See our work",
+    ctaStart: "Schedule a call",
+    ctaWork: "View projects",
     badgeNew: "New",
     collageAlt1: "Creative studio workspace",
     collageAlt2: "Designer sketching",
@@ -38,6 +38,7 @@ export const en = {
       "We design brand identities and websites that clarify positioning and help teams sell with confidence.",
     note:
       "A small studio focused on clear strategy, strong identity, and practical delivery.",
+    quote: "Design and development for brands that want to sell better.",
   },
   process: {
     label: "PROCESS",

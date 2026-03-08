@@ -13,15 +13,16 @@ const Header = () => {
   const location = useLocation();
   const navigateToSection = createNavigateToSection(navigate, location.pathname);
   const navItems = [
-    { key: "nav.work", section: "work" },
-    { key: "nav.capabilities", section: "capabilities" },
-    { key: "nav.about", section: "about" },
-    { key: "nav.process", section: "process" },
-    { key: "nav.contact", section: "contact" },
+    { key: "nav.home", section: "home" },
+    { key: "nav.work", section: "trabajos" },
+    { key: "nav.about", section: "nosotros" },
+    { key: "nav.capabilities", section: "servicios" },
+    { key: "nav.process", section: "proceso" },
+    { key: "nav.contact", section: "contacto" },
   ];
 
   const handleStartProject = () => {
-    navigateToSection("#contact");
+    navigateToSection("#contacto");
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {

@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "@/components/Logo";
-import { scrollToTop, scrollToSection } from "@/utils/scroll";
+import { scrollToSection, createNavigateToSection } from "@/utils/scroll";
 import { useI18n } from "@/i18n/context";
 
 const Footer = () => {
   const { t } = useI18n();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const navigateToSection = createNavigateToSection(navigate, location.pathname);
   const footerLinks = [
     { key: "nav.home", section: "home" },
-    { key: "nav.work", section: "work" },
-    { key: "nav.capabilities", section: "capabilities" },
-    { key: "nav.contact", section: "contact" },
+    { key: "nav.work", section: "trabajos" },
+    { key: "nav.capabilities", section: "servicios" },
+    { key: "nav.contact", section: "contacto" },
   ];
   const socials = [
     { key: "footer.socials.twitter", href: "#" },
@@ -18,9 +21,9 @@ const Footer = () => {
   ];
   const handleNavClick = (link: string) => {
     if (link === "home") {
-      scrollToTop();
+      navigateToSection("#home");
     } else {
-      scrollToSection(`#${link}`);
+      navigateToSection(`#${link}`);
     }
   };
 

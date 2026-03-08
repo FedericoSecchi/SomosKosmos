@@ -14,7 +14,7 @@ const ContactCTA = () => {
 
   return (
     <section
-      id="contact"
+      id="contacto"
       className="pb-32 bg-background text-foreground relative overflow-hidden border-t border-border/30"
       style={{ paddingTop: "clamp(4rem, 7vw, 6rem)" }}
     >

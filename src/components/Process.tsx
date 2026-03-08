@@ -6,7 +6,7 @@ const Process = () => {
   const steps = t<{ title: string; description: string }[]>("process.steps");
   return (
     <section
-      id="process"
+      id="proceso"
       className="pb-32 bg-muted/60 border-t border-border/40"
       style={{
         paddingTop: "clamp(5rem, 10vw, 9rem)",
@@ -58,7 +58,7 @@ const Process = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("#contact");
+                scrollToSection("#contacto");
               }}
               className="mt-12 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-6 py-4 rounded-full cursor-pointer hover:opacity-90 transition-opacity animate-heartbeat"
               type="button"

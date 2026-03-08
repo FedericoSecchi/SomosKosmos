@@ -5,7 +5,7 @@ import { useI18n } from "@/i18n/context";
 const Portfolio = () => {
   const { t } = useI18n();
   return (
-    <section id="work" className="relative z-20 py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
+    <section id="trabajos" className="relative z-20 py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
       <div className="section-container">
         <div className="mb-16" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>
@@ -17,7 +17,7 @@ const Portfolio = () => {
 
         {/* Portfolio Grid — fluid auto-fit: cards grow with viewport */}
         <div
-          className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
           data-animate="stagger"
         >
           {projectsData.map((project) => (

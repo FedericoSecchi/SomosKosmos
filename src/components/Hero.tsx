@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-background overflow-hidden flex items-center pt-20 md:pt-28 lg:pt-32 isolate">
+    <section id="home" className="relative min-h-screen bg-background overflow-hidden flex items-center pt-20 md:pt-28 lg:pt-32 isolate">
       <div className="section-container w-full pt-8 pb-16 md:pt-20 md:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Text content */}
@@ -54,14 +54,14 @@ const Hero = () => {
                 <Button
                   variant="hero"
                   size="xl"
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => scrollToSection("#contacto")}
                 >
                   {t("hero.ctaStart")}
                 </Button>
                 <Button
                   variant="heroOutline"
                   size="xl"
-                  onClick={() => scrollToSection("#work")}
+                  onClick={() => scrollToSection("#trabajos")}
                 >
                   {t("hero.ctaWork")}
                 </Button>

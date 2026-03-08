@@ -46,7 +46,7 @@ const Ethos = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("#contact");
+                scrollToSection("#contacto");
               }}
               className="mt-12 inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-6 py-4 rounded-full cursor-pointer hover:opacity-90 transition-opacity"
               type="button"

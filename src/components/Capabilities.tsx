@@ -8,7 +8,7 @@ const Capabilities = () => {
   const icons = ["✦", "◈", "◎", "⬡"];
 
   return (
-    <section id="capabilities" className="py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
+    <section id="servicios" className="py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           {/* Left: Title + Capability list */}

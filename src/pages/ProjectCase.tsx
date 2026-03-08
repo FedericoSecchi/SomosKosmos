@@ -43,7 +43,7 @@ const ProjectCase = () => {
               <Button onClick={() => navigate("/")} variant="default">
                 {t("caseStudy.notFoundCtaHome")}
               </Button>
-              <Button onClick={() => navigate("/#work")} variant="outline">
+              <Button onClick={() => navigate("/#trabajos")} variant="outline">
                 {t("caseStudy.notFoundCtaPortfolio")}
               </Button>
             </div>
@@ -159,7 +159,7 @@ const ProjectCase = () => {
         <div className="section-container">
           <div className="mb-4 md:mb-6">
             <Link
-              to="/#work"
+              to="/#trabajos"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-4 md:mb-6"
             >
               <svg
@@ -550,7 +550,7 @@ const ProjectCase = () => {
                   {t(`projects.${nextProject.id}.title`)}
                 </h3>
               </Link>
-              <Link to="/#work">
+              <Link to="/#trabajos">
                 <Button variant="outline" className="mt-8">
                   {t("caseStudy.viewAll")}
                 </Button>

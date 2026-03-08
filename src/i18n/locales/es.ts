@@ -13,9 +13,9 @@ export const es = {
     toggleAria: "Cambiar a inglés",
   },
   nav: {
-    work: "Trabajo",
-    capabilities: "Capacidades",
-    about: "Sobre",
+    work: "Trabajos",
+    capabilities: "Servicios",
+    about: "Nosotros",
     process: "Proceso",
     contact: "Contacto",
     home: "Inicio",
@@ -23,11 +23,11 @@ export const es = {
   hero: {
     label: "ESTUDIO",
     headline:
-      "Estudio de diseño y desarrollo para marcas y sitios web.",
+      "Diseño y desarrollo web para marcas que quieren vender mejor.",
     description:
       "Identidad visual, sitios web modernos y contenido digital para equipos que cuidan su imagen y lo que venden.",
-    ctaStart: "Iniciar un proyecto",
-    ctaWork: "Ver nuestro trabajo",
+    ctaStart: "Agendar llamada",
+    ctaWork: "Ver proyectos",
     badgeNew: "Nuevo",
     collageAlt1: "Estudio creativo en su espacio",
     collageAlt2: "Diseñador bocetando",
@@ -39,6 +39,8 @@ export const es = {
       "Diseñamos identidades y sitios web que afinan el posicionamiento y ayudan a los equipos a vender con confianza.",
     note:
       "Un estudio pequeño centrado en estrategia clara, identidad sólida y ejecución práctica.",
+    quote:
+      "Diseño y desarrollo web para marcas que quieren vender mejor.",
   },
   process: {
     label: "PROCESO",

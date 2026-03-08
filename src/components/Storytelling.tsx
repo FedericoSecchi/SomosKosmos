@@ -4,7 +4,7 @@ const Storytelling = () => {
   const { t } = useI18n();
   return (
     <section
-      id="about"
+      id="nosotros"
       className="about-section relative bg-background overflow-x-clip"
       style={{ paddingBottom: "clamp(2.5rem, 6vw, 6rem)" }}
       aria-labelledby="about-intro-heading"
@@ -23,6 +23,9 @@ const Storytelling = () => {
           >
             {t("about.label")}
           </span>
+          <p className="body-large text-center text-muted-foreground mb-6" style={{ paddingInline: "clamp(1.25rem, 6vw, 6rem)" }}>
+            «{t("about.quote")}»
+          </p>
           <h2
             id="about-intro-heading"
             className="headline-large text-center"

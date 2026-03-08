@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useI18n } from "@/i18n/context";
+import { organizationSchema } from "@/seo/schemaOrganization";
 
 const SeoSchema = () => {
   const { t, language } = useI18n();
@@ -12,14 +13,14 @@ const SeoSchema = () => {
     const siteUrl = window.location.origin;
     const description = t("meta.homeDescription");
     const name = t("brand.fullName");
+    const organization = {
+      ...organizationSchema,
+      name,
+      description,
+      url: siteUrl,
+    };
     const schema = [
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name,
-        description,
-        url: siteUrl,
-      },
+      organization,
       {
         "@context": "https://schema.org",
         "@type": "WebSite",

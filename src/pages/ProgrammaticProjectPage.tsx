@@ -1,9 +1,14 @@
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/seo/SEO";
+import SeoImage from "@/components/SeoImage";
 import { getProjectById } from "@/data/projects";
 import { seoKeywords } from "@/seo/seoKeywords";
+import { createProjectSchema } from "@/seo/schemaProject";
+import { organizationSchema } from "@/seo/schemaOrganization";
+import { generateCaseStudy } from "@/seo/caseStudyGenerator";
 import { useI18n } from "@/i18n/context";
 
 const SITE_URL = "https://somoskosmos.com";
@@ -24,9 +29,8 @@ const ProgrammaticProjectPage = () => {
   const seoTitle = `${projectTitle} ${keywordLabel} case study | Kosmos Studio`;
   const seoDescription = `Explore the ${keywordLabel} work behind the ${projectTitle} project by Kosmos Studio. Branding, visual identity and design system development.`;
   const canonicalUrl = `${SITE_URL}/project/${project.id}/${topic}`;
-  const imageUrl = project.image.startsWith("http")
-    ? project.image
-    : `${SITE_URL}${project.image.startsWith("/") ? project.image : `/${project.image}`}`;
+  const caseStudy = generateCaseStudy(project, projectTitle, topic);
+  const projectSchema = createProjectSchema(project, seoTitle, seoDescription);
 
   return (
     <div className="relative min-h-screen bg-background">
@@ -37,19 +41,28 @@ const ProgrammaticProjectPage = () => {
         url={canonicalUrl}
         type="article"
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(projectSchema)}
+        </script>
+      </Helmet>
       <Header />
       <main className="pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="section-container">
-          <h1 className="headline-large mb-6">{seoTitle}</h1>
+          <h1 className="headline-large mb-6">{caseStudy.headline}</h1>
           <p className="body-large text-muted-foreground mb-12 max-w-2xl">
-            {seoDescription}
+            {caseStudy.intro}
           </p>
 
           <figure className="full-bleed mb-12">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden rounded-lg">
-              <img
+              <SeoImage
                 src={project.image}
-                alt={`${projectTitle} ${keywordLabel} branding and design work by Kosmos Studio`}
+                projectTitle={projectTitle}
+                topic={topic}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
@@ -58,6 +71,13 @@ const ProgrammaticProjectPage = () => {
               {projectTitle} {keywordLabel} case study by Kosmos Studio.
             </figcaption>
           </figure>
+
+          {caseStudy.sections.map((section) => (
+            <section key={section.title} className="mb-10">
+              <h2 className="headline-medium mb-4">{section.title}</h2>
+              <p className="body-large text-muted-foreground">{section.text}</p>
+            </section>
+          ))}
 
           <Link
             to={`/project/${project.id}`}

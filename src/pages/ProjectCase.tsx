@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/seo/SEO";
-import { generateProjectSchema, generateBreadcrumbSchema } from "@/seo/projectSchema";
+import { generateProjectSchema, generateBreadcrumbSchema, generateImageObjectSchema } from "@/seo/projectSchema";
 import { projectTopics } from "@/seo/projectTopics";
 import { generateTopicContent } from "@/seo/generateTopicContent";
 import { projectsData, getProjectById } from "@/data/projects";
+import SeoImage from "@/components/SeoImage";
 import { useScrollAnimations } from "@/hooks/useScrollAnimations";
 import { useI18n } from "@/i18n/context";
 
@@ -195,9 +196,10 @@ const ProjectCase = () => {
           {/* Cover Image — full-bleed for all projects */}
           <figure className="full-bleed">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
-              <img
+              <SeoImage
                 src={project.image}
-                alt={(t as (key: string) => string)(`projects.${project.id}.coverImageAlt`) || `${projectTitle} branding and visual identity design by Kosmos Studio`}
+                projectTitle={projectTitle}
+                topic={isTopicPage ? topic : undefined}
                 className="w-full h-full object-cover block"
               />
             </div>

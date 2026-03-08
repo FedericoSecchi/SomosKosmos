@@ -25,7 +25,7 @@ export const en = {
     headline: "Design and development for brands that want to sell better.",
     description:
       "A creative studio for visual identity, modern websites, and digital content for teams that care about how they look and what they sell.",
-    ctaStart: "Schedule a call",
+    ctaStart: "Start a project",
     ctaWork: "View projects",
     badgeNew: "New",
     collageAlt1: "Creative studio workspace",

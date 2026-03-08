@@ -13,7 +13,6 @@ const Header = () => {
   const location = useLocation();
   const navigateToSection = createNavigateToSection(navigate, location.pathname);
   const navItems = [
-    { key: "nav.home", section: "home" },
     { key: "nav.work", section: "trabajos" },
     { key: "nav.about", section: "nosotros" },
     { key: "nav.capabilities", section: "servicios" },

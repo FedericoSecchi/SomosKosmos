@@ -13,7 +13,7 @@ export const es = {
     toggleAria: "Cambiar a inglés",
   },
   nav: {
-    work: "Trabajos",
+    work: "Trabajo",
     capabilities: "Servicios",
     about: "Nosotros",
     process: "Proceso",
@@ -26,7 +26,7 @@ export const es = {
       "Diseño y desarrollo web para marcas que quieren vender mejor.",
     description:
       "Identidad visual, sitios web modernos y contenido digital para equipos que cuidan su imagen y lo que venden.",
-    ctaStart: "Agendar llamada",
+    ctaStart: "Iniciar un proyecto",
     ctaWork: "Ver proyectos",
     badgeNew: "Nuevo",
     collageAlt1: "Estudio creativo en su espacio",

@@ -219,9 +219,8 @@ html {
     position: absolute;
     inset: 60% -4px auto -4px;
     height: 12px;
-    background: url("/assets/brush.svg") center / contain no-repeat;
-    transform: scale(1);
-    opacity: 0.95;
+    background: currentColor;
+    opacity: 0.2;
     pointer-events: none;
   }
 

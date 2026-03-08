@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo";
 import MobileMenu from "@/components/MobileMenu";
 import { scrollToSection, scrollToTop, createNavigateToSection } from "@/utils/scroll";
 import { useI18n } from "@/i18n/context";
@@ -38,9 +39,7 @@ const Header = () => {
         <div className="section-container flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" onClick={() => scrollToTop()} className="flex items-center gap-2">
-            <span className="font-display text-2xl font-bold tracking-tight">
-              {t("brand.name")}<span className="text-primary">{t("brand.dot")}</span>
-            </span>
+            <Logo variant="dark" size={90} />
           </Link>
 
           {/* Navigation */}

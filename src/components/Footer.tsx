@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "@/components/Logo";
 import { scrollToTop, scrollToSection } from "@/utils/scroll";
 import { useI18n } from "@/i18n/context";
 
@@ -29,8 +30,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <Link to="/" className="font-display text-3xl font-bold mb-6 block">
-              {t("brand.name")}<span className="text-primary">{t("brand.dot")}</span>
+            <Link to="/" className="mb-6 block">
+              <Logo variant="dark" size={48} />
             </Link>
             <p className="body-regular text-background/60 mb-6 max-w-xs">
               {t("footer.description")}

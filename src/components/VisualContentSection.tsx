@@ -40,9 +40,11 @@ const VisualContentSection = () => {
               <video
                 src="/videos/video-dji.mp4"
                 className="w-full h-full object-cover"
-                controls
+                autoPlay
+                muted
+                loop
                 playsInline
-                preload="metadata"
+                preload="auto"
                 aria-label={t("visualContent.videoLabel")}
               >
                 <track kind="captions" />

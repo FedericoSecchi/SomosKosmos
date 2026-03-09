@@ -102,19 +102,6 @@ export const en = {
     headline: "Behind the scenes.",
     subtext: "Ideas, experiments and moments from the process behind our work.",
   },
-  visualContent: {
-    label: "VISUAL CONTENT",
-    title: "Visual Content",
-    description:
-      "We produce photo and video content for brands, outdoor projects and tourism destinations.",
-    services: ["Photography", "Video production", "Drone footage"],
-    noteBefore: "Drone production in collaboration with ",
-    noteLink: "SkyShot",
-    noteAfter: ".",
-    videoLabel: "Drone production example",
-    cameraLine1: "Filmed with DJI Mavic 4 Pro",
-    cameraLine2: "6K aerial cinema camera",
-  },
   work: {
     label: "WORK",
     title: "Selected projects",
@@ -149,7 +136,10 @@ export const en = {
     content: {
       title: "Content & Motion",
       description:
-        "Content layouts, motion design, product visuals and digital campaign assets.",
+        "Content layouts, motion design, product visuals and digital campaign assets. We also produce photo and video for brands, outdoor projects and tourism destinations—photography, video production, drone footage.",
+      noteBefore: "Drone production in collaboration with ",
+      noteLink: "SkyShot",
+      noteAfter: ".",
       seo: "motion design, social media visuals, product visuals, campaign design",
     },
     systems: {

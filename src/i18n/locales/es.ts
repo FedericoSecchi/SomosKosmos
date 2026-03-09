@@ -103,19 +103,6 @@ export const es = {
     headline: "Dentro del estudio.",
     subtext: "Ideas, pruebas y momentos del proceso detrás de nuestro trabajo.",
   },
-  visualContent: {
-    label: "CONTENIDO VISUAL",
-    title: "Contenido visual",
-    description:
-      "Producimos fotografía y video para marcas, proyectos al aire libre y destinos turísticos.",
-    services: ["Fotografía", "Producción de video", "Footage con drone"],
-    noteBefore: "Producción con drone en colaboración con ",
-    noteLink: "SkyShot",
-    noteAfter: ".",
-    videoLabel: "Ejemplo de producción con drone",
-    cameraLine1: "Filmado con DJI Mavic 4 Pro",
-    cameraLine2: "Cámara aérea 6K",
-  },
   work: {
     label: "TRABAJO",
     title: "Proyectos seleccionados",
@@ -150,7 +137,10 @@ export const es = {
     content: {
       title: "Contenido & Motion",
       description:
-        "Diseño de contenidos, piezas de motion, visuales de producto y materiales para campañas digitales.",
+        "Diseño de contenidos, piezas de motion, visuales de producto y materiales para campañas digitales. También producimos fotografía y video para marcas, proyectos al aire libre y destinos turísticos—fotografía, producción de video, footage con drone.",
+      noteBefore: "Producción con drone en colaboración con ",
+      noteLink: "SkyShot",
+      noteAfter: ".",
       seo: "diseño de motion, visuales para redes, visuales de producto, diseño de campañas",
     },
     systems: {

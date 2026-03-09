@@ -79,7 +79,7 @@ const Capabilities = () => {
                       <div
                         className={`overflow-hidden transition-all duration-500 ${
                           activeIndex === index
-                            ? "max-h-44 opacity-100 mt-4"
+                            ? (key === "content" ? "max-h-64" : "max-h-44") + " opacity-100 mt-4"
                             : "max-h-0 opacity-0"
                         }`}
                       >
@@ -91,6 +91,21 @@ const Capabilities = () => {
                           }`}
                         >
                           {description}
+                          {key === "content" && (
+                            <>
+                              {" "}
+                              {t("services.content.noteBefore")}
+                              <a
+                                href="https://federicosecchi.github.io/Skyshot-Web/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary hover:underline"
+                              >
+                                {t("services.content.noteLink")}
+                              </a>
+                              {t("services.content.noteAfter")}
+                            </>
+                          )}
                         </p>
                         <Link
                           to={`/services/${SERVICE_SLUGS[key]}`}

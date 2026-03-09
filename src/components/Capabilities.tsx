@@ -128,7 +128,7 @@ const Capabilities = () => {
                 {/* Background shape */}
                 <div className="absolute inset-0 bg-muted rounded-3xl" />
 
-                {/* Active capability visual — icon on all sizes; Content & Motion shows drone video on desktop only */}
+                {/* Active capability visual — Content & Motion: video when open, icon when closed */}
                 <div
                   className="absolute inset-8 bg-secondary rounded-2xl flex items-center justify-center overflow-hidden"
                   data-state={activeIndex === 2 ? "open" : "closed"}
@@ -138,7 +138,7 @@ const Capabilities = () => {
                       <video
                         id="drone-video"
                         src="/videos/video-dji.mp4"
-                        className="hidden lg:block w-full h-full object-cover opacity-0 transition-opacity duration-500"
+                        className="w-full h-full object-cover opacity-0 transition-opacity duration-500"
                         autoPlay
                         muted
                         loop

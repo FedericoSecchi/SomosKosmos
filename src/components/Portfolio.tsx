@@ -5,12 +5,12 @@ import { useI18n } from "@/i18n/context";
 const Portfolio = () => {
   const { t } = useI18n();
   return (
-    <section id="trabajos" className="relative z-20 py-16 md:py-24 lg:py-32 bg-neutral-50 text-foreground">
+    <section id="trabajos" className="relative z-20 py-16 md:py-24 lg:py-32 bg-neutral-950 text-white">
       <div className="section-container">
         <div className="mb-16" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>
           <h2 className="headline-medium mb-4">{t("work.title")}</h2>
-          <p className="body-large text-muted-foreground">
+          <p className="body-large text-neutral-400">
             {t("work.subtitle")}
           </p>
         </div>

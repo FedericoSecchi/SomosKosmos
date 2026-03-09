@@ -22,13 +22,13 @@ export const en = {
   },
   hero: {
     label: "STUDIO",
-    headline: "Design and development for brands that want to sell better.",
+    headline: "Design and web development for brands that want to sell better.",
     description:
-      "A creative studio for visual identity, modern websites, and digital content for teams that care about how they look and what they sell.",
+      "Visual identity and clear websites for teams that want to position their brand and communicate their value.",
     ctaStart: "Start a project",
     ctaWork: "View projects",
     ctaProjects: "View projects",
-    ctaCall: "Schedule a call",
+    ctaCall: "Start a project",
     badgeNew: "New",
     collageAlt1: "Creative studio workspace",
     collageAlt2: "Designer sketching",

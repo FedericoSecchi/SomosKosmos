@@ -1,4 +1,5 @@
 import { useI18n } from "@/i18n/context";
+import "@/styles/components/visualContent.css";
 
 const VisualContentSection = () => {
   const { t } = useI18n();
@@ -34,17 +35,24 @@ const VisualContentSection = () => {
           </div>
 
           {/* Right: Video embed */}
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted" data-animate="fade-up">
-            <video
-              src="/videos/video-dji.mp4"
-              className="w-full h-full object-cover"
-              controls
-              playsInline
-              preload="metadata"
-              aria-label={t("visualContent.videoLabel")}
-            >
-              <track kind="captions" />
-            </video>
+          <div className="relative" data-animate="fade-up">
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
+              <video
+                src="/videos/video-dji.mp4"
+                className="w-full h-full object-cover"
+                controls
+                playsInline
+                preload="metadata"
+                aria-label={t("visualContent.videoLabel")}
+              >
+                <track kind="captions" />
+              </video>
+            </div>
+            <p className="camera-info">
+              {t("visualContent.cameraLine1")}
+              <br />
+              {t("visualContent.cameraLine2")}
+            </p>
           </div>
         </div>
       </div>

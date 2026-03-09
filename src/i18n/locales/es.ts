@@ -111,6 +111,8 @@ export const es = {
     services: ["Fotografía", "Producción de video", "Footage con drone"],
     note: "Producción con drone en colaboración con SkyShot.",
     videoLabel: "Ejemplo de producción con drone",
+    cameraLine1: "Filmado con DJI Mavic 4 Pro",
+    cameraLine2: "Cámara aérea 6K",
   },
   work: {
     label: "TRABAJO",

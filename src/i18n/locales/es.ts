@@ -289,16 +289,16 @@ export const es = {
       type: "Rebranding · Web · Contenidos",
       tag: "REBRANDING & WEB DESIGN",
       miniDescription:
-        "Rediseño integral de marca y web para una agencia dedicada al growth marketing y presencia de prensa.",
-      coverImageAlt: "Identidad de marca y experiencia digital Nude",
+        "Rediseño de marca y web para una marca de skincare natural.",
+      coverImageAlt: "Identidad de marca Nude skincare natural",
       task:
-        "Rediseñar la identidad de Órbita Comms, una agencia de PR y growth marketing fundada por dos profesionales con años de carrera que se unieron para acompañar proyectos Web3. El objetivo era construir una marca sólida y coherente que pudiera extenderse a web, materiales comerciales y presencia en redes sociales.",
+        "Rediseñar la identidad y presencia web de Nude, una marca de skincare natural. Necesitaban un sistema visual que reflejara sus valores—ingredientes honestos, fórmulas mínimas, sin aditivos innecesarios—y que destacara en un mercado saturado. El objetivo era una marca que se sintiera limpia, confiable y con identidad propia.",
       idea:
-        "Tomar la metáfora de 'entrar en órbita' como eje de la marca: una agencia que ayuda a que los proyectos Web3 despeguen y ganen visibilidad sostenida. La identidad debía equilibrar la calidez y cercanía de sus fundadoras con un posicionamiento nítido como equipo especializado en industria Web3 y frontier tech.",
+        "Tomar \"nude\" como más que un nombre: esencial, sin nada que ocultar. La identidad debía sentirse como el producto—simple, transparente, segura. Tipografía limpia, paleta contenida y mucho espacio en blanco para comunicar claridad y cuidado, evitando los clichés de las marcas orgánicas pero manteniendo cercanía.",
       solution:
-        "Diseñamos una identidad visual completa —logo, paleta, tipografías y sistema gráfico— pensada para escalar a todos sus puntos de contacto. Aplicamos la marca a sitio web, presentaciones comerciales, piezas de ventas y contenidos para social media, creando un universo visual unificado que refuerza su mensaje de PR + growth marketing para proyectos Web3.",
+        "Diseñamos una identidad completa —logo, tipografía, sistema de color y lenguaje gráfico— centrada en simplicidad y confianza. La aplicamos al sitio web, dirección de fotografía de producto, lineamientos de packaging y contenido para redes, creando un universo visual unificado que se siente premium y accesible.",
       result:
-        "Diseñamos una identidad visual completa —logo, paleta, tipografías y sistema gráfico— pensada para escalar a todos sus puntos de contacto. Aplicamos la marca a sitio web, presentaciones comerciales, piezas de ventas y contenidos para social media, creando un universo visual unificado que refuerza su mensaje de PR + growth marketing para proyectos Web3.",
+        "Una marca fiel al producto. Nude cuenta hoy con una identidad coherente que comunica skincare natural sin los lugares comunes—limpia, segura y lista para crecer. La experiencia web guía a los visitantes con claridad, y el sistema escala a nuevos productos y canales sin perder nitidez.",
     },
   },
 };

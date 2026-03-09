@@ -94,7 +94,7 @@ export const projectsData: Project[] = [
       nudeGallery2,
     ],
     seoTitle: "Nude Case Study — Kosmos Studio",
-    seoDescription: "Brand and web redesign for a growth marketing and press agency.",
+    seoDescription: "Brand and web redesign for a natural skincare brand.",
     seoImage: nudeImage,
   },
 ];

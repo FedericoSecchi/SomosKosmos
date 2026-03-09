@@ -289,16 +289,16 @@ export const en = {
       type: "Rebranding · Web · Content",
       tag: "REBRANDING & WEB DESIGN",
       miniDescription:
-        "Full brand and web redesign for an agency dedicated to growth marketing and press presence.",
-      coverImageAlt: "Nude brand identity and digital experience",
+        "Brand and web redesign for a natural skincare brand.",
+      coverImageAlt: "Nude natural skincare brand identity",
       task:
-        "Redesign the identity of Órbita Comms, a PR and growth marketing agency founded by two professionals with years of experience who joined forces to support Web3 projects. The goal was to build a solid, coherent brand that could extend to web, sales materials, and social presence.",
+        "Redesign the identity and web presence of Nude, a natural skincare brand. They needed a visual system that reflected their values—honest ingredients, minimal formulas, no unnecessary additives—while standing out in a crowded market. The goal was a brand that felt clean, trustworthy and distinctly ownable.",
       idea:
-        "Use the metaphor of 'reaching orbit' as the brand's core: an agency that helps Web3 projects take off and gain sustained visibility. The identity had to balance the warmth and approachability of its founders with a clear positioning as a team specialized in the Web3 and frontier tech industry.",
+        "Embrace \"nude\" as more than a name: bare, essential, nothing to hide. The identity should feel like the product itself—simple, transparent, confident. Clean typography, a restrained palette and generous whitespace would communicate clarity and care, avoiding the clichés of organic brands while staying approachable.",
       solution:
-        "We designed a complete visual identity —logo, palette, typefaces, and graphic system— built to scale across all touchpoints. We applied the brand to website, sales presentations, sales collateral, and social content, creating a unified visual universe that reinforces their PR + growth marketing message for Web3 projects.",
+        "We designed a complete brand identity —logo, typography, color system and graphic language— built around simplicity and trust. We applied it to the website, product photography direction, packaging guidelines and social content, creating a unified visual universe that feels both premium and accessible.",
       result:
-        "We designed a complete visual identity —logo, palette, typefaces, and graphic system— built to scale across all touchpoints. We applied the brand to website, sales presentations, sales collateral, and social content, creating a unified visual universe that reinforces their PR + growth marketing message for Web3 projects.",
+        "A brand that feels true to the product. Nude now has a coherent identity that communicates natural skincare without the usual tropes—clean, confident and ready to grow. The web experience guides visitors clearly, and the system scales to new products and channels without losing clarity.",
     },
   },
 };

@@ -95,7 +95,7 @@ const Capabilities = () => {
           {/* Right: Visual display */}
           <div className="relative mt-12 lg:mt-0 flex justify-center lg:block h-full">
             <div className="lg:sticky lg:top-32 h-full w-full max-w-md lg:max-w-none">
-              <div className="relative w-full aspect-square lg:h-full lg:aspect-square lg:max-w-full">
+              <div className="hidden md:block relative w-full aspect-square lg:h-full lg:aspect-square lg:max-w-full">
                 {/* Background shape */}
                 <div className="absolute inset-0 bg-muted rounded-3xl" />
 

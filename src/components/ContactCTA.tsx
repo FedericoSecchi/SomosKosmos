@@ -27,9 +27,6 @@ const ContactCTA = () => {
             <Button variant="neon" size="xl" asChild>
               <a href={mailto}>{t("contact.primaryButton")}</a>
             </Button>
-            <Button variant="heroOutline" size="xl" className="border-foreground/30 text-foreground hover:bg-foreground hover:text-background" asChild>
-              <a href="/brief">{t("contact.secondaryButton")}</a>
-            </Button>
           </div>
 
           <a

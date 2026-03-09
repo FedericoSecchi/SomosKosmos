@@ -18,6 +18,7 @@ import orbitaGallery4 from "@/assets/projects/orbita/orbita-04.png";
 import orbitaGallery5 from "@/assets/projects/orbita/orbita-05.png";
 import orbitaGallery6 from "@/assets/projects/orbita/orbita-06.png";
 import nudeImage from "@/assets/projects/nude/hero.png";
+import nudeGallery1 from "@/assets/projects/nude/grid-01.png";
 import nudeGallery2 from "@/assets/projects/nude/grid-02.png";
 
 export type ProjectLayout = "premium" | "default";
@@ -87,9 +88,9 @@ export const projectsData: Project[] = [
     size: "large",
     layout: "premium",
     galleries: [
-      nudeGallery2,
-      nudeGallery2,
-      nudeGallery2,
+      nudeGallery1,
+      nudeGallery1,
+      nudeGallery1,
       nudeGallery2,
     ],
     seoTitle: "Nude Case Study — Kosmos Studio",

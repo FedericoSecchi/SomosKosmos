@@ -239,7 +239,7 @@ const ProjectCase = () => {
                 </p>
               </div>
             )}
-            {isPremium && galleries[0] && !isOrbitaNarrative && !isNudeCase && (
+            {isPremium && galleries[0] && !isOrbitaNarrative && (
               <figure className="full-bleed mt-8 lg:mt-12">
                 <div className="w-full overflow-hidden">
                   <img

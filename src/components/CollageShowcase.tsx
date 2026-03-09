@@ -9,7 +9,6 @@ const CollageShowcase = () => {
     <section className="py-16 lg:py-24 xl:py-32 bg-white text-foreground overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-12 lg:mb-16 xl:mb-20" data-animate="fade-up">
-          <span className="label-text text-primary mb-4 block">{t("work.label")}</span>
           <h2 className="headline-medium mb-4">
             {t("work.collageTitle")}
             <br />

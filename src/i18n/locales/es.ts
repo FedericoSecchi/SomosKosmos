@@ -36,7 +36,7 @@ export const es = {
     collageAlt3: "Diseño web",
   },
   about: {
-    label: "SOBRE",
+    label: "NOSOTROS",
     mainLine:
       "Diseñamos identidades y sitios web que afinan el posicionamiento y ayudan a los equipos a vender con confianza.",
     note:

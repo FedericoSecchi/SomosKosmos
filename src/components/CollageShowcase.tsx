@@ -6,7 +6,7 @@ import heroImage3 from "@/assets/work/work-3.jpg";
 const CollageShowcase = () => {
   const { t } = useI18n();
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground overflow-hidden">
+    <section className="py-16 md:py-24 lg:py-32 bg-white text-foreground overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-12 md:mb-20" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>

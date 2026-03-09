@@ -50,7 +50,7 @@ const TopicLanding = () => {
                 <div className="absolute inset-0 z-0">
                   <img
                     src={project.image}
-                    alt={`${t(`projects.${project.id}.title`)} branding and visual identity by Kosmos Studio`}
+                    alt={`${t(`projects.${project.id}.title`)} — Kosmos Studio`}
                     className="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:opacity-40"
                     loading="lazy"
                   />

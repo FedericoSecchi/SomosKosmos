@@ -23,8 +23,8 @@ export default function SeoImage({
   height,
 }: SeoImageProps) {
   const alt = topic
-    ? `${projectTitle} ${topic.replace(/-/g, " ")} visual identity design`
-    : `${projectTitle} branding project visual identity design`;
+    ? `${projectTitle} — ${topic.replace(/-/g, " ")}`
+    : `${projectTitle} — cover`;
 
   return (
     <img

@@ -237,9 +237,9 @@ export const en = {
       tag: "Branding",
       miniDescription:
         "Live branding for a global crypto security alliance.",
-      coverImageAlt: "Security Alliance branding identity system",
+      coverImageAlt: "Security Alliance brand identity system",
       task:
-        "Security Alliance is an organization that drives security initiatives for the crypto ecosystem, such as SEAL 911, Safe Harbor, Wargames and SEAL Intel. They already had a logo and visual base, but the system fell short of the speed at which their projects were growing. The challenge was to turn that starting point into a coherent, flexible brand universe able to adapt to new initiatives, formats and audiences without losing identity.",
+        "Security Alliance drives security initiatives for the crypto ecosystem—SEAL 911, Safe Harbor, Wargames and SEAL Intel. They had a logo and visual base, but the system couldn't keep up with how fast their projects were growing. The challenge was to turn that starting point into a coherent, flexible brand universe that could adapt to new initiatives, formats and audiences without losing identity.",
       idea:
         'Rather than redesigning from scratch, we acted as "amplifiers" of the existing brand. The idea was to build a modular visual language: an identity that felt solid and consistent, but elastic enough to hold very different products—from incident response services to legal programs and educational wargames. Every piece—presentations, social, illustrations or new logos—had to help Security Alliance explain what it does and why it matters for ecosystem security.',
       solution:
@@ -250,7 +250,7 @@ export const en = {
         { title: "Architecture for new initiatives", text: "We defined criteria for new logos and applications, so every new project still feels part of the same Security Alliance ecosystem." },
       ],
       result:
-        "The result is a clearer, more consistent brand ready to grow: a visual system that helps Security Alliance communicate its value, launch new initiatives and maintain a professional presence at every touchpoint.",
+        "A brand that scales. Security Alliance now has a single visual system that holds across touchpoints and new initiatives—clearer communication, less friction, and a presence that matches their role in ecosystem security.",
     },
     "the-red-guild": {
       title: "The Red Guild",

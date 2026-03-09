@@ -71,7 +71,7 @@ export function generateImageObjectSchema(contentUrl: string, projectTitle: stri
     creator: { "@type": "Organization", name: "Kosmos Studio" },
     creditText: "Kosmos Studio",
     license: SITE_URL,
-    name: `${projectTitle} branding and visual identity design by Kosmos Studio`,
+    name: `${projectTitle} — Kosmos Studio`,
   };
 }
 

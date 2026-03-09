@@ -110,7 +110,7 @@ const ProjectCase = () => {
 
   const keywordsContent = [projectTag, "case study", "branding", "Kosmos Studio"].join(", ");
   const SEO_LINK_TEXT: Record<string, string> = {
-    "security-alliance": "Security Alliance branding project",
+    "security-alliance": "Security Alliance",
     "the-red-guild": "The Red Guild visual identity",
     "orbita": "Orbita design system",
     nude: "Nude rebranding and web design",
@@ -190,9 +190,6 @@ const ProjectCase = () => {
                 height={1400}
               />
             </div>
-            <figcaption className="seo-hidden">
-              {projectTitle} branding and design system created by Kosmos Studio.
-            </figcaption>
           </figure>
         </div>
       </section>
@@ -225,12 +222,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
+                    alt={`${projectTitle} — image 1`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {isOrbitaNarrative && galleries[0] && galleries[1] && galleries[2] && (
@@ -238,24 +234,23 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
+                    alt={`${projectTitle} — image 1`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                   <img
                     src={galleries[1]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
+                    alt={`${projectTitle} — image 2`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                   <img
                     src={galleries[2]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
+                    alt={`${projectTitle} — image 3`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
           </div>
@@ -290,12 +285,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
+                    alt={`${projectTitle} — image 2`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {isOrbitaNarrative && galleries[3] && (
@@ -303,12 +297,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
+                    alt={`${projectTitle} — image 4`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {isPremium && galleries[2] && galleries.length < 6 && !isNudeCase && (
@@ -316,12 +309,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
+                    alt={`${projectTitle} — image 3`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
           </div>
@@ -365,12 +357,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
+                    alt={`${projectTitle} — image 4`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {isOrbitaNarrative && galleries[4] && (
@@ -378,12 +369,11 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
-                    alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 5`}
+                    alt={`${projectTitle} — image 5`}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                 </div>
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
           </div>
@@ -398,33 +388,30 @@ const ProjectCase = () => {
               <figure className="mt-12 lg:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
-                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
+                  alt={`${projectTitle} — image 3`}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {galleries[3] && (
               <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[3]}
-                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
+                  alt={`${projectTitle} — image 4`}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
             {galleries[4] && (
               <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[4]}
-                  alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 5`}
+                  alt={`${projectTitle} — image 5`}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
-                <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
           </div>
@@ -455,12 +442,11 @@ const ProjectCase = () => {
           <div className="w-full overflow-hidden mt-12 lg:mt-20">
             <img
               src={galleries[5]}
-              alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 6`}
+              alt={`${projectTitle} — image 6`}
               className="w-full h-auto object-cover block"
               loading="lazy"
             />
           </div>
-          <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
         </figure>
       )}
 
@@ -485,43 +471,39 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 1`}
+                alt={`${projectTitle} — image 1`}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
             </div>
-            <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
           </figure>
           <div className="full-bleed grid grid-cols-1 lg:grid-cols-2 gap-0 mb-6">
             <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 2`}
+                alt={`${projectTitle} — image 2`}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
-              <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
             </figure>
             <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
+                alt={`${projectTitle} — image 3`}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
-              <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
             </figure>
           </div>
           <figure className="full-bleed">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 4`}
+                alt={`${projectTitle} — image 4`}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
             </div>
-            <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
           </figure>
         </section>
       )}

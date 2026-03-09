@@ -237,20 +237,20 @@ export const es = {
       tag: "Branding",
       miniDescription:
         "Branding vivo para una alianza global de seguridad en crypto.",
-      coverImageAlt: "Sistema de identidad de marca Security Alliance",
+      coverImageAlt: "Sistema de identidad Security Alliance",
       task:
-        "Security Alliance es una organización que impulsa iniciativas de seguridad para el ecosistema cripto, como SEAL 911, Safe Harbor, Wargames y SEAL Intel.\n\nYa contaban con un logo y una base visual, pero el sistema se quedaba corto frente a la velocidad con la que crecían sus proyectos.\n\nEl reto fue convertir ese punto de partida en un universo de marca coherente y flexible, capaz de adaptarse a nuevas iniciativas, formatos y audiencias sin perder identidad.",
+        "Security Alliance impulsa iniciativas de seguridad para el ecosistema cripto —SEAL 911, Safe Harbor, Wargames y SEAL Intel—. Ya tenían un logo y una base visual, pero el sistema no daba abasto ante la velocidad con la que crecían sus proyectos. El reto fue convertir ese punto de partida en un universo de marca coherente y flexible, capaz de adaptarse a nuevas iniciativas, formatos y audiencias sin perder identidad.",
       idea:
-        'En lugar de rediseñar todo desde cero, trabajamos como "amplificadores" de la marca existente. La idea fue construir un lenguaje visual modular: una identidad que se sintiera sólida y consistente, pero lo bastante elástica como para albergar productos muy distintos entre sí, desde servicios de respuesta a incidentes hasta programas legales y wargames educativos. Cada pieza —presentaciones, redes, ilustraciones o nuevos logos— debía ayudar a Security Alliance a explicar mejor qué hace y por qué es tan crítica para la seguridad del ecosistema.',
+        'En lugar de rediseñar desde cero, trabajamos como "amplificadores" de la marca existente. La idea fue construir un lenguaje visual modular: una identidad sólida y consistente, pero lo bastante elástica para albergar productos muy distintos —desde servicios de respuesta a incidentes hasta programas legales y wargames educativos—. Cada pieza —presentaciones, redes, ilustraciones o nuevos logos— debía ayudar a Security Alliance a explicar qué hace y por qué importa para la seguridad del ecosistema.',
       solution:
-        "Una marca más clara, consistente y preparada para crecer: un sistema visual que ayuda a Security Alliance a explicar su valor y sostener una presencia profesional en cada punto de contacto.",
+        "Una marca más clara y consistente, lista para escalar: un sistema visual que ayuda a Security Alliance a comunicar su valor, lanzar nuevas iniciativas y sostener una presencia profesional en cada punto de contacto.",
       solutionItems: [
         { title: "Sistema de marca extendido", text: "Organizamos el logo, la paleta y la tipografía existentes en un sistema claro y escalable para todas sus iniciativas." },
         { title: "Visuales para servicios clave", text: "Creamos ilustraciones, presentaciones y piezas para redes que explican mejor sus servicios y proyectos (como SEAL 911, Safe Harbor o Wargames)." },
-        { title: "Arquitectura para nuevas iniciativas", text: "Definimos criterios para nuevos logos y aplicaciones, asegurando que cada proyecto nuevo siga sintiéndose parte del mismo ecosistema de Security Alliance." },
+        { title: "Arquitectura para nuevas iniciativas", text: "Definimos criterios para nuevos logos y aplicaciones, asegurando que cada proyecto nuevo siga sintiéndose parte del mismo ecosistema Security Alliance." },
       ],
       result:
-        "El resultado es una marca más clara, consistente y preparada para crecer: un sistema visual que ayuda a Security Alliance a explicar mejor su valor, activar nuevas iniciativas y sostener una presencia profesional en cada punto de contacto.",
+        "Una marca que escala. Security Alliance cuenta hoy con un sistema visual único que funciona en todos los touchpoints y nuevas iniciativas —comunicación más clara, menos fricción y una presencia acorde a su rol en la seguridad del ecosistema.",
     },
     "the-red-guild": {
       title: "The Red Guild",

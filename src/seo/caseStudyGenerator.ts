@@ -27,7 +27,7 @@ export function generateCaseStudy(
     sections: [
       {
         title: "Project Overview",
-        text: `${projectTitle} is a branding and visual identity project developed by Kosmos Studio.`,
+        text: `${projectTitle} project by Kosmos Studio.`,
       },
       {
         title: "Design Approach",

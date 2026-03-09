@@ -1,4 +1,8 @@
 /* Capabilities videos — visible when their service is active; icon hidden when any video shows */
+[data-state="branding"] #branding-video {
+  opacity: 1;
+}
+
 [data-state="websites"] #websites-video {
   opacity: 1;
 }
@@ -11,6 +15,7 @@
   opacity: 1;
 }
 
+[data-state="branding"] #service-icon,
 [data-state="websites"] #service-icon,
 [data-state="content"] #service-icon,
 [data-state="systems"] #service-icon {

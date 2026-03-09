@@ -128,11 +128,22 @@ const Capabilities = () => {
                 {/* Background shape */}
                 <div className="absolute inset-0 bg-muted rounded-3xl" />
 
-                {/* Active capability visual — videos for Websites, Content & Motion, Systems; icon fallback */}
+                {/* Active capability visual — videos for Branding, Websites, Content & Motion, Systems; icon fallback */}
                 <div
                   className="absolute inset-8 bg-secondary rounded-2xl flex items-center justify-center overflow-hidden"
                   data-state={SERVICE_KEYS[activeIndex]}
                 >
+                  <video
+                    id="branding-video"
+                    src="/videos/branding.mov"
+                    className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    aria-hidden
+                  />
                   <video
                     id="websites-video"
                     src="/videos/website.mov"

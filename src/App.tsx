@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ProjectCase from "./pages/ProjectCase";
 import ProjectTopic from "./pages/ProjectTopic";
 import ServiceLanding from "./pages/ServiceLanding";
+import Brief from "./pages/Brief";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/services/:serviceSlug" element={<ServiceLanding />} />
           <Route path="/project/:projectId/:topic" element={<ProjectTopic />} />
           <Route path="/project/:projectId" element={<ProjectCase />} />
+          <Route path="/brief" element={<Brief />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

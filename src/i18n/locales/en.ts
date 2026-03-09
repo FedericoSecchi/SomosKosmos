@@ -161,6 +161,10 @@ export const en = {
     email: "hello@somoskosmos.com",
     mailtoSubject: "Project inquiry",
   },
+  brief: {
+    title: "Project brief",
+    subtitle: "Tell us about your project and we'll get back with a simple plan, timeline and budget.",
+  },
   footer: {
     description: "Somos Kosmos — branding, websites and visual content.",
     navigation: "Navigation",

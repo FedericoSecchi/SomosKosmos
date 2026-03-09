@@ -7,10 +7,6 @@ const ContactCTA = () => {
   const subject = t("contact.mailtoSubject");
   const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 
-  const handleStartBrief = () => {
-    window.open("https://placeholder.google.form", "_blank");
-  };
-
   return (
     <section
       id="contacto"
@@ -31,14 +27,8 @@ const ContactCTA = () => {
             <Button variant="neon" size="xl" asChild>
               <a href={mailto}>{t("contact.primaryButton")}</a>
             </Button>
-            <Button
-              variant="heroOutline"
-              size="xl"
-              className="border-foreground/30 text-foreground hover:bg-foreground hover:text-background opacity-50 cursor-not-allowed"
-              onClick={handleStartBrief}
-              disabled
-            >
-              {t("contact.secondaryButton")}
+            <Button variant="heroOutline" size="xl" className="border-foreground/30 text-foreground hover:bg-foreground hover:text-background" asChild>
+              <a href="/brief">{t("contact.secondaryButton")}</a>
             </Button>
           </div>
 

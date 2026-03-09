@@ -13,7 +13,7 @@ const SITE_URL = "https://somoskosmos.com";
 
 const SERVICE_SLUGS = ["branding", "websites", "content-motion", "systems-automation"];
 
-const urls: string[] = [SITE_URL + "/"];
+const urls: string[] = [SITE_URL + "/", SITE_URL + "/brief"];
 
 SERVICE_SLUGS.forEach((slug) => {
   urls.push(`${SITE_URL}/services/${slug}`);

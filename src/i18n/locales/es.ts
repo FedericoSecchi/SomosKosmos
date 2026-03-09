@@ -162,6 +162,10 @@ export const es = {
     email: "hello@somoskosmos.com",
     mailtoSubject: "Consulta de proyecto",
   },
+  brief: {
+    title: "Brief de proyecto",
+    subtitle: "Contanos sobre tu proyecto y respondemos con un plan simple, tiempos y presupuesto.",
+  },
   footer: {
     description: "Somos Kosmos — branding, sitios web y contenido visual.",
     navigation: "Navegación",

@@ -1,0 +1,8 @@
+/* Drone video — visible when Content & Motion section is open */
+[data-state="open"] #drone-video {
+  opacity: 1;
+}
+
+[data-state="open"] #motion-icon {
+  opacity: 0;
+}

@@ -113,17 +113,17 @@ const Capabilities = () => {
                 {/* Background shape */}
                 <div className="absolute inset-0 bg-muted rounded-3xl" />
 
-                {/* Active capability visual — Content & Motion shows drone video on hover */}
+                {/* Active capability visual — Content & Motion shows drone video when section open */}
                 <div
-                  className={`absolute inset-8 bg-secondary rounded-2xl flex items-center justify-center overflow-hidden ${
-                    activeIndex === 2 ? "group" : ""
-                  }`}
+                  className="absolute inset-8 bg-secondary rounded-2xl flex items-center justify-center overflow-hidden"
+                  data-state={activeIndex === 2 ? "open" : "closed"}
                 >
                   {activeIndex === 2 ? (
                     <>
                       <video
+                        id="drone-video"
                         src="/videos/video-dji.mp4"
-                        className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        className="w-full h-full object-cover opacity-0 transition-opacity duration-500"
                         autoPlay
                         muted
                         loop
@@ -131,7 +131,10 @@ const Capabilities = () => {
                         preload="auto"
                         aria-hidden
                       />
-                      <span className="absolute inset-0 flex items-center justify-center text-[180px] text-primary opacity-20 group-hover:opacity-0 transition-opacity duration-500">
+                      <span
+                        id="motion-icon"
+                        className="absolute inset-0 flex items-center justify-center text-[180px] text-primary opacity-20 transition-opacity duration-500"
+                      >
                         ◎
                       </span>
                     </>

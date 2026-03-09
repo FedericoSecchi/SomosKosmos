@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-secondary text-secondary-foreground">
-        <div className="section-container flex items-center justify-between h-20">
+        <div className="section-container flex items-center justify-between h-[70px] lg:h-20">
           {/* Logo */}
           <Link to="/" onClick={() => scrollToTop()} className="flex items-center gap-2">
             <Logo variant="light" size={56} />

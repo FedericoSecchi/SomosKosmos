@@ -37,7 +37,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           {/* Left: Text content */}
           <div className="relative z-10">
-            <span className="label-text text-primary mb-3 block">{t("hero.label")}</span>
             <h1
               className="headline-large mb-8"
             >

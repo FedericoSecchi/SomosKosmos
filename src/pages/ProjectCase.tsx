@@ -180,7 +180,7 @@ const ProjectCase = () => {
           </div>
 
           <div className="mb-8 lg:mb-12 flex flex-col items-center text-center space-y-4">
-            <span className="label-text text-primary block">
+            <span className="label-text text-muted-foreground block">
               {t(`projects.${project.id}.tag`)}
             </span>
             <h1 className="headline-large">

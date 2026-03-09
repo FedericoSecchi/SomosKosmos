@@ -60,6 +60,7 @@ const ProjectCase = () => {
   const isPremium = project.layout === "premium";
   const galleries = project.galleries ?? [];
   const isOrbitaNarrative = project.id === "orbita" && galleries.length >= 6;
+  const isNudeCase = project.id === "nude";
 
   const isTopicPage = Boolean(topic && projectTopics.includes(topic));
   const projectTitle = t<string>(`projects.${project.id}.title`);
@@ -181,7 +182,11 @@ const ProjectCase = () => {
           </div>
 
           <div className="mb-8 lg:mb-12 flex flex-col items-center text-center space-y-4">
-            <span className="label-text text-muted-foreground block">
+            <span
+              className={`label-text block ${
+                isNudeCase ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
               {t(`projects.${project.id}.tag`)}
             </span>
             <h1 className="headline-large">
@@ -234,7 +239,7 @@ const ProjectCase = () => {
                 </p>
               </div>
             )}
-            {isPremium && galleries[0] && !isOrbitaNarrative && (
+            {isPremium && galleries[0] && !isOrbitaNarrative && !isNudeCase && (
               <figure className="full-bleed mt-8 lg:mt-12">
                 <div className="w-full overflow-hidden">
                   <img
@@ -299,7 +304,7 @@ const ProjectCase = () => {
                 </p>
               </div>
             )}
-            {isPremium && galleries[1] && !isOrbitaNarrative && (
+            {isPremium && galleries[1] && !isOrbitaNarrative && !isNudeCase && (
               <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
@@ -325,7 +330,7 @@ const ProjectCase = () => {
                 <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
               </figure>
             )}
-            {isPremium && galleries[2] && galleries.length < 6 && (
+            {isPremium && galleries[2] && galleries.length < 6 && !isNudeCase && (
               <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img

@@ -111,7 +111,7 @@ const ProjectCase = () => {
   const keywordsContent = [projectTag, "case study", "branding", "Kosmos Studio"].join(", ");
   const SEO_LINK_TEXT: Record<string, string> = {
     "security-alliance": "Security Alliance",
-    "the-red-guild": "The Red Guild visual identity",
+    "the-red-guild": "The Red Guild",
     "orbita": "Orbita design system",
     nude: "Nude rebranding and web design",
   };
@@ -567,10 +567,6 @@ const ProjectCase = () => {
         <p>Concept exploration, visual language development, brand architecture and digital design implementation.</p>
       </section>
       <nav className="seo-hidden" aria-label="Portfolio and services">
-        <a href="/">Home</a>
-        <a href="/#trabajos">Portfolio</a>
-        <a href="/#services">Services</a>
-        <a href="/#contacto">Contact</a>
         {projectsData.map((p) => (
           <a key={p.id} href={`/project/${p.id}`}>{SEO_LINK_TEXT[p.id] ?? t(`projects.${p.id}.title`)}</a>
         ))}

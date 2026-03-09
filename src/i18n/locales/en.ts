@@ -254,19 +254,19 @@ export const en = {
     },
     "the-red-guild": {
       title: "The Red Guild",
-      type: "Project · Visual system",
+      type: "Branding · Web",
       tag: "BRANDING & WEB DESIGN",
       miniDescription:
         "Full brand and web redesign for a security guild in the crypto ecosystem.",
-      coverImageAlt: "The Red Guild brand identity and web design",
+      coverImageAlt: "The Red Guild brand and web design",
       task:
-        "Completely redesign The Red Guild's identity —logo, visual system and website— to reflect its role as a security and education collective within the crypto ecosystem. The brand needed to stand apart from other security organizations, maintaining technical credibility while expressing a more approachable and playful personality.",
+        "Redesign The Red Guild's identity —logo, visual system and website— to reflect its role as a security and education collective in the crypto ecosystem. The brand needed to stand apart from other security organizations: technically credible, but more approachable and playful.",
       idea:
-        "Transform the experience of learning security into a kind of serious-play \"dojo\" and \"guild\": a distinct visual universe where training, failing and improving feels like leveling up. The identity needed to unify all its initiatives (Phishing Dojo, Damn Vulnerable DeFi, Security Frameworks, research, education) under a single narrative of continuous training.",
+        "Turn learning security into a serious-play \"dojo\" and \"guild\": a distinct visual universe where training, failing and improving feels like leveling up. The identity had to unify all initiatives (Phishing Dojo, Damn Vulnerable DeFi, Security Frameworks, research, education) under one narrative of continuous training.",
       solution:
-        "We created a visual system unique within the industry: a bold logo, vibrant palette and graphic elements that reinforce the guild, missions and challenges narrative. The new website was designed as a gamified hub, where each initiative is presented as a \"level\" or \"mission\" with subtle interactions and moments of discovery throughout the navigation.",
+        "We created a visual system unique within the industry: a bold logo, vibrant palette and graphic elements that reinforce the guild, missions and challenges narrative. The new website was designed as a gamified hub—each initiative presented as a \"level\" or \"mission\" with subtle interactions and moments of discovery.",
       result:
-        "The Red Guild now looks and feels clearly distinct within the crypto security and education ecosystem, without losing technical rigor. The web experience better reflects the way they work: practical, community-driven and challenge-oriented, making it easier for new people to understand what they do and feel encouraged to participate in their initiatives.",
+        "A brand that stands out. The Red Guild now feels clearly distinct within the crypto security and education space—technical rigor intact, but welcoming. The web experience mirrors how they work: practical, community-driven and challenge-oriented, so new people quickly understand what they do and want to participate.",
     },
     "orbita": {
       title: "Orbita",

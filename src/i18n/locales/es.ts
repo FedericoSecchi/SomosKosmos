@@ -142,9 +142,9 @@ export const es = {
   },
   clients: {
     label: "CLIENTES",
-    title: "Marcas con las que trabajamos",
+    title: "Marcas con las que hemos trabajado",
     description:
-      "Selección de clientes, colaboradores y proyectos reales en los que participamos.",
+      "Una selección de clientes, colaboradores y proyectos que hemos ayudado a construir.",
   },
   contact: {
     label: "CONTACTO",

@@ -138,9 +138,9 @@ export const en = {
   },
   clients: {
     label: "CLIENTS",
-    title: "Brands We Work With",
+    title: "Brands We've Worked With",
     description:
-      "A selection of clients, collaborators and real projects we've been involved in.",
+      "A selection of clients, collaborators and projects we've helped shape.",
   },
   contact: {
     label: "CONTACT",

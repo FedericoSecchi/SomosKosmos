@@ -135,13 +135,14 @@ const Capabilities = () => {
                 >
                   <video
                     id="branding-video"
-                    src="/videos/branding.mov"
+                    src="/videos/branding.mp4"
                     className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500"
                     autoPlay
                     muted
                     loop
                     playsInline
                     preload="auto"
+                    data-service="branding"
                     aria-hidden
                   />
                   <video

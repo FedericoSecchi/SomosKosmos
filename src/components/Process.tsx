@@ -30,7 +30,7 @@ const Process = () => {
 
           {/* Right: Steps */}
           <div>
-            <span className="label-text text-muted-foreground mb-8 block">
+            <span className="label-text text-primary mb-8 block">
               {t("process.list_label")}
             </span>
 

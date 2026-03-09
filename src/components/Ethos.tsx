@@ -10,7 +10,7 @@ const Ethos = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Main statement */}
           <div data-animate="fade-up">
-            <span className="label-text text-muted-foreground mb-4 block">{t("ethos.label")}</span>
+            <span className="label-text text-primary mb-4 block">{t("ethos.label")}</span>
             <h2 className="headline-medium mb-8">
               {t("ethos.title")}
               <br />
@@ -24,7 +24,7 @@ const Ethos = () => {
 
           {/* Right: Bullets */}
           <div data-animate="stagger">
-            <span className="label-text text-muted-foreground mb-8 block">
+            <span className="label-text text-primary mb-8 block">
               {t("ethos.clientsAppreciate")}
             </span>
 

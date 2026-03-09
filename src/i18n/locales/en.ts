@@ -22,9 +22,9 @@ export const en = {
   },
   hero: {
     label: "STUDIO",
-    headline: "Design and web development for brands that want to sell better.",
+    headline: "Design and web development for brands that want to grow.",
     description:
-      "Visual identity and clear websites for teams that want to position their brand and communicate their value.",
+      "Visual identity and websites designed to help teams scale and build stronger brands.",
     ctaStart: "Start a project",
     ctaWork: "View projects",
     ctaProjects: "View projects",

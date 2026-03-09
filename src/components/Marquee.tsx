@@ -8,7 +8,7 @@ const Marquee = () => {
       <div className="section-container">
         <div className="text-center mb-6">
           <span className="label-text text-primary mb-2 block">{t("services.label")}</span>
-          <h2 className="font-display text-xl md:text-2xl font-semibold text-secondary-foreground/80">
+          <h2 className="font-display text-xl lg:text-2xl font-semibold text-secondary-foreground/80">
             {t("services.title")}
           </h2>
         </div>
@@ -18,7 +18,7 @@ const Marquee = () => {
           {[...items, ...items, ...items, ...items].map((item, i) => (
             <span
               key={i}
-              className="font-display text-4xl md:text-5xl font-bold text-secondary-foreground/20 flex items-center gap-12"
+              className="font-display text-4xl lg:text-5xl font-bold text-secondary-foreground/20 flex items-center gap-12"
             >
               {item}
               <span className="text-primary text-2xl">✦</span>

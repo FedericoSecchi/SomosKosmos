@@ -5,7 +5,7 @@ const Storytelling = () => {
   return (
     <section
       id="nosotros"
-      className="about-section relative bg-background overflow-x-clip py-16 md:py-20 lg:py-24"
+      className="about-section relative bg-background overflow-x-clip py-16 lg:py-20 xl:py-24"
       aria-labelledby="about-intro-heading"
     >
       <div

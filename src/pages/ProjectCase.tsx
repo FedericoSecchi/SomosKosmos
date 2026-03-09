@@ -155,12 +155,12 @@ const ProjectCase = () => {
         <meta itemProp="creator" content="Kosmos Studio" />
         <meta itemProp="publisher" content="Kosmos Studio" />
         {/* Hero Section — mobile-first vertical spacing */}
-        <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-background">
+        <section className="pt-24 pb-8 lg:pt-32 lg:pb-12 bg-background">
         <div className="section-container">
-          <div className="mb-4 md:mb-6">
+          <div className="mb-4 lg:mb-6">
             <Link
               to="/#trabajos"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-4 md:mb-6"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-4 lg:mb-6"
             >
               <svg
                 className="w-4 h-4"
@@ -179,7 +179,7 @@ const ProjectCase = () => {
             </Link>
           </div>
 
-          <div className="mb-8 md:mb-12 flex flex-col items-center text-center space-y-4">
+          <div className="mb-8 lg:mb-12 flex flex-col items-center text-center space-y-4">
             <span className="label-text text-primary block">
               {t(`projects.${project.id}.tag`)}
             </span>
@@ -212,10 +212,10 @@ const ProjectCase = () => {
 
       {/* Task Block */}
       {t(`projects.${project.id}.task`) && (
-        <section className="pt-8 pb-12 md:pt-12 md:pb-20 bg-background" data-animate="fade-up">
+        <section className="pt-8 pb-12 lg:pt-12 lg:pb-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
-              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 md:gap-16 lg:gap-24 items-center">
+              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 lg:gap-16 xl:gap-24 items-center">
                 <div className="flex items-center justify-start">
                   <h2 className="headline-medium">{t("caseStudy.task")}</h2>
                 </div>
@@ -234,7 +234,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[0] && !isOrbitaNarrative && (
-              <figure className="full-bleed mt-8 md:mt-12">
+              <figure className="full-bleed mt-8 lg:mt-12">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
@@ -247,7 +247,7 @@ const ProjectCase = () => {
               </figure>
             )}
             {isOrbitaNarrative && galleries[0] && galleries[1] && galleries[2] && (
-              <figure className="full-bleed mt-8 md:mt-12">
+              <figure className="full-bleed mt-8 lg:mt-12">
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
@@ -277,10 +277,10 @@ const ProjectCase = () => {
 
       {/* Idea Block */}
       {(isPremium || t(`projects.${project.id}.idea`)) && (
-        <section className="pt-6 pb-12 md:pt-10 md:pb-20 bg-background" data-animate="fade-up">
+        <section className="pt-6 pb-12 lg:pt-10 lg:pb-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             {isPremium ? (
-              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 md:gap-16 lg:gap-24 items-center">
+              <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 lg:gap-16 xl:gap-24 items-center">
                 <div className="flex items-center justify-start">
                   <h2 className="headline-medium">{t("caseStudy.sectionIdea")}</h2>
                 </div>
@@ -299,7 +299,7 @@ const ProjectCase = () => {
               </div>
             )}
             {isPremium && galleries[1] && !isOrbitaNarrative && (
-              <figure className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
@@ -312,7 +312,7 @@ const ProjectCase = () => {
               </figure>
             )}
             {isOrbitaNarrative && galleries[3] && (
-              <figure className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
@@ -325,7 +325,7 @@ const ProjectCase = () => {
               </figure>
             )}
             {isPremium && galleries[2] && galleries.length < 6 && (
-              <figure className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
@@ -343,9 +343,9 @@ const ProjectCase = () => {
 
       {/* Solución section (premium only) */}
       {isPremium && (
-        <section className="pt-6 pb-12 md:pt-10 md:pb-20 bg-background" data-animate="fade-up">
+        <section className="pt-6 pb-12 lg:pt-10 lg:pb-20 bg-background" data-animate="fade-up">
           <div className="section-container">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 md:gap-16 lg:gap-32 items-center">
+            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-16 xl:gap-32 items-center">
               <div className="flex items-center justify-start">
                 <h2 className="headline-medium">{t("caseStudy.sectionSolution")}</h2>
               </div>
@@ -374,7 +374,7 @@ const ProjectCase = () => {
               </div>
             </div>
             {galleries[3] && galleries.length < 6 && !isOrbitaNarrative && (
-              <figure className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
@@ -387,7 +387,7 @@ const ProjectCase = () => {
               </figure>
             )}
             {isOrbitaNarrative && galleries[4] && (
-              <figure className="full-bleed mt-12 md:mt-20">
+              <figure className="full-bleed mt-12 lg:mt-20">
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
@@ -408,7 +408,7 @@ const ProjectCase = () => {
         <div className="full-bleed">
           <div className="w-full">
             {galleries[2] && (
-              <figure className="mt-12 md:mt-20 w-full overflow-hidden">
+              <figure className="mt-12 lg:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
                   alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 3`}
@@ -446,9 +446,9 @@ const ProjectCase = () => {
 
       {/* Resultado section (premium only) */}
       {isPremium && t(`projects.${project.id}.result`) && (
-        <section className="pt-6 pb-12 md:pt-10 md:pb-20 bg-background" data-animate="fade-up">
+        <section className="pt-6 pb-12 lg:pt-10 lg:pb-20 bg-background" data-animate="fade-up">
           <div className="section-container">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 md:gap-16 lg:gap-32 items-center">
+            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-16 xl:gap-32 items-center">
               <div className="flex items-center justify-start">
                 <h2 className="headline-medium">{t("caseStudy.sectionResult")}</h2>
               </div>
@@ -465,7 +465,7 @@ const ProjectCase = () => {
       {/* Gallery 6 (premium with 6 galleries only, below Resultado) — full-bleed for all */}
       {isPremium && galleries.length >= 6 && galleries[5] && (
         <figure className="full-bleed">
-          <div className="w-full overflow-hidden mt-12 md:mt-20">
+          <div className="w-full overflow-hidden mt-12 lg:mt-20">
             <img
               src={galleries[5]}
               alt={`${projectTitle} branding and visual identity design by Kosmos Studio, image 6`}
@@ -479,7 +479,7 @@ const ProjectCase = () => {
 
       {/* Solution Block (default layout only) */}
       {!isPremium && t(`projects.${project.id}.solution`) && (
-        <section className="pt-6 pb-12 md:pt-10 md:pb-20 bg-background" data-animate="fade-up">
+        <section className="pt-6 pb-12 lg:pt-10 lg:pb-20 bg-background" data-animate="fade-up">
           <div className="section-container">
             <div className="max-w-4xl">
               <h2 className="headline-medium mb-6">{t("caseStudy.solution")}</h2>
@@ -493,7 +493,7 @@ const ProjectCase = () => {
 
       {/* Visual Gallery Block (default layout only) — full-bleed */}
       {!isPremium && (
-        <section className="py-12 md:py-20 bg-background">
+        <section className="py-12 lg:py-20 bg-background">
           <figure className="full-bleed mb-6">
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
@@ -505,7 +505,7 @@ const ProjectCase = () => {
             </div>
             <figcaption className="seo-hidden">{projectTitle} branding and design system created by Kosmos Studio.</figcaption>
           </figure>
-          <div className="full-bleed grid grid-cols-1 md:grid-cols-2 gap-0 mb-6">
+          <div className="full-bleed grid grid-cols-1 lg:grid-cols-2 gap-0 mb-6">
             <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
@@ -541,7 +541,7 @@ const ProjectCase = () => {
 
       {/* Next Project Navigation (default layout only) */}
       {!isPremium && (
-        <section className="py-12 md:py-20 bg-background border-t">
+        <section className="py-12 lg:py-20 bg-background border-t">
           <div className="section-container">
             <div className="max-w-4xl mx-auto text-center">
               <p className="body-regular text-muted-foreground mb-6">{t("caseStudy.nextProject")}</p>
@@ -561,12 +561,12 @@ const ProjectCase = () => {
       )}
 
       {/* Related projects — internal linking for all case studies */}
-      <section className="py-12 md:py-16 bg-muted/30 border-t" aria-labelledby="related-projects-heading">
+      <section className="py-12 lg:py-16 bg-muted/30 border-t" aria-labelledby="related-projects-heading">
         <div className="section-container">
           <h2 id="related-projects-heading" className="headline-medium mb-8">
             {t("caseStudy.relatedProjects")}
           </h2>
-          <ul className="flex flex-wrap gap-6 md:gap-8">
+          <ul className="flex flex-wrap gap-6 lg:gap-8">
             {relatedProjects.map((p) => (
               <li key={p.id}>
                 <Link

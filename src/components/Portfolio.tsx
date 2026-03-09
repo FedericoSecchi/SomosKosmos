@@ -5,9 +5,9 @@ import { useI18n } from "@/i18n/context";
 const Portfolio = () => {
   const { t } = useI18n();
   return (
-    <section id="trabajos" className="relative z-20 py-16 md:py-24 lg:py-32 bg-neutral-950 text-white">
+    <section id="trabajos" className="relative z-20 py-16 lg:py-24 xl:py-32 bg-neutral-950 text-white">
       <div className="section-container">
-        <div className="mb-12 md:mb-16" data-animate="fade-up">
+        <div className="mb-12 lg:mb-16" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>
           <h2 className="headline-medium mb-4">{t("work.title")}</h2>
           <p className="body-large text-neutral-400">
@@ -17,7 +17,7 @@ const Portfolio = () => {
 
         {/* Portfolio Grid — fluid auto-fit: cards grow with viewport */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
           data-animate="stagger"
         >
           {projectsData.map((project) => (
@@ -54,7 +54,7 @@ const Portfolio = () => {
               </div>
 
               {/* Project title — above badge, revealed on hover */}
-              <h3 className="absolute left-4 bottom-14 z-10 font-display text-2xl md:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="absolute left-4 bottom-14 z-10 font-display text-2xl lg:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {t(`projects.${project.id}.title`)}
               </h3>
 

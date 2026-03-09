@@ -50,7 +50,7 @@ const ProgrammaticProjectPage = () => {
         </script>
       </Helmet>
       <Header />
-      <main className="pt-24 pb-16 md:pt-32 md:pb-24">
+      <main className="pt-24 pb-16 lg:pt-32 lg:pb-24">
         <div className="section-container">
           <h1 className="headline-large mb-6">{caseStudy.headline}</h1>
           <p className="body-large text-muted-foreground mb-12 max-w-2xl">

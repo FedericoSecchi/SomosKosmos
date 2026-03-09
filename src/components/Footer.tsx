@@ -28,9 +28,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background py-14 md:py-20 lg:py-24">
+    <footer className="bg-foreground text-background py-14 lg:py-20 xl:py-24">
       <div className="section-container">
-        <div className="grid md:grid-cols-3 gap-10 md:gap-12 mb-12 md:mb-16">
+        <div className="grid lg:grid-cols-3 gap-10 lg:gap-12 mb-12 lg:mb-16">
           {/* Brand */}
           <div>
             <Link to="/" className="mb-6 block">
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 md:pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-6 lg:pt-8 border-t border-background/10 flex flex-col lg:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/40">
             {t("footer.copyright")}
           </p>

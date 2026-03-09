@@ -31,9 +31,9 @@ const TopicLanding = () => {
         type="website"
       />
       <Header />
-      <main className="pt-24 pb-16 md:pt-32 md:pb-24">
+      <main className="pt-24 pb-16 lg:pt-32 lg:pb-24">
         <section className="section-container">
-          <div className="mb-12 md:mb-16">
+          <div className="mb-12 lg:mb-16">
             <h1 className="headline-large mb-6">{topic.title}</h1>
             <p className="body-large text-muted-foreground max-w-2xl">
               {topic.description}
@@ -71,7 +71,7 @@ const TopicLanding = () => {
                     />
                   </svg>
                 </div>
-                <h2 className="absolute left-4 bottom-14 z-10 font-display text-2xl md:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h2 className="absolute left-4 bottom-14 z-10 font-display text-2xl lg:text-3xl font-bold text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {t(`projects.${project.id}.title`)}
                 </h2>
                 <span className="absolute left-4 bottom-[30px] z-10 inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full">

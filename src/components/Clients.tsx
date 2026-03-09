@@ -9,10 +9,10 @@ const Clients = () => {
   return (
     <section
       id="clientes"
-      className="py-16 md:py-24 lg:py-32 bg-background overflow-hidden"
+      className="py-16 lg:py-24 xl:py-32 bg-background overflow-hidden"
     >
       <div className="section-container">
-        <div className="text-center mb-12 md:mb-16 lg:mb-20" data-animate="fade-up">
+        <div className="text-center mb-12 lg:mb-16 xl:mb-20" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("clients.label")}</span>
           <h2 className="headline-medium mb-4">
             {t("clients.title")}
@@ -34,11 +34,11 @@ const Clients = () => {
                   <img
                     src={brand.logo}
                     alt={t(`brands.${brand.id}`)}
-                    className="h-12 md:h-16 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                    className="h-12 lg:h-16 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                   />
                 ) : (
                   <div className="text-center">
-                    <h3 className="font-display text-lg md:text-xl font-semibold text-muted-foreground group-hover:text-primary transition-colors">
+                    <h3 className="font-display text-lg lg:text-xl font-semibold text-muted-foreground group-hover:text-primary transition-colors">
                       {t(`brands.${brand.id}`)}
                     </h3>
                   </div>

@@ -7,11 +7,11 @@ const Process = () => {
   return (
     <section
       id="proceso"
-      className="pt-16 md:pt-24 lg:pt-32 pb-32 bg-muted/60 border-t border-border/40"
+      className="pt-16 lg:pt-24 xl:pt-32 pb-32 bg-muted/60 border-t border-border/40"
       aria-labelledby="process-heading"
     >
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Main statement */}
           <div>
             <span className="label-text text-primary mb-4 block">

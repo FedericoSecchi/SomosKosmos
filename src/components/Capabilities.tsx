@@ -8,9 +8,9 @@ const Capabilities = () => {
   const icons = ["✦", "◈", "◎", "⬡"];
 
   return (
-    <section id="servicios" className="py-16 md:py-24 lg:py-32 bg-secondary text-secondary-foreground">
+    <section id="servicios" className="py-16 lg:py-24 xl:py-32 bg-secondary text-secondary-foreground">
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-20 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-stretch">
           {/* Left: Title + Capability list */}
           <div className="space-y-10" data-animate="fade-up">
             <div>
@@ -48,7 +48,7 @@ const Capabilities = () => {
                           {icons[index]}
                         </span>
                         <h3
-                          className={`font-display text-2xl md:text-3xl font-bold transition-colors duration-300 ${
+                          className={`font-display text-2xl lg:text-3xl font-bold transition-colors duration-300 ${
                             activeIndex === index
                               ? "text-background"
                               : "text-muted-foreground"

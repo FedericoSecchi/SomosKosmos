@@ -43,7 +43,7 @@ const Header = () => {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => {
               const sectionId = `#${item.section}`;
               return (
@@ -60,7 +60,7 @@ const Header = () => {
           </nav>
 
           {/* Language Toggle & CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <button
               onClick={toggleLanguage}
               className="text-base font-medium text-secondary-foreground/80 hover:text-secondary-foreground transition-colors uppercase"
@@ -80,7 +80,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setIsMobileMenuOpen(true)}
             aria-label={t("aria.openMenu")}
           >

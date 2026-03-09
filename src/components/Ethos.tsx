@@ -5,7 +5,7 @@ const Ethos = () => {
   const { t } = useI18n();
   const bullets = t<string[]>("ethos.bullets");
   return (
-    <section id="about" className="py-16 md:py-24 lg:py-32 bg-muted">
+    <section id="about" className="py-16 lg:py-24 xl:py-32 bg-muted">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Main statement */}

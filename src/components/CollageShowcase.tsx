@@ -6,9 +6,9 @@ import heroImage3 from "@/assets/work/work-3.jpg";
 const CollageShowcase = () => {
   const { t } = useI18n();
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white text-foreground overflow-hidden">
+    <section className="py-16 lg:py-24 xl:py-32 bg-white text-foreground overflow-hidden">
       <div className="section-container">
-        <div className="text-center mb-12 md:mb-16 lg:mb-20" data-animate="fade-up">
+        <div className="text-center mb-12 lg:mb-16 xl:mb-20" data-animate="fade-up">
           <span className="label-text text-primary mb-4 block">{t("work.label")}</span>
           <h2 className="headline-medium mb-4">
             {t("work.collageTitle")}
@@ -21,10 +21,10 @@ const CollageShowcase = () => {
         </div>
 
         {/* Collage Grid — studio photos (reusing hero images) */}
-        <div className="relative h-[800px] md:h-[900px] isolate" data-animate="scale">
+        <div className="relative h-[800px] lg:h-[900px] isolate" data-animate="scale">
             {/* Large image */}
             <div
-              className="collage-card absolute top-0 left-0 w-[60%] md:w-[45%] h-[45%] rounded-2xl overflow-hidden shadow-2xl block"
+              className="collage-card absolute top-0 left-0 w-[60%] lg:w-[45%] h-[45%] rounded-2xl overflow-hidden shadow-2xl block"
               style={{ transform: "rotate(-2deg)" }}
               data-parallax="0.1"
             >
@@ -37,7 +37,7 @@ const CollageShowcase = () => {
 
             {/* Medium image right */}
             <div
-              className="collage-card absolute top-10 right-0 w-[50%] md:w-[40%] h-[35%] rounded-2xl overflow-hidden shadow-xl block"
+              className="collage-card absolute top-10 right-0 w-[50%] lg:w-[40%] h-[35%] rounded-2xl overflow-hidden shadow-xl block"
               style={{ transform: "rotate(4deg)" }}
               data-parallax="0.15"
             >
@@ -50,7 +50,7 @@ const CollageShowcase = () => {
 
             {/* Small image center */}
             <div
-              className="collage-card absolute top-[40%] left-[30%] w-[35%] md:w-[25%] h-[30%] rounded-2xl overflow-hidden shadow-xl z-10 block"
+              className="collage-card absolute top-[40%] left-[30%] w-[35%] lg:w-[25%] h-[30%] rounded-2xl overflow-hidden shadow-xl z-10 block"
               style={{ transform: "rotate(-1deg)" }}
               data-parallax="0.2"
             >
@@ -63,7 +63,7 @@ const CollageShowcase = () => {
 
             {/* Bottom left */}
             <div
-              className="collage-card absolute bottom-20 left-10 w-[45%] md:w-[35%] h-[35%] rounded-2xl overflow-hidden shadow-xl block"
+              className="collage-card absolute bottom-20 left-10 w-[45%] lg:w-[35%] h-[35%] rounded-2xl overflow-hidden shadow-xl block"
               style={{ transform: "rotate(3deg)" }}
               data-parallax="0.08"
             >
@@ -76,23 +76,23 @@ const CollageShowcase = () => {
 
             {/* Bottom right decorative card */}
             <div
-              className="absolute bottom-10 right-20 w-[30%] md:w-[20%] h-[25%] bg-primary rounded-2xl flex items-center justify-center"
+              className="absolute bottom-10 right-20 w-[30%] lg:w-[20%] h-[25%] bg-primary rounded-2xl flex items-center justify-center"
               style={{ transform: "rotate(-5deg)" }}
             >
-              <span className="font-display text-4xl md:text-6xl font-bold text-primary-foreground">
+              <span className="font-display text-4xl lg:text-6xl font-bold text-primary-foreground">
                 ✦
               </span>
             </div>
 
             {/* Floating elements — low z-index so they don't overlap Works section below */}
             <div
-              className="absolute top-[5%] md:top-[15%] lg:top-[20%] right-[30%] text-5xl animate-float z-0"
+              className="absolute top-[5%] lg:top-[15%] xl:top-[20%] right-[30%] text-5xl animate-float z-0"
               style={{ animationDelay: "0.3s" }}
             >
               👀
             </div>
             <div
-              className="absolute bottom-[40%] left-[80%] md:left-[70%] text-4xl animate-float z-0"
+              className="absolute bottom-[40%] left-[80%] lg:left-[70%] text-4xl animate-float z-0"
               style={{ animationDelay: "0.8s" }}
             >
               🌟

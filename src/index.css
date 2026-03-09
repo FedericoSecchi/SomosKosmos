@@ -110,7 +110,11 @@ html {
 @layer components {
   /* Editorial Typography */
   .headline-display {
-    @apply font-display font-bold leading-[0.9] tracking-tight;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    @apply font-display;
   }
 
   .headline-large {

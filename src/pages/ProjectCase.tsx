@@ -509,12 +509,11 @@ const ProjectCase = () => {
 
       {/* Next Project Navigation */}
       <div className="mt-24 mb-32 flex justify-center lg:mt-28 lg:mb-36">
-        <Link
-          to={`/project/${nextProject.id}`}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition"
-        >
-          {t("caseStudy.nextProject")} →
-        </Link>
+        <Button variant="default" size="lg" asChild>
+          <Link to={`/project/${nextProject.id}`}>
+            {t("caseStudy.nextProject")} →
+          </Link>
+        </Button>
       </div>
 
       {/* SEO: invisible semantic sections for crawlers — no layout change */}

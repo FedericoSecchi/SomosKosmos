@@ -30,12 +30,6 @@ const ProjectCase = () => {
     }
   }, [project, t]);
 
-  useEffect(() => {
-    if (project?.externalUrl && project.externalUrl !== "#") {
-      window.location.href = project.externalUrl;
-    }
-  }, [project?.externalUrl]);
-
   if (!project) {
     return (
       <div className="relative min-h-screen bg-background">
@@ -57,14 +51,6 @@ const ProjectCase = () => {
           </div>
         </div>
         <Footer />
-      </div>
-    );
-  }
-
-  if (project.externalUrl && project.externalUrl !== "#") {
-    return (
-      <div className="relative min-h-screen bg-background flex items-center justify-center">
-        <p className="text-muted-foreground">{t("caseStudy.redirecting")}…</p>
       </div>
     );
   }
@@ -189,6 +175,16 @@ const ProjectCase = () => {
             <p className="body-large text-muted-foreground max-w-prose mx-auto">
               {t(`projects.${project.id}.miniDescription`)}
             </p>
+            {project.externalUrl && project.externalUrl !== "#" && (
+              <a
+                href={project.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-2 mt-6 rounded-full bg-primary text-black font-medium text-sm hover:opacity-90 transition"
+              >
+                visitar web
+              </a>
+            )}
           </div>
 
           {/* Cover Image — full-bleed for all projects */}

@@ -4,7 +4,6 @@ import { useI18n } from "@/i18n/context";
 
 const Portfolio = () => {
   const { t } = useI18n();
-  const isExternal = (url?: string) => url && url !== "#";
 
   return (
     <section id="trabajos" className="relative z-20 py-16 lg:py-24 xl:py-32 bg-neutral-950 text-white">
@@ -22,11 +21,12 @@ const Portfolio = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
           data-animate="stagger"
         >
-          {projectsData.map((project) => {
-            const external = isExternal(project.externalUrl);
-            const cardClass = "group relative flex flex-col h-full w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl aspect-[2560/1400]";
-            const content = (
-              <>
+          {projectsData.map((project) => (
+            <Link
+              key={project.id}
+              to={`/project/${project.id}`}
+              className="group relative flex flex-col h-full w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl aspect-[2560/1400]"
+            >
               {/* Background layer: image + gradient (z-0, below content) */}
               <div className="absolute inset-0 z-0">
                 <img
@@ -59,41 +59,14 @@ const Portfolio = () => {
                 {t(`projects.${project.id}.title`)}
               </h3>
 
-              {/* Green badge and visit-website button */}
-              <div className="absolute left-0 right-0 bottom-[30px] z-10 flex flex-col items-center px-4">
+              {/* Green badge — 30px above bottom */}
+              <div className="absolute left-4 bottom-[30px] z-10 flex flex-col items-start">
                 <span className="inline-block px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider rounded-full">
                   {t(`projects.${project.id}.tag`)}
                 </span>
-                {project.externalUrl && project.externalUrl !== "#" && (
-                  <a
-                    href={project.externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center justify-center px-5 py-2 mt-4 rounded-full bg-primary text-black font-medium text-sm hover:opacity-90 transition"
-                  >
-                    visitar web
-                  </a>
-                )}
               </div>
-            </>
-            );
-            return external ? (
-              <a
-                key={project.id}
-                href={project.externalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cardClass}
-              >
-                {content}
-              </a>
-            ) : (
-              <Link key={project.id} to={`/project/${project.id}`} className={cardClass}>
-                {content}
-              </Link>
-            );
-          })}
+            </Link>
+          ))}
         </div>
       </div>
     </section>

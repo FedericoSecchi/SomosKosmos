@@ -201,6 +201,7 @@ export const es = {
       "El proyecto que buscás no existe o fue movido.",
     notFoundCtaHome: "Volver al inicio",
     notFoundCtaPortfolio: "Ver portfolio",
+    redirecting: "Redirigiendo al proyecto",
     detailAlt: "Detalle",
   },
   notFound: {
@@ -232,6 +233,13 @@ export const es = {
     "swap-coffee": "Swap Coffee",
     "fmag": "FMAG",
     "baba-sturite": "Baba Sturite",
+    calmo: "Calmo",
+    ehtexperience: "EHTperience",
+    deltarowling: "DeltaRowling",
+    "fede-garcia": "Fede García",
+    mareboats: "Mareboats",
+    skyshot: "SkyShot",
+    pancito: "Pancito",
   },
   projects: {
     "security-alliance": {
@@ -303,6 +311,61 @@ export const es = {
       result:
         "Una marca fiel al producto. Nude cuenta hoy con una identidad coherente que comunica skincare natural sin los lugares comunes—limpia, segura y lista para crecer. La experiencia web guía a los visitantes con claridad, y el sistema escala a nuevos productos y canales sin perder nitidez.",
     },
+    calmo: {
+      title: "Calmo",
+      type: "Branding · Web",
+      tag: "BRANDING & WEB",
+      miniDescription:
+        "Identidad visual y sitio web para Calmo, proyecto centrado en bienestar y experiencias de calma.",
+      coverImageAlt: "Calmo — identidad y web",
+    },
+    ehtexperience: {
+      title: "EHTperience",
+      type: "Web Design",
+      tag: "WEB DESIGN",
+      miniDescription:
+        "Diseño y desarrollo web para EHTperience, plataforma enfocada en experiencias tecnológicas y eventos.",
+      coverImageAlt: "EHTperience — diseño web",
+    },
+    deltarowling: {
+      title: "DeltaRowling",
+      type: "Branding · Web",
+      tag: "BRANDING & WEB",
+      miniDescription:
+        "Identidad visual y presencia digital para DeltaRowling, proyecto vinculado al deporte y experiencias en el agua.",
+      coverImageAlt: "DeltaRowling — identidad y presencia digital",
+    },
+    "fede-garcia": {
+      title: "Fede García",
+      type: "Sitio personal",
+      tag: "PERSONAL WEBSITE",
+      miniDescription:
+        "Sitio web personal para Fede García, mostrando su trabajo y proyectos creativos.",
+      coverImageAlt: "Fede García — sitio personal",
+    },
+    mareboats: {
+      title: "Mareboats",
+      type: "Web Design",
+      tag: "WEB DESIGN",
+      miniDescription:
+        "Sitio web para Mareboats, empresa enfocada en experiencias náuticas y navegación.",
+      coverImageAlt: "Mareboats — web",
+    },
+    skyshot: {
+      title: "SkyShot",
+      type: "Media aérea",
+      tag: "AERIAL MEDIA",
+      miniDescription:
+        "Proyecto de producción audiovisual aérea con drone para turismo, naturaleza y marcas.",
+      coverImageAlt: "SkyShot — media aérea",
+    },
+    pancito: {
+      title: "Pancito",
+      type: "Branding",
+      tag: "BRANDING",
+      miniDescription:
+        "Identidad visual y presencia digital para Pancito, proyecto gastronómico artesanal.",
+      coverImageAlt: "Pancito — identidad",
+    },
   },
 };
-

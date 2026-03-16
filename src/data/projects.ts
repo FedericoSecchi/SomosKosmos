@@ -35,6 +35,8 @@ export interface Project {
   seoDescription?: string;
   /** SEO: absolute or path for og:image (defaults to project image) */
   seoImage?: string;
+  /** When set, project is external: card and case page link to this URL instead of internal case study */
+  externalUrl?: string;
 }
 
 export const projectsData: Project[] = [
@@ -96,6 +98,70 @@ export const projectsData: Project[] = [
     seoTitle: "Nude Case Study — Kosmos Studio",
     seoDescription: "Brand and web redesign for a natural skincare brand.",
     seoImage: nudeImage,
+  },
+  // External portfolio projects (externalUrl links to live site)
+  {
+    id: "calmo",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "Calmo — Branding & Web | Kosmos Studio",
+    seoDescription: "Visual identity and website for Calmo, a project focused on wellbeing and calm experiences.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#", // Replace with live site URL when available
+  },
+  {
+    id: "ehtexperience",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "EHTperience — Web Design | Kosmos Studio",
+    seoDescription: "Website design and development for EHTperience, a platform focused on tech experiences and events.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
+  },
+  {
+    id: "deltarowling",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "DeltaRowling — Branding & Web | Kosmos Studio",
+    seoDescription: "Brand identity and digital presence for DeltaRowling, a project connected to sport and water experiences.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
+  },
+  {
+    id: "fede-garcia",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "Fede García — Personal Website | Kosmos Studio",
+    seoDescription: "Personal website for Fede García showcasing his work and creative projects.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
+  },
+  {
+    id: "mareboats",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "Mareboats — Web Design | Kosmos Studio",
+    seoDescription: "Website for Mareboats, a company focused on boating and nautical experiences.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
+  },
+  {
+    id: "skyshot",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "SkyShot — Aerial Media | Kosmos Studio",
+    seoDescription: "Aerial drone media project focused on tourism, nature and brand storytelling.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
+  },
+  {
+    id: "pancito",
+    image: "/branding/og-image.jpg",
+    size: "medium",
+    seoTitle: "Pancito — Branding | Kosmos Studio",
+    seoDescription: "Brand identity and digital presence for Pancito, an artisanal food project.",
+    seoImage: "/branding/og-image.jpg",
+    externalUrl: "#",
   },
 ];
 

@@ -200,6 +200,7 @@ export const en = {
       "The project you're looking for doesn't exist or has been moved.",
     notFoundCtaHome: "Return to Home",
     notFoundCtaPortfolio: "View Portfolio",
+    redirecting: "Redirecting to project",
     detailAlt: "Detail",
   },
   notFound: {
@@ -232,6 +233,13 @@ export const en = {
     "swap-coffee": "Swap Coffee",
     "fmag": "FMAG",
     "baba-sturite": "Baba Sturite",
+    calmo: "Calmo",
+    ehtexperience: "EHTperience",
+    deltarowling: "DeltaRowling",
+    "fede-garcia": "Fede García",
+    mareboats: "Mareboats",
+    skyshot: "SkyShot",
+    pancito: "Pancito",
   },
   projects: {
     "security-alliance": {
@@ -302,6 +310,62 @@ export const en = {
         "We designed a complete brand identity —logo, typography, color system and graphic language— built around simplicity and trust. We applied it to the website, product photography direction, packaging guidelines and social content, creating a unified visual universe that feels both premium and accessible.",
       result:
         "A brand that feels true to the product. Nude now has a coherent identity that communicates natural skincare without the usual tropes—clean, confident and ready to grow. The web experience guides visitors clearly, and the system scales to new products and channels without losing clarity.",
+    },
+    calmo: {
+      title: "Calmo",
+      type: "Branding · Web",
+      tag: "BRANDING & WEB",
+      miniDescription:
+        "Visual identity and website for Calmo, a project focused on wellbeing and calm experiences.",
+      coverImageAlt: "Calmo — identity and web",
+    },
+    ehtexperience: {
+      title: "EHTperience",
+      type: "Web Design",
+      tag: "WEB DESIGN",
+      miniDescription:
+        "Website design and development for EHTperience, a platform focused on tech experiences and events.",
+      coverImageAlt: "EHTperience — web design",
+    },
+    deltarowling: {
+      title: "DeltaRowling",
+      type: "Branding · Web",
+      tag: "BRANDING & WEB",
+      miniDescription:
+        "Brand identity and digital presence for DeltaRowling, a project connected to sport and water experiences.",
+      coverImageAlt: "DeltaRowling — identity and digital presence",
+    },
+    "fede-garcia": {
+      title: "Fede García",
+      type: "Personal Website",
+      tag: "PERSONAL WEBSITE",
+      miniDescription:
+        "Personal website for Fede García showcasing his work and creative projects.",
+      coverImageAlt: "Fede García — personal site",
+    },
+    mareboats: {
+      title: "Mareboats",
+      type: "Web Design",
+      tag: "WEB DESIGN",
+      miniDescription:
+        "Website for Mareboats, a company focused on boating and nautical experiences.",
+      coverImageAlt: "Mareboats — web",
+    },
+    skyshot: {
+      title: "SkyShot",
+      type: "Aerial Media",
+      tag: "AERIAL MEDIA",
+      miniDescription:
+        "Aerial drone media project focused on tourism, nature and brand storytelling.",
+      coverImageAlt: "SkyShot — aerial media",
+    },
+    pancito: {
+      title: "Pancito",
+      type: "Branding",
+      tag: "BRANDING",
+      miniDescription:
+        "Brand identity and digital presence for Pancito, an artisanal food project.",
+      coverImageAlt: "Pancito — identity",
     },
   },
 };

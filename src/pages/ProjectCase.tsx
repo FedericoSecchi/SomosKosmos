@@ -30,6 +30,12 @@ const ProjectCase = () => {
     }
   }, [project, t]);
 
+  useEffect(() => {
+    if (project?.externalUrl && project.externalUrl !== "#") {
+      window.location.href = project.externalUrl;
+    }
+  }, [project?.externalUrl]);
+
   if (!project) {
     return (
       <div className="relative min-h-screen bg-background">
@@ -51,6 +57,14 @@ const ProjectCase = () => {
           </div>
         </div>
         <Footer />
+      </div>
+    );
+  }
+
+  if (project.externalUrl && project.externalUrl !== "#") {
+    return (
+      <div className="relative min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">{t("caseStudy.redirecting")}…</p>
       </div>
     );
   }

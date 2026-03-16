@@ -4,6 +4,8 @@ import { useI18n } from "@/i18n/context";
 
 const Portfolio = () => {
   const { t } = useI18n();
+  const isExternal = (url?: string) => url && url !== "#";
+
   return (
     <section id="trabajos" className="relative z-20 py-16 lg:py-24 xl:py-32 bg-neutral-950 text-white">
       <div className="section-container">
@@ -20,12 +22,11 @@ const Portfolio = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
           data-animate="stagger"
         >
-          {projectsData.map((project) => (
-            <Link
-              key={project.id}
-              to={`/project/${project.id}`}
-              className="group relative flex flex-col h-full w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl aspect-[2560/1400]"
-            >
+          {projectsData.map((project) => {
+            const external = isExternal(project.externalUrl);
+            const cardClass = "group relative flex flex-col h-full w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl aspect-[2560/1400]";
+            const content = (
+              <>
               {/* Background layer: image + gradient (z-0, below content) */}
               <div className="absolute inset-0 z-0">
                 <img
@@ -64,8 +65,24 @@ const Portfolio = () => {
                   {t(`projects.${project.id}.tag`)}
                 </span>
               </div>
-            </Link>
-          ))}
+            </>
+            );
+            return external ? (
+              <a
+                key={project.id}
+                href={project.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cardClass}
+              >
+                {content}
+              </a>
+            ) : (
+              <Link key={project.id} to={`/project/${project.id}`} className={cardClass}>
+                {content}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

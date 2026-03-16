@@ -32,5 +32,12 @@ export const brandsData: Brand[] = [
     id: "baba-sturite",
     // logo: "/logos/baba-sturite.svg",
   },
+  { id: "calmo" },
+  { id: "ehtexperience" },
+  { id: "deltarowling" },
+  { id: "fede-garcia" },
+  { id: "mareboats" },
+  { id: "skyshot" },
+  { id: "pancito" },
 ];
 

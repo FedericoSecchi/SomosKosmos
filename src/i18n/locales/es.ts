@@ -190,7 +190,7 @@ export const es = {
     relatedProjects: "Proyectos relacionados",
     viewAll: "Ver todos los proyectos",
     task: "Tarea",
-    idea: "Problema",
+    idea: "Idea",
     solution: "Resultado",
     sectionIdea: "Idea",
     sectionSolution: "Solución",

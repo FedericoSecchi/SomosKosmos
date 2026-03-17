@@ -14,7 +14,6 @@ const Clients = () => {
     >
       <div className="section-container">
         <div className="text-center mb-12 lg:mb-16 xl:mb-20" data-animate="fade-up">
-          <span className="label-text text-muted-foreground/70 mb-4 block">{t("clients.label")}</span>
           <h2 className="headline-medium mb-4">
             {t("clients.title")}
           </h2>

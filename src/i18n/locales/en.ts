@@ -327,12 +327,20 @@ export const en = {
       coverImageAlt: "Calmo — cover",
     },
     ehtexperience: {
-      title: "EHTperience",
+      title: "ETHperience",
       type: "Web Design",
-      tag: "WEB DESIGN",
+      tag: "Web Design",
       miniDescription:
-        "Website design and development for EHTperience, a platform focused on tech experiences and events.",
-      coverImageAlt: "EHTperience — web design",
+        "A digital platform connecting people, ideas and experiences within the tech ecosystem.",
+      task:
+        "Design and develop the website for ETHperience, a platform focused on events and experiences within the tech ecosystem. The goal was to create a clear, dynamic and easy-to-navigate digital presence.",
+      idea:
+        "Approach the website as an extension of the experience: dynamic, accessible and community-driven. The structure needed to make it easy to explore events and understand the value of the platform.",
+      solution:
+        "We built a modern website with a clear structure and intuitive navigation. Content organization and readability were key to help users quickly find relevant information.",
+      result:
+        "ETHperience now has a clear and functional digital presence that improves how events are communicated and makes it easier for users to engage with the platform.",
+      coverImageAlt: "ETHperience — cover",
     },
     deltarowling: {
       title: "DeltaRowling",

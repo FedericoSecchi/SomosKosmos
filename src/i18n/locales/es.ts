@@ -327,12 +327,20 @@ export const es = {
       coverImageAlt: "Calmo — cover",
     },
     ehtexperience: {
-      title: "EHTperience",
+      title: "ETHperience",
       type: "Web Design",
-      tag: "WEB DESIGN",
+      tag: "Web Design",
       miniDescription:
-        "Diseño y desarrollo web para EHTperience, plataforma enfocada en experiencias tecnológicas y eventos.",
-      coverImageAlt: "EHTperience — diseño web",
+        "Una plataforma digital para conectar personas, ideas y experiencias dentro del ecosistema tech.",
+      task:
+        "Diseñar y desarrollar el sitio web de ETHperience, una plataforma orientada a eventos y experiencias dentro del ecosistema tecnológico. El objetivo era construir una presencia digital clara, dinámica y fácil de explorar.",
+      idea:
+        "Pensar la web como una extensión de la experiencia: dinámica, accesible y enfocada en la comunidad. La navegación debía permitir descubrir eventos, entender la propuesta y generar interés en participar.",
+      solution:
+        "Desarrollamos un sitio web moderno con una estructura clara y una navegación intuitiva. Priorizamos la organización del contenido y la legibilidad, acompañando el ritmo de la plataforma y facilitando el acceso a la información clave.",
+      result:
+        "ETHperience cuenta ahora con una presencia digital clara y funcional, que facilita la comunicación de sus eventos y mejora la experiencia de quienes interactúan con la plataforma.",
+      coverImageAlt: "ETHperience — cover",
     },
     deltarowling: {
       title: "DeltaRowling",

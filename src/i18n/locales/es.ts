@@ -191,7 +191,7 @@ export const es = {
     viewAll: "Ver todos los proyectos",
     task: "Tarea",
     idea: "Idea",
-    solution: "Resultado",
+    solution: "Solución",
     sectionIdea: "Idea",
     sectionSolution: "Solución",
     sectionResult: "Resultado",
@@ -348,6 +348,14 @@ export const es = {
       tag: "BRANDING & WEB",
       miniDescription:
         "Identidad visual y presencia digital para DeltaRowling, proyecto vinculado al deporte y experiencias en el agua.",
+      task:
+        "Diseñar la identidad visual y presencia digital de DeltaRowing, un proyecto enfocado en experiencias de remo en entornos naturales. El objetivo era construir una marca clara y atractiva que transmitiera la energía del deporte y la conexión con el entorno.",
+      idea:
+        "Trabajar la marca desde la experiencia física y el paisaje. DeltaRowling debía sentirse activo, natural y directo, combinando la intensidad del remo con la calma del entorno. La identidad debía reflejar movimiento sin perder claridad.",
+      solution:
+        "Desarrollamos una identidad visual sólida y flexible, acompañada de un sitio web claro y funcional. La estructura prioriza la experiencia del usuario, facilitando la exploración de actividades, información práctica y contacto.",
+      result:
+        "DeltaRowling cuenta ahora con una marca clara y una presencia digital alineada a su propuesta. El sitio facilita la comunicación de la experiencia y permite a nuevos usuarios entender rápidamente qué ofrece y cómo participar.",
       coverImageAlt: "DeltaRowling — identidad y presencia digital",
     },
     "fede-garcia": {
@@ -356,6 +364,14 @@ export const es = {
       tag: "PERSONAL WEBSITE",
       miniDescription:
         "Sitio web personal para Fede García, mostrando su trabajo y proyectos creativos.",
+      task:
+        "Crear un sitio web que refleje la trayectoria profesional de Fede García como entrenador de vela, organizando su experiencia, logros y perfil de forma clara y accesible.",
+      idea:
+        "Priorizar claridad y credibilidad. El sitio debía funcionar como una herramienta profesional, destacando experiencia, roles y recorrido sin distracciones ni elementos innecesarios.",
+      solution:
+        "Se desarrolló un sitio web limpio y estructurado, con foco en la legibilidad y la organización del contenido. La navegación permite recorrer fácilmente su trayectoria y entender su perfil en pocos minutos.",
+      result:
+        "Fede García cuenta ahora con una presencia digital profesional que le permite presentar su perfil de forma clara, ordenada y confiable ante equipos, clubes y organizaciones.",
       coverImageAlt: "Fede García — sitio personal",
     },
     mareboats: {
@@ -364,6 +380,14 @@ export const es = {
       tag: "WEB DESIGN",
       miniDescription:
         "Sitio web para Mareboats, empresa enfocada en experiencias náuticas y navegación.",
+      task:
+        "Diseñar la identidad visual y presencia digital de Mareboats, una empresa de tours privados en barco en Hvar. El objetivo era comunicar una experiencia clara, atractiva y confiable para turistas internacionales.",
+      idea:
+        "Construir la marca desde el destino y la experiencia. Mareboats debía transmitir verano, libertad y exclusividad, manteniendo una estética limpia y accesible para un público global.",
+      solution:
+        "Se desarrolló una identidad visual fresca y un sitio web optimizado para conversión. La estructura prioriza la claridad de las experiencias, imágenes impactantes y un flujo simple hacia la reserva.",
+      result:
+        "Mareboats cuenta ahora con una presencia digital alineada a su propuesta, facilitando la comunicación de sus tours y mejorando la experiencia de los usuarios interesados en reservar.",
       coverImageAlt: "Mareboats — web",
     },
     skyshot: {
@@ -372,6 +396,14 @@ export const es = {
       tag: "AERIAL MEDIA",
       miniDescription:
         "Proyecto de producción audiovisual aérea con drone para turismo, naturaleza y marcas.",
+      task:
+        "Desarrollar un sistema de producción audiovisual enfocado en deportes acuáticos, capaz de generar contenido de alta calidad para atletas, escuelas y marcas, optimizando tiempos de entrega y consistencia visual.",
+      idea:
+        "Pensar el contenido como producto, no solo como servicio. SkyShot se construye como un sistema que permite capturar, editar y entregar material de forma rápida, manteniendo calidad y coherencia visual.",
+      solution:
+        "Se diseñó un flujo de trabajo completo que integra captura con drone, edición optimizada y entrega en formatos listos para redes. El sistema permite producir contenido de forma eficiente y escalable en entornos dinámicos como el agua.",
+      result:
+        "SkyShot Lab valida un modelo de producción ágil y adaptable, permitiendo generar contenido atractivo para redes y clientes en tiempos reducidos, manteniendo calidad visual y consistencia.",
       coverImageAlt: "SkyShot — media aérea",
     },
     pancito: {
@@ -380,6 +412,14 @@ export const es = {
       tag: "BRANDING",
       miniDescription:
         "Identidad visual y presencia digital para Pancito, proyecto gastronómico artesanal.",
+      task:
+        "Desarrollar la identidad y presencia digital de El Pancito, un proyecto gastronómico enfocado en productos caseros. El objetivo era transmitir cercanía, simpleza y autenticidad.",
+      idea:
+        "Construir una marca cálida y accesible, evitando lo sofisticado. El Pancito debía sentirse cercano, real y cotidiano, reflejando el proceso artesanal y el vínculo directo con el producto.",
+      solution:
+        "Se desarrolló una identidad visual simple y coherente, acompañada de una presencia digital clara. El enfoque estuvo en resaltar el producto y facilitar la comunicación directa con los clientes.",
+      result:
+        "El Pancito cuenta ahora con una identidad clara y una presencia digital alineada a su esencia, permitiendo comunicar su propuesta de forma simple y generar conexión con sus clientes.",
       coverImageAlt: "Pancito — identidad",
     },
   },

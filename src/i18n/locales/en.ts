@@ -348,6 +348,14 @@ export const en = {
       tag: "BRANDING & WEB",
       miniDescription:
         "Brand identity and digital presence for DeltaRowling, a project connected to sport and water experiences.",
+      task:
+        "Design the visual identity and digital presence for DeltaRowling, a project focused on rowing experiences in natural environments. The goal was to create a clear and engaging brand that reflects both the sport and the landscape.",
+      idea:
+        "Build the brand around movement and environment. DeltaRowling needed to feel active, natural and direct, balancing physical intensity with the calm of the surroundings.",
+      solution:
+        "We developed a strong and flexible visual identity along with a clear and functional website. The structure prioritizes usability, making it easy to explore activities, access information and get in touch.",
+      result:
+        "DeltaRowling now has a clear brand and a digital presence aligned with its offering. The website helps communicate the experience effectively and makes it easy for new users to understand and engage.",
       coverImageAlt: "DeltaRowling — identity and digital presence",
     },
     "fede-garcia": {
@@ -356,6 +364,14 @@ export const en = {
       tag: "PERSONAL WEBSITE",
       miniDescription:
         "Personal website for Fede García showcasing his work and creative projects.",
+      task:
+        "Create a website that reflects Fede García’s professional trajectory as a sailing coach, organizing his experience, achievements and profile in a clear and accessible way.",
+      idea:
+        "Focus on clarity and credibility. The website needed to act as a professional tool, highlighting experience and career path without unnecessary elements.",
+      solution:
+        "A clean and structured website was developed, with emphasis on readability and content organization. The navigation allows users to quickly understand his profile and experience.",
+      result:
+        "Fede García now has a professional digital presence that clearly communicates his profile to teams, clubs and organizations.",
       coverImageAlt: "Fede García — personal site",
     },
     mareboats: {
@@ -364,6 +380,14 @@ export const en = {
       tag: "WEB DESIGN",
       miniDescription:
         "Website for Mareboats, a company focused on boating and nautical experiences.",
+      task:
+        "Design the visual identity and digital presence for Mareboats, a private boat tour company in Hvar. The goal was to create a clear, attractive and trustworthy experience for international visitors.",
+      idea:
+        "Build the brand around destination and experience. Mareboats needed to feel like summer, freedom and exclusivity, while remaining clean and accessible for a global audience.",
+      solution:
+        "A fresh visual identity and a conversion-focused website were developed. The structure highlights experiences, strong imagery and a simple path to booking.",
+      result:
+        "Mareboats now has a digital presence aligned with its offering, improving how tours are communicated and making it easier for users to book.",
       coverImageAlt: "Mareboats — web",
     },
     skyshot: {
@@ -372,6 +396,14 @@ export const en = {
       tag: "AERIAL MEDIA",
       miniDescription:
         "Aerial drone media project focused on tourism, nature and brand storytelling.",
+      task:
+        "Develop a production system focused on water sports, capable of delivering high-quality content for athletes, schools and brands, while optimizing workflow and consistency.",
+      idea:
+        "Treat content as a product, not just a service. SkyShot is built as a system that captures, edits and delivers content efficiently without compromising quality.",
+      solution:
+        "A complete workflow was designed, integrating drone capture, optimized editing and delivery in social-ready formats. The system enables efficient and scalable content production in dynamic environments.",
+      result:
+        "SkyShot Lab validates a fast and adaptable production model, delivering high-quality content in short timeframes while maintaining visual consistency.",
       coverImageAlt: "SkyShot — aerial media",
     },
     pancito: {
@@ -380,6 +412,14 @@ export const en = {
       tag: "BRANDING",
       miniDescription:
         "Brand identity and digital presence for Pancito, an artisanal food project.",
+      task:
+        "Develop the identity and digital presence for El Pancito, a homemade food project. The goal was to communicate warmth, simplicity and authenticity.",
+      idea:
+        "Build a warm and approachable brand, avoiding anything overly polished. El Pancito needed to feel real, everyday and connected to the product itself.",
+      solution:
+        "A simple and consistent visual identity was created, along with a clear digital presence. The focus was on highlighting the product and enabling direct communication with customers.",
+      result:
+        "El Pancito now has a clear identity and a digital presence aligned with its essence, helping communicate its offering and connect with customers in a natural way.",
       coverImageAlt: "Pancito — identity",
     },
   },

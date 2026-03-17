@@ -180,6 +180,8 @@ const ProjectCase = () => {
                 href={project.externalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => console.log("visit_project_click", project.id)}
+                aria-label={`Visit ${project.id} website`}
                 className="inline-flex items-center justify-center px-6 py-2 mt-6 rounded-full bg-primary text-black font-medium text-sm hover:opacity-90 transition"
               >
                 visitar web

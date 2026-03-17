@@ -100,6 +100,7 @@ export const projectsData: Project[] = [
     seoTitle: "Nude Case Study — Kosmos Studio",
     seoDescription: "Brand and web redesign for a natural skincare brand.",
     seoImage: nudeImage,
+    externalUrl: "https://nudecosmetica.com/",
   },
   // External portfolio projects (externalUrl links to live site)
   {
@@ -109,7 +110,7 @@ export const projectsData: Project[] = [
     seoTitle: "Calmo — Branding & Web | Kosmos Studio",
     seoDescription: "Visual identity and website for Calmo, a project focused on wellbeing and calm experiences.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: " http://calmo.fit/",
+    externalUrl: "http://calmo.fit/",
   },
   {
     id: "ehtexperience",

@@ -314,10 +314,18 @@ export const en = {
     calmo: {
       title: "Calmo",
       type: "Branding · Web",
-      tag: "BRANDING & WEB",
+      tag: "Branding & Web",
       miniDescription:
-        "Visual identity and website for Calmo, a project focused on wellbeing and calm experiences.",
-      coverImageAlt: "Calmo — identity and web",
+        "Brand identity and website for a wellbeing-focused brand built around calm, clarity and intentional experiences.",
+      task:
+        "Create the visual identity and digital presence for Calmo, a brand focused on wellbeing and intentional experiences. The goal was to build a clear, consistent and emotionally driven brand from the ground up.",
+      idea:
+        "Design from feeling, not decoration. Calmo needed to feel light, simple and human, avoiding visual noise and focusing on rhythm, spacing and clarity.",
+      solution:
+        "We created a minimal visual identity with a soft color palette and a clean typographic system. The website was designed to feel calm and intuitive, with a clear structure and content that breathes.",
+      result:
+        "A clear and consistent brand that communicates its value without friction. Calmo now has a digital presence that reflects its purpose and builds trust from the first interaction.",
+      coverImageAlt: "Calmo — cover",
     },
     ehtexperience: {
       title: "EHTperience",

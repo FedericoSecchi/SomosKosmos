@@ -314,10 +314,18 @@ export const es = {
     calmo: {
       title: "Calmo",
       type: "Branding · Web",
-      tag: "BRANDING & WEB",
+      tag: "Branding & Web",
       miniDescription:
-        "Identidad visual y sitio web para Calmo, proyecto centrado en bienestar y experiencias de calma.",
-      coverImageAlt: "Calmo — identidad y web",
+        "Identidad y sitio web para una marca enfocada en bienestar, calma y experiencias conscientes.",
+      task:
+        "Crear la identidad visual y presencia digital de Calmo, una marca orientada al bienestar y las experiencias conscientes. El objetivo era construir una imagen clara, coherente y emocional que transmitiera calma desde el primer contacto.",
+      idea:
+        "Trabajar la marca desde la sensación, no desde la estética. Calmo debía sentirse simple, liviana y cercana, evitando ruido visual y priorizando espacios, ritmo y claridad. La identidad debía acompañar la experiencia, no competir con ella.",
+      solution:
+        "Diseñamos una identidad visual minimalista, con una paleta suave y un sistema tipográfico limpio que refuerza la sensación de calma. Desarrollamos un sitio web claro y directo, donde el contenido respira y la navegación acompaña el ritmo de la marca.",
+      result:
+        "El resultado es una marca coherente y reconocible, con una presencia digital alineada a su propuesta: simple, clara y enfocada en la experiencia. Calmo logra comunicar su valor sin fricción, generando confianza desde el primer contacto.",
+      coverImageAlt: "Calmo — cover",
     },
     ehtexperience: {
       title: "EHTperience",

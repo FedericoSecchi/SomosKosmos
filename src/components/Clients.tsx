@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { brandsData } from "@/data/brands";
 import { useI18n } from "@/i18n/context";
 
@@ -5,6 +6,20 @@ const Clients = () => {
   const { t } = useI18n();
   // Duplicate brands for seamless marquee
   const marqueeBrands = [...brandsData, ...brandsData, ...brandsData];
+
+  const brandToProjectSlug: Record<string, string | undefined> = {
+    "security-alliance": "security-alliance",
+    "the-red-guild": "the-red-guild",
+    orbita: "orbita",
+    nude: "nude",
+    calmo: "calmo",
+    ehtexperience: "ehtexperience",
+    deltarowling: "deltarowling",
+    "fede-garcia": "fede-garcia",
+    mareboats: "mareboats",
+    skyshot: "skyshot",
+    pancito: "pancito",
+  };
 
   return (
     <section
@@ -38,9 +53,20 @@ const Clients = () => {
                   />
                 ) : (
                   <div className="text-center">
-                    <h3 className="font-display text-lg lg:text-xl font-semibold text-muted-foreground group-hover:text-primary transition-colors">
-                      {t(`brands.${brand.id}`)}
-                    </h3>
+                    {brandToProjectSlug[brand.id] ? (
+                      <Link
+                        to={`/project/${brandToProjectSlug[brand.id]}`}
+                        className="block"
+                      >
+                        <h3 className="font-display text-lg lg:text-xl font-semibold text-muted-foreground group-hover:text-primary transition-colors">
+                          {t(`brands.${brand.id}`)}
+                        </h3>
+                      </Link>
+                    ) : (
+                      <h3 className="font-display text-lg lg:text-xl font-semibold text-muted-foreground group-hover:text-primary transition-colors">
+                        {t(`brands.${brand.id}`)}
+                      </h3>
+                    )}
                   </div>
                 )}
               </div>

@@ -49,7 +49,7 @@ export const projectsData: Project[] = [
     seoTitle: "Security Alliance Branding Case Study — Kosmos Studio",
     seoDescription: "Brand identity and modular design system created for a global crypto security alliance.",
     seoImage: securityAllianceImage,
-    externalUrl: "https://securityalliance.org",
+    externalUrl: "https://securityalliance.org/",
   },
   {
     id: "the-red-guild",
@@ -67,6 +67,7 @@ export const projectsData: Project[] = [
     seoTitle: "The Red Guild Branding & Web — Kosmos Studio",
     seoDescription: "Visual identity and web experience for The Red Guild.",
     seoImage: theRedGuildImage,
+    externalUrl: "https://theredguild.org/",
   },
   {
     id: "orbita",
@@ -108,7 +109,7 @@ export const projectsData: Project[] = [
     seoTitle: "Calmo — Branding & Web | Kosmos Studio",
     seoDescription: "Visual identity and website for Calmo, a project focused on wellbeing and calm experiences.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "https://calmo.fit",
+    externalUrl: " http://calmo.fit/",
   },
   {
     id: "ehtexperience",
@@ -117,7 +118,7 @@ export const projectsData: Project[] = [
     seoTitle: "EHTperience — Web Design | Kosmos Studio",
     seoDescription: "Website design and development for EHTperience, a platform focused on tech experiences and events.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "https://ethperience.com",
+    externalUrl: "http://ethperience.com/",
   },
   {
     id: "deltarowling",
@@ -126,7 +127,7 @@ export const projectsData: Project[] = [
     seoTitle: "DeltaRowling — Branding & Web | Kosmos Studio",
     seoDescription: "Brand identity and digital presence for DeltaRowling, a project connected to sport and water experiences.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "https://deltarowingadventure.com",
+    externalUrl: "https://deltarowingadventure.com/",
   },
   {
     id: "fede-garcia",
@@ -135,7 +136,7 @@ export const projectsData: Project[] = [
     seoTitle: "Fede García — Personal Website | Kosmos Studio",
     seoDescription: "Personal website for Fede García showcasing his work and creative projects.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "#",
+    externalUrl: "https://www.fedegarcia.com/",
   },
   {
     id: "mareboats",
@@ -144,7 +145,7 @@ export const projectsData: Project[] = [
     seoTitle: "Mareboats — Web Design | Kosmos Studio",
     seoDescription: "Website for Mareboats, a company focused on boating and nautical experiences.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "https://mareboats.com",
+    externalUrl: "https://mareboatshvar.com/",
   },
   {
     id: "skyshot",
@@ -153,7 +154,7 @@ export const projectsData: Project[] = [
     seoTitle: "SkyShot — Aerial Media | Kosmos Studio",
     seoDescription: "Aerial drone media project focused on tourism, nature and brand storytelling.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "https://skyshotlab.com",
+    externalUrl: "http://skyshot.space/",
   },
   {
     id: "pancito",
@@ -162,7 +163,7 @@ export const projectsData: Project[] = [
     seoTitle: "Pancito — Branding | Kosmos Studio",
     seoDescription: "Brand identity and digital presence for Pancito, an artisanal food project.",
     seoImage: "/branding/og-image.jpg",
-    externalUrl: "#",
+    externalUrl: "https://pancito.shop/",
   },
 ];
 

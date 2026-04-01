@@ -89,6 +89,7 @@ const ProjectCase = () => {
     tags: projectTag,
     topic: isTopicPage ? topic : undefined,
     mainEntityOfPage: isTopicPage ? `${SITE_URL}/project/${project.id}` : undefined,
+    datePublished: project.datePublished,
   });
 
   const breadcrumbListJsonLd = generateBreadcrumbSchema({
@@ -108,6 +109,16 @@ const ProjectCase = () => {
   );
 
   const keywordsContent = [projectTag, "case study", "branding", "Kosmos Studio"].join(", ");
+  const GALLERY_ALT_LABELS = [
+    "brand identity system",
+    "visual language and typography",
+    "color palette and design elements",
+    "design system overview",
+    "brand application and mockups",
+    "final brand deliverables",
+  ];
+  const galleryAlt = (index: number) =>
+    `${projectTitle} — ${GALLERY_ALT_LABELS[index] ?? `detail ${index + 1}`} by Kosmos Studio`;
   const SEO_LINK_TEXT: Record<string, string> = {
     "security-alliance": "Security Alliance",
     "the-red-guild": "The Red Guild",
@@ -231,7 +242,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[0]}
-                    alt={`${projectTitle} — image 1`}
+                    alt={galleryAlt(0)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -243,19 +254,19 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden grid grid-cols-1 gap-0">
                   <img
                     src={galleries[0]}
-                    alt={`${projectTitle} — image 1`}
+                    alt={galleryAlt(0)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                   <img
                     src={galleries[1]}
-                    alt={`${projectTitle} — image 2`}
+                    alt={galleryAlt(1)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
                   <img
                     src={galleries[2]}
-                    alt={`${projectTitle} — image 3`}
+                    alt={galleryAlt(2)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -294,7 +305,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[1]}
-                    alt={`${projectTitle} — image 2`}
+                    alt={galleryAlt(1)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -306,7 +317,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${projectTitle} — image 4`}
+                    alt={galleryAlt(3)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -318,7 +329,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[2]}
-                    alt={`${projectTitle} — image 3`}
+                    alt={galleryAlt(2)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -366,7 +377,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[3]}
-                    alt={`${projectTitle} — image 4`}
+                    alt={galleryAlt(3)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -378,7 +389,7 @@ const ProjectCase = () => {
                 <div className="w-full overflow-hidden">
                   <img
                     src={galleries[4]}
-                    alt={`${projectTitle} — image 5`}
+                    alt={galleryAlt(4)}
                     className="w-full h-auto object-cover block"
                     loading="lazy"
                   />
@@ -397,7 +408,7 @@ const ProjectCase = () => {
               <figure className="mt-12 lg:mt-20 w-full overflow-hidden">
                 <img
                   src={galleries[2]}
-                  alt={`${projectTitle} — image 3`}
+                  alt={galleryAlt(2)}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
@@ -407,7 +418,7 @@ const ProjectCase = () => {
               <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[3]}
-                  alt={`${projectTitle} — image 4`}
+                  alt={galleryAlt(3)}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
@@ -417,7 +428,7 @@ const ProjectCase = () => {
               <figure className="w-full overflow-hidden">
                 <img
                   src={galleries[4]}
-                  alt={`${projectTitle} — image 5`}
+                  alt={galleryAlt(4)}
                   className="w-full h-auto object-cover block"
                   loading="lazy"
                 />
@@ -451,7 +462,7 @@ const ProjectCase = () => {
           <div className="w-full overflow-hidden mt-12 lg:mt-20">
             <img
               src={galleries[5]}
-              alt={`${projectTitle} — image 6`}
+              alt={galleryAlt(5)}
               className="w-full h-auto object-cover block"
               loading="lazy"
             />
@@ -480,7 +491,7 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} — image 1`}
+                alt={galleryAlt(0)}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
@@ -490,7 +501,7 @@ const ProjectCase = () => {
             <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} — image 2`}
+                alt={galleryAlt(1)}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
@@ -498,7 +509,7 @@ const ProjectCase = () => {
             <figure className="relative aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} — image 3`}
+                alt={galleryAlt(2)}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />
@@ -508,7 +519,7 @@ const ProjectCase = () => {
             <div className="relative w-full aspect-[2560/1400] overflow-hidden">
               <img
                 src={project.image}
-                alt={`${projectTitle} — image 4`}
+                alt={galleryAlt(3)}
                 className="w-full h-full object-cover block"
                 loading="lazy"
               />

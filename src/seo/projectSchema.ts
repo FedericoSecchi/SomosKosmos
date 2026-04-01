@@ -15,6 +15,8 @@ export interface ProjectSchemaInput {
   topic?: string;
   /** For topic pages: parent project URL as mainEntityOfPage */
   mainEntityOfPage?: string;
+  /** ISO date string when the project was published (e.g. "2024-06-01") */
+  datePublished?: string;
 }
 
 /**
@@ -50,7 +52,7 @@ export function generateProjectSchema(project: ProjectSchemaInput) {
       "@type": "Organization",
       name: "Kosmos Studio",
     },
-    datePublished: "2024-01-01",
+    datePublished: project.datePublished ?? "2024-01-01",
     publisher: {
       "@type": "Organization",
       name: "Kosmos Studio",

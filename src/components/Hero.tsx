@@ -86,6 +86,8 @@ const Hero = () => {
                 src={heroImage1}
                 alt={t("hero.collageAlt1")}
                 className="w-full h-full object-cover"
+                fetchPriority="high"
+                loading="eager"
               />
             </div>
 

@@ -2,6 +2,7 @@ import BackButton from "@/components/BackButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/seo/SEO";
+import { Helmet } from "react-helmet-async";
 import { useI18n } from "@/i18n/context";
 
 const SITE_URL = "https://somoskosmos.com";
@@ -17,6 +18,9 @@ const Brief = () => {
         url={`${SITE_URL}/brief`}
         type="website"
       />
+      <Helmet>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <Header />
       <main className="pt-24 pb-16 lg:pt-32 lg:pb-24">
         <section className="section-container">

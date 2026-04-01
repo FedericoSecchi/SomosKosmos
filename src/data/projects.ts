@@ -35,6 +35,8 @@ export interface Project {
   seoDescription?: string;
   /** SEO: absolute or path for og:image (defaults to project image) */
   seoImage?: string;
+  /** SEO: ISO date string when the project was published (e.g. "2024-03-15") */
+  datePublished?: string;
   /** When set, project is external: card and case page link to this URL instead of internal case study */
   externalUrl?: string;
 }
@@ -49,6 +51,7 @@ export const projectsData: Project[] = [
     seoTitle: "Security Alliance Branding Case Study — Kosmos Studio",
     seoDescription: "Brand identity and modular design system created for a global crypto security alliance.",
     seoImage: securityAllianceImage,
+    datePublished: "2024-06-01",
     externalUrl: "https://securityalliance.org/",
   },
   {
@@ -67,6 +70,7 @@ export const projectsData: Project[] = [
     seoTitle: "The Red Guild Branding & Web — Kosmos Studio",
     seoDescription: "Visual identity and web experience for The Red Guild.",
     seoImage: theRedGuildImage,
+    datePublished: "2024-08-01",
     externalUrl: "https://theredguild.org/",
   },
   {
@@ -85,6 +89,7 @@ export const projectsData: Project[] = [
     seoTitle: "Orbita Case Study — Kosmos Studio",
     seoDescription: "Brand and digital experience for Orbita.",
     seoImage: orbitaImage,
+    datePublished: "2024-10-01",
   },
   {
     id: "nude",
@@ -93,13 +98,14 @@ export const projectsData: Project[] = [
     layout: "premium",
     galleries: [
       nudeGallery1,
-      nudeGallery1,
-      nudeGallery1,
+      nudeGallery2,
+      nudeGallery2,
       nudeGallery2,
     ],
     seoTitle: "Nude Case Study — Kosmos Studio",
     seoDescription: "Brand and web redesign for a natural skincare brand.",
     seoImage: nudeImage,
+    datePublished: "2025-01-01",
     externalUrl: "https://nudecosmetica.com/",
   },
   // External portfolio projects (externalUrl links to live site)

@@ -21,6 +21,15 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: "dist",
       assetsDir: "assets",
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            "vendor-react": ["react", "react-dom", "react-router-dom"],
+            "vendor-ui": ["@radix-ui/react-tooltip", "react-helmet-async"],
+            "vendor-gsap": ["gsap"],
+          },
+        },
+      },
     },
   };
 });

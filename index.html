@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
-    <title>Kosmos Studio — Branding, Web Design & Creative Systems</title>
-    <meta name="description" content="Kosmos Studio builds branding systems, digital identities and web experiences for ambitious teams." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Kosmos Studio — Branding, Diseño Web y Sistemas Creativos</title>
+    <meta name="description" content="Kosmos Studio construye sistemas de branding, identidades digitales y experiencias web para equipos ambiciosos." />
     <meta name="author" content="Kosmos Studio" />
-    <meta name="keywords" content="branding, web design, creative agency, visual identity, websites, digital content, kosmos studio" />
+    <meta name="keywords" content="branding, diseño web, agencia creativa, identidad visual, websites, contenido digital, kosmos studio" />
 
     <link rel="canonical" href="https://somoskosmos.com/" />
     <link rel="icon" type="image/png" href="/branding/favicon.png" />
@@ -15,17 +16,27 @@
     <link rel="apple-touch-icon" href="/branding/logo-light.png" />
     <link rel="manifest" href="/manifest.json" />
 
+    <!-- Hreflang for bilingual targeting -->
+    <link rel="alternate" hreflang="es" href="https://somoskosmos.com/" />
+    <link rel="alternate" hreflang="en" href="https://somoskosmos.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://somoskosmos.com/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Kosmos Studio" />
-    <meta property="og:description" content="Creative studio focused on branding, digital design and visual systems." />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="Kosmos Studio" />
+    <meta property="og:title" content="Kosmos Studio — Branding &amp; Diseño Web" />
+    <meta property="og:description" content="Estudio creativo especializado en branding, identidad digital y sistemas visuales para marcas ambiciosas." />
     <meta property="og:image" content="https://somoskosmos.com/branding/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://somoskosmos.com" />
+    <meta property="og:image:alt" content="Kosmos Studio — Branding &amp; Diseño Web" />
+    <meta property="og:url" content="https://somoskosmos.com/" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kosmos Studio" />
-    <meta name="twitter:description" content="Creative studio focused on branding, digital design and visual systems." />
+    <meta name="twitter:site" content="@kosmostudio" />
+    <meta name="twitter:title" content="Kosmos Studio — Branding &amp; Diseño Web" />
+    <meta name="twitter:description" content="Estudio creativo especializado en branding, identidad digital y sistemas visuales." />
     <meta name="twitter:image" content="https://somoskosmos.com/branding/og-image.jpg" />
 
     <script type="application/ld+json">
@@ -35,16 +46,18 @@
       "name": "Kosmos Studio",
       "url": "https://somoskosmos.com",
       "logo": "https://somoskosmos.com/branding/logo-light.png",
-      "sameAs": [
-        "https://instagram.com/",
-        "https://linkedin.com/"
-      ]
+      "description": "Estudio creativo especializado en branding, identidad digital y experiencias web.",
+      "foundingDate": "2022",
+      "areaServed": "Worldwide",
+      "serviceType": ["Branding", "Web Design", "Visual Identity", "Design Systems"]
     }
     </script>
 
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Note: LCP hero image fetchpriority is set directly in Hero component -->
   </head>
 
   <body>

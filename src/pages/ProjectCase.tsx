@@ -119,6 +119,9 @@ const ProjectCase = () => {
   ];
   const galleryAlt = (index: number) =>
     `${projectTitle} — ${GALLERY_ALT_LABELS[index] ?? `detail ${index + 1}`} by Kosmos Studio`;
+  // External-only projects (no gallery content) should not be indexed
+  const isExternalOnly = Boolean(project.externalUrl) && galleries.length === 0;
+
   const SEO_LINK_TEXT: Record<string, string> = {
     "security-alliance": "Security Alliance",
     "the-red-guild": "The Red Guild",
@@ -136,6 +139,7 @@ const ProjectCase = () => {
         type="article"
       />
       <Helmet>
+        {isExternalOnly && <meta name="robots" content="noindex, follow" />}
         <meta name="keywords" content={[projectTag, "case study", "branding", "Kosmos Studio"].join(", ")} />
         <script type="application/ld+json">
           {JSON.stringify(creativeWorkJsonLd)}

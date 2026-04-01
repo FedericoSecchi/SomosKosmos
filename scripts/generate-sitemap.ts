@@ -1,18 +1,25 @@
 /**
- * Generates sitemap.xml with all project and topic pages.
+ * Generates sitemap.xml with only high-value, indexable pages.
+ *
+ * Excluded intentionally:
+ *   - /brief: noindexed contact form
+ *   - /project/:id/:keyword: 220 thin programmatic pages (noindexed)
+ *   - external-only projects (no gallery content, noindexed)
+ *
  * Run before build: npx tsx scripts/generate-sitemap.ts
  */
 import { writeFileSync } from "fs";
 import { resolve } from "path";
-import { projectIds } from "../src/data/projectIds";
 import { projectTopics } from "../src/seo/projectTopics";
 import { programmaticTopics } from "../src/seo/programmaticTopics";
-import { seoKeywords } from "../src/seo/seoKeywords";
 
 const SITE_URL = "https://somoskosmos.com";
 const BUILD_DATE = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
 
 const SERVICE_SLUGS = ["branding", "websites", "content-motion", "systems-automation"];
+
+// Only premium projects with real gallery content
+const PREMIUM_PROJECT_IDS = ["security-alliance", "the-red-guild", "orbita", "nude"];
 
 interface SitemapEntry {
   url: string;
@@ -22,31 +29,27 @@ interface SitemapEntry {
 
 const entries: SitemapEntry[] = [];
 
-// Home — highest priority
+// Home
 entries.push({ url: SITE_URL + "/", priority: "1.0", changefreq: "weekly" });
 
-// Service pages — high priority
+// Service pages
 SERVICE_SLUGS.forEach((slug) => {
   entries.push({ url: `${SITE_URL}/services/${slug}`, priority: "0.9", changefreq: "monthly" });
 });
 
-// Topic landing pages — high priority
+// Topic landing pages (keyword-targeted, distinct from service pages)
 programmaticTopics.forEach((topic) => {
   entries.push({ url: `${SITE_URL}/topic/${topic.slug}`, priority: "0.8", changefreq: "monthly" });
 });
 
-// Project case study pages — high priority
-projectIds.forEach((projectId) => {
+// Premium project case study pages only
+PREMIUM_PROJECT_IDS.forEach((projectId) => {
   entries.push({ url: `${SITE_URL}/project/${projectId}`, priority: "0.8", changefreq: "monthly" });
+  // Topic variants for premium projects (branding, design-system, etc.)
   projectTopics.forEach((topic) => {
     entries.push({ url: `${SITE_URL}/project/${projectId}/${topic}`, priority: "0.6", changefreq: "monthly" });
   });
-  seoKeywords.forEach((keyword) => {
-    entries.push({ url: `${SITE_URL}/project/${projectId}/${keyword}`, priority: "0.5", changefreq: "monthly" });
-  });
 });
-
-// Note: /brief is intentionally excluded (noindexed contact form)
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

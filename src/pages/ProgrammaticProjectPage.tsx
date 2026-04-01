@@ -42,6 +42,8 @@ const ProgrammaticProjectPage = () => {
         type="article"
       />
       <Helmet>
+        {/* Programmatic keyword pages are thin content — keep for internal linking only */}
+        <meta name="robots" content="noindex, follow" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

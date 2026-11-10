@@ -21,7 +21,6 @@ export function Hero({
 }) {
   return (
     <section className="relative overflow-hidden border-b border-line" data-hero>
-      <div aria-hidden="true" className="absolute inset-0 grid-lines opacity-50" />
       <div className="container relative py-16 md:py-28">
         <div className="flex flex-col gap-6 max-w-4xl">
           <span className="eyebrow">

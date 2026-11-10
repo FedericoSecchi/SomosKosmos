@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { KStar } from './KStar';
+import { Logo } from './Logo';
 import type { Locale } from '@/lib/site';
 import { pathFor } from '@/lib/urls';
 
@@ -30,9 +30,8 @@ export function Header({ locale }: { locale: Locale }) {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/90 backdrop-blur">
       <div className="container flex items-center justify-between py-4">
-        <Link href={home} className="flex items-center gap-2 text-fg hover:text-accent transition-colors">
-          <KStar className="w-6 h-6 text-accent" />
-          <span className="font-display font-bold uppercase tracking-wide text-lg">{locale === 'es' ? 'Somos Kosmos' : 'Somos Kosmos'}</span>
+        <Link href={home} className="flex items-center opacity-100 hover:opacity-80 transition-opacity">
+          <Logo height={36} />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-display font-bold uppercase tracking-wide">
           <Link href={pathFor(locale, ['services', 'websites'])} className="hover:text-accent transition-colors">

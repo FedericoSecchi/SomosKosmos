@@ -19,7 +19,6 @@ export function ProjectHero({
   const servicesLabel = project.services.join(' · ');
   return (
     <section className="relative overflow-hidden border-b border-line" data-hero>
-      <div aria-hidden="true" className="absolute inset-0 grid-lines opacity-40" />
       <div className="container relative py-16 md:py-24 grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-end">
         <div className="flex flex-col gap-5">
           <span className="eyebrow">{servicesLabel}</span>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { KStar } from './KStar';
+import { Logo } from './Logo';
 import { SITE, type Locale } from '@/lib/site';
 import { pathFor } from '@/lib/urls';
 
@@ -40,9 +40,8 @@ export function Footer({ locale }: { locale: Locale }) {
     <footer className="border-t border-line mt-16">
       <div className="container py-12 grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <KStar className="w-5 h-5 text-accent" />
-            <span className="font-display font-bold uppercase tracking-wide">Somos Kosmos</span>
+          <div className="mb-4">
+            <Logo height={32} />
           </div>
           <p className="text-fg-muted text-sm max-w-xs">{c.legal}</p>
           <p className="text-fg-muted text-sm mt-4">

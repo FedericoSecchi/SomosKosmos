@@ -14,7 +14,15 @@
 
 @layer base {
   html { -webkit-text-size-adjust: 100%; }
-  body { @apply bg-bg text-fg font-body; line-height: 1.7; }
+  /* Grilla fina de la identidad (00-contexto § Identidad visual) como fondo de todo el sitio. */
+  body {
+    @apply bg-bg text-fg font-body;
+    line-height: 1.7;
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
   h1, h2, h3, h4 { @apply font-display; line-height: 1.05; letter-spacing: -0.02em; font-weight: 700; }
   :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
   ::selection { background: var(--color-accent); color: #111; }

@@ -66,7 +66,6 @@ export default function BriefPage() {
       <Header locale={LOCALE} />
       <main>
         <section className="relative overflow-hidden border-b border-line" data-hero>
-          <div aria-hidden="true" className="absolute inset-0 grid-lines opacity-50" />
           <div className="container relative py-16 md:py-24">
             <div className="flex flex-col gap-6 max-w-3xl">
               <span className="eyebrow"><KStar className="w-3 h-3" /> Iniciar un proyecto</span>

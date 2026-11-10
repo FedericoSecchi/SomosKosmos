@@ -7,25 +7,47 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# dependencies
 node_modules
 node_modules 2
+.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# vite legacy
 dist
 dist-ssr
 .vite
+
+# testing
+/coverage
+
+# misc
+.DS_Store
 *.local
 
-# Environment
+# env
 .env
 .env.local
 .env.*.local
 
-# Editor directories and files
+# editor
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# os
+*.pem
+
+# claude local permissions (not committed)
+.claude/settings.local.json

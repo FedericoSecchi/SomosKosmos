@@ -47,7 +47,7 @@ const FAQ = [
   },
   {
     q: '¿Hacen las automatizaciones con n8n o con otra herramienta?',
-    a: 'Los flujos los armamos en n8n y los bots, sobre WhatsApp. Para cada integración usamos lo que pida el proyecto. [CONFIRMAR: otras herramientas que usan habitualmente]',
+    a: 'Los flujos los armamos en n8n y los bots, sobre WhatsApp.',
   },
   {
     q: '¿Después se puede cambiar?',
@@ -104,7 +104,6 @@ export default function Page() {
             'Carga de datos de redes/formularios al CRM.',
             'Sistemas de diseño para que las piezas salgan iguales.',
           ]}
-          note="Casos puntuales (ejemplos propios) se agregan acá cuando el cliente autoriza mostrarlos [CONFIRMAR: ejemplo publicable]."
         />
         <Process
           locale={LOCALE}
@@ -114,7 +113,7 @@ export default function Page() {
             { title: '01 · Mapeo', text: 'Vemos qué hacés hoy a mano y por dónde se pierde tiempo.' },
             { title: '02 · Primer flujo', text: 'Armamos el flujo que más tiempo te ahorra y lo activamos.' },
             { title: '03 · Pruebas', text: 'Lo probamos y ajustamos.' },
-            { title: '04 · Entrega', text: 'Traspaso al equipo. [CONFIRMAR: qué se entrega al final]' },
+            { title: '04 · Entrega', text: 'Traspaso al equipo.' },
           ]}
           closing="Menos drama. Más progreso."
         />

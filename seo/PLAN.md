@@ -181,7 +181,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 | Link de Calendly (evento de 20 min) | CTA principal | ✅ creado 26/10/2026 |
 | Precio "desde" por servicio (ARS y USD) | — | ❌ descartado: se cotiza por alcance en la primera llamada (Fede, 10/11/2026) |
 | Alcance de Sistemas & Automatizaciones | `/services/systems-automation` | ✅ "hacemos todo" (Fede, 26/10) |
-| Ejemplo concreto de automatización publicable | `/services/systems-automation` | pendiente |
+| Ejemplo concreto de automatización publicable | `/services/systems-automation` | pendiente; mientras tanto la frase se borró de la web (10/11/2026) |
 | Ciudad publicable | schema, footer | pendiente |
 | 3–5 testimonios con nombre | home, servicios | pendiente |
 | Fotos reales de equipo y proceso | home (hero, equipo) | pendiente |

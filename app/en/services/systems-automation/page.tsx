@@ -47,7 +47,7 @@ const FAQ = [
   },
   {
     q: 'Do you use n8n or something else?',
-    a: 'We build flows in n8n and bots on WhatsApp. For each integration we use whatever the project needs. [CONFIRMAR: other tools you use regularly]',
+    a: 'We build flows in n8n and bots on WhatsApp.',
   },
   {
     q: 'Can it be changed later?',
@@ -104,7 +104,6 @@ export default function Page() {
             'Social/form data pushed into your CRM.',
             'Design systems so every piece ships consistently.',
           ]}
-          note="Specific case studies (our own) are added here when a client authorizes showing them [CONFIRMAR: publishable example]."
         />
         <Process
           locale={LOCALE}
@@ -114,7 +113,7 @@ export default function Page() {
             { title: '01 · Mapping', text: 'See what you do by hand today and where time is lost.' },
             { title: '02 · First flow', text: 'Build the flow that saves you the most time and turn it on.' },
             { title: '03 · Testing', text: 'We test it and adjust.' },
-            { title: '04 · Handoff', text: 'Handover to your team. [CONFIRMAR: what is delivered at the end]' },
+            { title: '04 · Handoff', text: 'Handover to your team.' },
           ]}
           closing="Less drama. More progress."
         />

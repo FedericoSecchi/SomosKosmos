@@ -19,7 +19,7 @@ export const SITE = {
   // Hasta confirmar ciudad: áreas de servicio en texto.
   areaServed: ['Argentina', 'Remote'],
 
-  // [CONFIRMAR: Instagram, LinkedIn, Behance reales].
+  // Perfiles sociales: vacío hasta tener los links reales.
   sameAs: [] as string[],
 } as const;
 

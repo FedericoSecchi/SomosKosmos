@@ -43,10 +43,6 @@ const FAQ = [
     a: 'An identity system: logo, typography, color palette and a brand guide with real-use rules, so anyone on your team (or a vendor) uses the brand the same way. [CONFIRMAR: additional pieces included]',
   },
   {
-    q: 'How long does a branding process take?',
-    a: '[CONFIRMAR: typical timing]. It depends on the number of touchpoints and feedback speed. We work in 2–3 rounds per deliverable to avoid dragging it on forever.',
-  },
-  {
     q: 'Do you do rebranding if I already have a brand?',
     a: "Yes. It's different from starting from scratch: part of the value is deciding what to keep and what to change without losing recognition. Nude is an example: brand and web redesign for a natural skincare brand.",
   },

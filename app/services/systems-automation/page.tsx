@@ -113,7 +113,7 @@ export default function Page() {
           steps={[
             { title: '01 · Mapeo', text: 'Vemos qué hacés hoy a mano y por dónde se pierde tiempo.' },
             { title: '02 · Primer flujo', text: 'Armamos el flujo que más tiempo te ahorra y lo activamos.' },
-            { title: '03 · Pruebas', text: 'Lo probamos y ajustamos. [CONFIRMAR: duración de la etapa de pruebas]' },
+            { title: '03 · Pruebas', text: 'Lo probamos y ajustamos.' },
             { title: '04 · Entrega', text: 'Traspaso al equipo. [CONFIRMAR: qué se entrega al final]' },
           ]}
           closing="Menos drama. Más progreso."

@@ -113,7 +113,7 @@ export default function Page() {
           steps={[
             { title: '01 · Mapping', text: 'See what you do by hand today and where time is lost.' },
             { title: '02 · First flow', text: 'Build the flow that saves you the most time and turn it on.' },
-            { title: '03 · Testing', text: 'We test it and adjust. [CONFIRMAR: length of the testing stage]' },
+            { title: '03 · Testing', text: 'We test it and adjust.' },
             { title: '04 · Handoff', text: 'Handover to your team. [CONFIRMAR: what is delivered at the end]' },
           ]}
           closing="Less drama. More progress."

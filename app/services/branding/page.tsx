@@ -43,10 +43,6 @@ const FAQ = [
     a: 'Un sistema de identidad: logo, tipografía, paleta de color y una guía de marca con reglas de uso real, para que cualquier persona del equipo (o un proveedor) use la marca igual. [CONFIRMAR: piezas adicionales incluidas]',
   },
   {
-    q: '¿Cuánto tarda un proceso de branding?',
-    a: '[CONFIRMAR: tiempo típico]. Depende de la cantidad de puntos de contacto y de la velocidad de feedback. Hacemos 2–3 rondas por entregable para evitar que se eternice.',
-  },
-  {
     q: '¿Hacen rebranding de una empresa que ya tiene marca?',
     a: 'Sí. Es un trabajo distinto al de empezar de cero: parte del valor es decidir qué conservar y qué cambiar sin perder reconocimiento. Nude es un ejemplo: rediseño de marca y web para una marca natural de cuidado de la piel.',
   },

@@ -22,7 +22,7 @@ const config: Config = {
         body: ['var(--font-body)', 'sans-serif'],
       },
       fontSize: {
-        hero: ['clamp(2.75rem, 9vw, 7.5rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
+        hero: ['clamp(2.125rem, 8vw, 7.5rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
       },
       borderRadius: { sm: '0.25rem', md: '0.5rem', lg: '1rem' },
       spacing: { section: '5rem' },

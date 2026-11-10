@@ -189,7 +189,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 | Nombre exacto "DeltaRowing" | caso | pendiente |
 | Links de Instagram, LinkedIn, Behance | footer, schema `sameAs` | pendiente |
 | Mostrar equipo con nombres | home | pendiente |
-| Texto de privacidad | /privacidad | pendiente |
+| Texto de privacidad | /privacidad | ✅ responsable "Somos Kosmos", contacto hello@somoskosmos.com; solo Calendly y email; sin analítica (Fede, 10/11/2026) |
 | Propiedad de GA4 | medición | pendiente |
 
 ## 10. Criterios de terminado

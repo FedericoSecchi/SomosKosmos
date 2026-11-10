@@ -33,3 +33,35 @@ links a `#`, links internos rotos, sitemap).
 - CTA visible en 360×740 / 390×844 y altura uniforme de cards: no se abrió navegador
 - JSON-LD validado como JSON, no en Rich Results Test
 - Keywords de la versión EN: no hay `keywords.md` para EN en el plan
+
+---
+
+# Correcciones antes del merge — 2026-11-10 (segunda pasada)
+
+Un commit por punto en `kosmos/web-2026`. Build `npm run build` limpio (TS estricto, 28 rutas).
+Verificación con Chrome headless manejado por DevTools Protocol (viewport real, sin iframes).
+
+| # | Corrección | Verificación |
+|---|---|---|
+| 1 | Overflow del bloque de precios (446px a 360) | `scrollWidth == 360` en **23/23** páginas |
+| 2 | Fuera lo que no está en `00-contexto.md` (mantenimiento, datos reales 1–2 semanas, infraestructura, panel/tablero, Slack, OpenAI/Claude, "todo documentado", Next.js, Webflow, etc.) | grep: solo quedan dentro de `[CONFIRMAR: …]`. kw_coverage de servicios sigue ✅ (83–100%) |
+| 3 | Casos solo desde `legacy-vite/data/projects.ts` | 11 casos reescritos; Orbita: "Marca y experiencia digital" (lo único que dice la fuente) |
+| 4 | Marca una vez en el title | **24/24** `<title>` y `og:title` terminan en " — Somos Kosmos", una sola vez |
+| 5 | Logo `logo-light.png` en header/footer + grilla fina de fondo | Capturas abajo |
+| 6 | Botón flotante de WhatsApp | A 360×740 en 22 páginas: CTA del hero sin scroll (≤ 639px), flotante oculto mientras se ve, visible después, 0 textos del footer tapados. `/privacidad` no tiene flotante |
+| 7 | Borrados `legacy-vite/` y `DEPLOYMENT.md`; README con deploy real | Build limpio sin ellos; `out/CNAME` = somoskosmos.com |
+
+Cambio extra que salió del punto 6: en 4 servicios el CTA del hero quedaba debajo del pliegue a
+360×740 (H1 largo en 44px). H1 mobile pasa a 34px y el hero tiene menos padding arriba.
+
+Pendiente menor: las meta descriptions de Orbita (54 car.) y The Red Guild (69 car.) quedan cortas
+porque la fuente no dice más; se completan cuando haya datos del caso.
+
+## Capturas (full page)
+| | 360 | 1280 |
+|---|---|---|
+| Home | ![home 360](capturas/home-360.png) | ![home 1280](capturas/home-1280.png) |
+| /services/websites | ![websites 360](capturas/websites-360.png) | ![websites 1280](capturas/websites-1280.png) |
+
+Las capturas se toman con un viewport tan alto como la página, así que el CTA del hero queda
+siempre a la vista y el botón flotante no aparece (es lo esperado).

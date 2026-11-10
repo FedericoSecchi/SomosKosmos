@@ -21,15 +21,15 @@ export function Pricing({
   return (
     <section className="section" id="pricing">
       <div className="container">
-        <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
-          <div>
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-end">
+          <div className="min-w-0">
             <span className="eyebrow block mb-3">{locale === 'es' ? 'Inversión' : 'Investment'}</span>
             <h2 className="text-3xl md:text-5xl">{h2}</h2>
             {detail ? <p className="text-fg-muted mt-3 max-w-xl">{detail}</p> : null}
             {payment ? <p className="text-sm text-fg-muted mt-5">{payment}</p> : null}
           </div>
-          <div className="rounded-lg border border-line bg-surface p-8">
-            <p className="font-display text-5xl md:text-6xl text-accent">{priceFrom}</p>
+          <div className="min-w-0 rounded-lg border border-line bg-surface p-6 md:p-8">
+            <p className="font-display text-3xl sm:text-5xl md:text-6xl text-accent break-words">{priceFrom}</p>
             <p className="text-sm text-fg-muted mt-3 mb-6">
               {locale === 'es'
                 ? 'Cotizamos cada proyecto por alcance. Te pasamos el "desde" por WhatsApp.'

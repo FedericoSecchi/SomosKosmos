@@ -41,7 +41,7 @@ QA de todas las páginas: `seo/qa-cierre.md` (2026-11-10).
 - [x] Enlaces internos: 0 rotos · Redirecciones de §7: stubs en `out/` · Sitemap: 23 canónicas
 - [x] Limpieza: `scripts/generate-sitemap.ts` y `project_state/` eliminados
 - [x] `gbp.md` con lo que se sabe (no existe ficha; se crea post-merge)
-- [ ] PR
+- [x] PR #1 abierto (2026-11-10). Nada mergeado.
 
 Estados: ⬜ pendiente · 🟡 en curso · ✅ aprobado/hecho · ⛔ bloqueado
 

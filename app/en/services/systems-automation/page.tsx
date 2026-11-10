@@ -23,7 +23,7 @@ const SERVICE = getService('systems-automation');
 export const metadata: Metadata = {
   title: 'WhatsApp and process automation for businesses — Somos Kosmos',
   description:
-    'We automate messaging, sales and support flows: WhatsApp bots, n8n workflows and integrations. For small businesses that want to stop answering and typing everything by hand.',
+    'We automate messaging, sales and support: WhatsApp bots, n8n workflows and integrations, for small businesses tired of answering and typing everything by hand.',
   alternates: {
     canonical: CANONICAL,
     languages: hreflangFor(PATH, true),

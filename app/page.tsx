@@ -19,17 +19,20 @@ const LOCALE = 'es' as const;
 const CANONICAL = pathFor(LOCALE, PATH);
 
 export const metadata: Metadata = {
-  title: 'Somos Kosmos — Branding y diseño web para pymes que quieren que las elijan',
+  title: {
+    absolute:
+      'Estudio de branding y diseño web para pymes — Somos Kosmos',
+  },
   description:
-    'Estudio creativo de branding, sitios en código, contenido y automatizaciones. Convertimos tu marca en un sistema que funciona. Del caos al Kosmos.',
+    'Somos Kosmos: estudio de branding y diseño web para pymes, con base en Argentina. Diseño de marca y página web, contenido y automatizaciones, con un mismo equipo.',
   alternates: {
     canonical: CANONICAL,
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Somos Kosmos — Branding y diseño web para pymes',
+    title: 'Estudio de branding y diseño web para pymes — Somos Kosmos',
     description:
-      'Un mismo equipo resuelve marca, web, contenido y automatizaciones. Sin vueltas infinitas. Sin desaparecer a mitad del proyecto.',
+      'Diseño de marca y páginas web para pymes. Un mismo equipo resuelve branding, sitio, contenido y automatizaciones. Sin vueltas infinitas.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.es,
     type: 'website',
@@ -48,9 +51,9 @@ export default function HomePage() {
       <main>
         <Hero
           locale={LOCALE}
-          eyebrow="Branding · Web · Contenido · Automatizaciones"
-          h1="Branding y diseño web para pymes que quieren que las elijan."
-          lead="Convertimos tu marca en un sistema que funciona. Un mismo equipo resuelve identidad, sitio, contenido y automatizaciones, con tiempos y rondas definidas. Del caos al Kosmos."
+          eyebrow="Estudio creativo · Argentina"
+          h1="Estudio de branding y diseño web para pymes que quieren que las elijan."
+          lead="Somos Kosmos: una agencia creativa chica con base en Argentina. Convertimos tu marca en un sistema que funciona. Un mismo equipo resuelve identidad, sitio, contenido y automatizaciones, con tiempos y rondas definidas."
           primaryLabel="Escribinos por WhatsApp"
           primaryText={WHATSAPP_TEXTS.home}
           note="Te respondemos [CONFIRMAR: tiempo] en horario laboral."
@@ -70,7 +73,7 @@ export default function HomePage() {
         <Process
           locale={LOCALE}
           h2="Cómo trabajamos."
-          intro="Brief claro, feedback honesto, plazos realistas. Sin vueltas infinitas. Sin desaparecer a mitad del proyecto."
+          intro="Brief corto, feedback honesto, plazos realistas. Sin vueltas infinitas. Sin desaparecer a mitad del proyecto."
           steps={[
             { title: '01 · Brief', text: 'Cuestionario corto para entender negocio, objetivos y lo que ya probaste.' },
             { title: '02 · Moodboard', text: 'Referencias y dirección antes de abrir Figma. Alineación por escrito.' },

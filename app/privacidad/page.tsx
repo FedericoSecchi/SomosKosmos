@@ -46,8 +46,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl mt-10">2. Qué datos recibimos.</h2>
           <p>
-            Cuando nos escribís por WhatsApp, email, formulario de brief o agendás una llamada por
-            Calendly, recibimos tu nombre, el canal de contacto que elegiste (número de teléfono o
+            Cuando nos escribís por WhatsApp o email, o agendás una llamada por Calendly, recibimos tu nombre, el canal de contacto que elegiste (número de teléfono o
             email) y la información que incluyas en el mensaje. También podemos registrar la fecha
             de la primera conversación.
           </p>

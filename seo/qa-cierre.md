@@ -65,3 +65,53 @@ porque la fuente no dice más; se completan cuando haya datos del caso.
 
 Las capturas se toman con un viewport tan alto como la página, así que el CTA del hero queda
 siempre a la vista y el botón flotante no aparece (es lo esperado).
+
+> Tercera pasada: el botón flotante ya no existe y las capturas de arriba se regeneraron.
+
+---
+
+# Cierre de datos — 2026-11-10 (tercera pasada)
+
+Un commit por punto en `kosmos/web-2026`. Verificación con Playwright (Chrome headless) sobre
+`out/` servido en local.
+
+| # | Cambio | Verificación |
+|---|---|---|
+| 1 | CTA: "Agendá una llamada de 20 min" (Calendly) + "Escribinos a hello@somoskosmos.com" (mailto), `data-event` = `calendly_click` / `email_click`. Fuera `StickyCta`, `lib/whatsapp.ts` y todo `wa.me`. `/brief` con esas dos opciones | `grep -rl wa.me out/` → **0 archivos** · 0 botones flotantes en 23 páginas |
+| 2 | Precios: fuera "Desde [CONFIRMAR]" y el alcance del precio de entrada. Bloque fijo: "Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada." + 50/50 | grep "desde"/"starting price" en el código → 0 |
+| 3 | Tiempos: fuera FAQ de duración de branding y la duración de pruebas en automatizaciones. Websites sin cambios | — |
+| 4 | Hechos de Fede (10/11/2026): mantenimiento mensual ("lo vemos según el proyecto"), archivos editables en branding, piezas mensuales en contenido, dron según zona | Cargados también en `00-contexto.md` |
+| 5 | Privacidad: responsable "Somos Kosmos", contacto hello@; solo Calendly + email; el sitio no usa analítica ni cookies de seguimiento | copy_lint 100 |
+| 6 | Thumbnails: captura 1280×800 del sitio real en WebP (`public/projects/<slug>/thumb.webp`) para ETHperience, DeltaRowing, Fede García, MareBoats, SkyShot y Pancito. Los 6 cargaron (SkyShot con 12 s de espera por su loader). Placeholder de marca sin texto visible | Revisadas a ojo las 6 capturas |
+| 7 | Fuera lo que sigue sin dato: otras herramientas de automatización, nota de ejemplo publicable, "qué se entrega al final" | `grep -rl CONFIRMAR out/` → **0 archivos** |
+| 8 | H1 del hero −25 % en desktop (`clamp(2.125rem, 6vw, 5.625rem)`: 102 → 77 px a 1280) y padding superior 112 → 80 px | Botones del hero ≤ 776 px en 1280×800 en **22/22** páginas con hero CTA |
+
+Extra: en 360 px el botón de email cortaba la dirección a la mitad ("HELLO@SO / MOSKOSMOS.COM");
+ahora el email va en minúsculas y la línea se parte antes. Y "landing page para negocio" vuelve
+en la FAQ de tiempos de websites (se había perdido con el texto del precio).
+
+## Resultado de los scripts (último build)
+| Chequeo | Resultado |
+|---|---|
+| `npm run build` | OK, TS estricto, 28 rutas |
+| `scrollWidth` a 360 | **23/23** = 360 |
+| CTA del hero sin scroll a 360×740 | 22/22 (máx. 725 px, automatizaciones) · `/privacidad` no tiene hero CTA |
+| CTA del hero sin scroll a 1280×800 | 22/22 (máx. 776 px, websites y automatizaciones) |
+| `kw_coverage.py --geo Argentina` | home 100 % · websites 86 % · branding 100 % · automatizaciones 83 % · contenido 100 % — todos ✅ |
+| `copy_lint.py` | home 94 · websites 98 · branding 98 · automatizaciones 96 · contenido 98 · brief 97 · privacidad 100 · EN (5 páginas) 99 — todos ✅ |
+| Técnico | 1 H1 por página, 0 links internos rotos, sitemap 23 URLs, títulos con la marca una vez (24/24) |
+
+`kw_coverage` sin `--geo` toma "negocios" como lugar y marca una inserción forzada falsa en el H1
+de automatizaciones ("…para negocios que quieren…"); con `--geo Argentina` (como en las pasadas
+anteriores) pasa.
+
+Sigue igual: descriptions cortas de Orbita (54) y The Red Guild (69); "página web para mi negocio"
+y "automatizar procesos de ventas" ausentes (ver qa de cada página).
+
+## Capturas
+| | 360 × 740 (pantalla inicial) | 1280 × 800 (pantalla inicial) |
+|---|---|---|
+| Home | ![home 360 fold](capturas/home-360x740-fold.png) | ![home 1280 fold](capturas/home-1280x800-fold.png) |
+| /services/websites | ![websites 360 fold](capturas/websites-360x740-fold.png) | ![websites 1280 fold](capturas/websites-1280x800-fold.png) |
+
+Página completa: `capturas/home-360.png`, `home-1280.png`, `websites-360.png`, `websites-1280.png`.

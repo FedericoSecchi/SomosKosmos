@@ -43,6 +43,18 @@ QA de todas las páginas: `seo/qa-cierre.md` (2026-11-10).
 - [x] `gbp.md` con lo que se sabe (no existe ficha; se crea post-merge)
 - [x] PR #1 abierto (2026-11-10). Nada mergeado.
 
+## Cierre de datos (2026-11-10, tercera pasada)
+- [x] CTA: llamada de 20 min (Calendly) + email; sin WhatsApp ni botón flotante
+- [x] Precios: sin "desde"; "Cotizamos cada proyecto por alcance…" + 50/50
+- [x] Tiempos: solo websites
+- [x] Hechos de Fede: mantenimiento mensual, archivos editables, piezas mensuales, dron según zona
+- [x] Privacidad: responsable Somos Kosmos, solo Calendly + email, sin analítica
+- [x] Thumbnails de los 6 casos sin imagen: captura del sitio real (WebP 1280×800)
+- [x] Cero `[CONFIRMAR]` y cero `wa.me` en `out/`
+- [x] H1 desktop −25 %: botones del hero visibles en 1280×800
+- Pendiente: `brief.md`/`contenido.md` por página todavía describen el CTA de WhatsApp (son
+  notas de trabajo; la fuente vigente es PLAN §5–§6 y `00-contexto.md`)
+
 Estados: ⬜ pendiente · 🟡 en curso · ✅ aprobado/hecho · ⛔ bloqueado
 
 ## Baseline del repo (2026-10-26)
@@ -58,16 +70,16 @@ Estados: ⬜ pendiente · 🟡 en curso · ✅ aprobado/hecho · ⛔ bloqueado
 
 ## Pendientes del cliente (bloquean publicación)
 Ver `PLAN.md § 9` para la lista completa. Resumen:
-- [ ] Número de WhatsApp de ventas, quién responde y tiempo de respuesta
-- [ ] Precio "desde" por servicio (ARS + USD)
-- [ ] Ejemplo concreto de automatización publicable
+- [x] ~~Número de WhatsApp~~: descartado, CTA = Calendly + email (10/11/2026)
+- [x] ~~Precio "desde"~~: descartado, se cotiza por alcance (10/11/2026)
+- [ ] Ejemplo concreto de automatización publicable (la frase se sacó de la web)
 - [ ] Ciudad publicable (o "remoto desde Argentina")
 - [ ] 3–5 testimonios con nombre
 - [ ] Fotos reales de equipo y proceso
-- [ ] Thumbnails de ETHperience, DeltaRowing, Fede García, MareBoats, SkyShot, Pancito
+- [x] Thumbnails de ETHperience, DeltaRowing, Fede García, MareBoats, SkyShot, Pancito (captura del sitio real; reemplazables)
 - [ ] Nombre exacto "DeltaRowing"
 - [ ] Links reales de Instagram, LinkedIn, Behance
-- [ ] Texto de /privacidad
+- [x] Texto de /privacidad
 - [ ] Propiedad de GA4
 
 ## Decisiones tomadas sin consultar (y resúmenes de checkpoint)

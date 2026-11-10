@@ -22,7 +22,7 @@ const CANONICAL = pathFor(LOCALE, PATH);
 const SERVICE = getService('content-motion');
 
 export const metadata: Metadata = {
-  title: 'Contenido para redes y producción audiovisual — Somos Kosmos',
+  title: 'Contenido para redes sociales de marcas — Somos Kosmos',
   description:
     'Templates para redes, motion, fotografía y video para marcas y destinos turísticos. Producción con dron propia a través de SkyShot.',
   alternates: {
@@ -50,7 +50,7 @@ const FAQ = [
   },
   {
     q: '¿Producen video?',
-    a: 'Sí, fotografía y video. Reels, piezas para campaña, aftermovies de eventos y material de producto. Trabajamos en Argentina y donde haga falta.',
+    a: 'Sí, fotografía y video para turismo, marcas y eventos: reels, piezas para campaña, aftermovies y material de producto. Trabajamos en Argentina y donde haga falta.',
   },
   {
     q: '¿Y lo de dron?',
@@ -91,7 +91,7 @@ export default function Page() {
         <Hero
           locale={LOCALE}
           eyebrow="Servicio · Contenido & Motion"
-          h1="Piezas para redes y campañas pensadas para atraer y generar resultados."
+          h1="Contenido para redes sociales de marcas: piezas y campañas pensadas para atraer y generar resultados."
           lead="Templates reutilizables, motion, fotografía y video. Producción con dron propia a través de SkyShot. Para marcas que quieren sostener presencia sin depender de un diseñador freelance distinto por mes."
           primaryLabel="Pedí tu propuesta de contenido"
           primaryText={WHATSAPP_TEXTS.content}
@@ -101,12 +101,12 @@ export default function Page() {
           locale={LOCALE}
           h2="Qué podemos producir."
           items={[
-            'Set de templates en Canva/Figma reutilizables con tutorial de uso.',
+            'Templates de Canva (o Figma) con tu marca, reutilizables y con tutorial de uso.',
             'Auditoría de redes con hallazgos y propuesta de mejora.',
-            'Diseño mensual de piezas para redes y campañas.',
-            'Motion graphics para reels, intros y campañas digitales.',
+            'Diseño mensual de piezas para redes sociales y campañas.',
+            'Motion graphics para marcas: reels, intros y campañas digitales.',
             'Fotografía y video para marca, producto o destino.',
-            'Producción con dron (vía SkyShot) para turismo e inmuebles.',
+            'Video con dron para empresas de turismo e inmuebles (vía SkyShot).',
             'Refresh de decks y materiales comerciales.',
             'Materiales de campaña por hitos (lanzamiento, temporada, evento).',
           ]}

@@ -53,7 +53,7 @@ const FAQ = [
     a: 'No. Hacemos todo en código (Next.js), sin plantillas ni constructores. El resultado es más rápido, más legible para Google y más fácil de escalar que una web montada sobre un builder.',
   },
   {
-    q: '¿Cuánto cuesta?',
+    q: '¿Cuánto cuesta una página web?',
     a: 'Cotizamos cada proyecto por alcance: una landing no es lo mismo que un sitio con reservas o un catálogo de productos. Te pasamos el "desde" por WhatsApp con una llamada corta o un cuestionario de 5 preguntas.',
   },
   {
@@ -91,8 +91,8 @@ export default function Page() {
         <Hero
           locale={LOCALE}
           eyebrow="Servicio · Websites"
-          h1="Creamos sitios que explican lo que hacés, ordenan la info y ayudan a que te elijan."
-          lead="Hacemos landings y sitios web a medida en código propio, sin plantillas ni constructores. Diseño UX/UI, SEO base, formularios y CMS si hace falta. Entregamos en 1–4 semanas con 2–3 rondas de feedback."
+          h1="Diseño de páginas web para pymes: sitios que explican lo que hacés y ayudan a que te elijan."
+          lead="Diseño web a medida, en código propio, sin plantillas ni constructores. Landings y sitios con UX/UI, SEO base, formularios y CMS si hace falta. Entregamos en 1–4 semanas con 2–3 rondas de feedback."
           primaryLabel="Contanos tu web por WhatsApp"
           primaryText={WHATSAPP_TEXTS.websites}
           note="Te pasamos el “desde” en la primera respuesta."
@@ -117,7 +117,7 @@ export default function Page() {
         <FeaturedWork
           locale={LOCALE}
           h2="Webs que hicimos."
-          intro="Turismo, cosmética, deporte, web3 y marca personal. Mismo foco: que se lea rápido y guíe a la acción."
+          intro="Páginas web para empresas de turismo como MareBoats y DeltaRowing, y para marcas de cosmética, deporte, web3 y marca personal. Mismo foco: que se lea rápido y guíe a la acción."
           slugs={['calmo', 'the-red-guild', 'mareboats', 'ethperience', 'fede-garcia', 'deltarowling']}
         />
         <Process
@@ -136,7 +136,7 @@ export default function Page() {
           locale={LOCALE}
           h2="Cuánto cuesta."
           priceFrom="[CONFIRMAR]"
-          detail="Cotizamos cada proyecto por alcance. Una landing arranca abajo de un sitio corporativo con CMS; un sitio con reservas o integraciones queda arriba. Te pasamos el número en el primer mensaje."
+          detail="Cotizamos cada proyecto por alcance. Una landing page para un negocio con un solo servicio arranca abajo de un sitio corporativo con CMS; un sitio con reservas o integraciones queda arriba. Te pasamos el número en el primer mensaje."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
           primaryLabel="Pedí tu “desde”"
           primaryText={WHATSAPP_TEXTS.websites}
@@ -145,7 +145,7 @@ export default function Page() {
         <ClosingCta
           locale={LOCALE}
           h2="¿Hablamos de tu web?"
-          lead="Contanos qué negocio tenés y para qué querés usar el sitio. Te respondemos con una propuesta clara."
+          lead="¿Necesitás una página web para tu negocio? Contanos qué hacés y para qué querés usar el sitio. Te respondemos con alcance, plazos y el “desde”."
           primaryLabel="Contanos tu web por WhatsApp"
           primaryText={WHATSAPP_TEXTS.websites}
         />

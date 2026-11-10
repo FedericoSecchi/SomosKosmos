@@ -48,7 +48,7 @@ const FAQ = [
     a: 'Nos sirven: una cuenta de WhatsApp Business (o la posibilidad de abrirla), acceso a las herramientas que ya usás (planillas, CRM, calendarios, mails) y una lista corta de las cosas que te comen tiempo. Si no sabés por dónde empezar, lo mapeamos juntos en la primera llamada.',
   },
   {
-    q: '¿Usan n8n u otra herramienta?',
+    q: '¿Hacen las automatizaciones con n8n o con otra herramienta?',
     a: 'Usamos n8n cuando tiene sentido (open source, se autohospeda, se puede migrar). Para integraciones específicas también usamos la API de WhatsApp, OpenAI/Claude si hace falta un paso de IA, y lo que requiera el proyecto. Trabajamos sobre tu infraestructura, no sobre la nuestra.',
   },
   {
@@ -90,8 +90,8 @@ export default function Page() {
         <Hero
           locale={LOCALE}
           eyebrow="Servicio · Sistemas & Automatizaciones"
-          h1="Tu negocio funcionando solo."
-          lead="Automatizamos mensajes, ventas y procesos para que ahorres tiempo. Bots de WhatsApp, flujos en n8n, integraciones entre herramientas y sistemas de diseño que mantienen la marca en orden."
+          h1="Automatización de WhatsApp para negocios que quieren dejar de responder todo a mano."
+          lead="Tu negocio funcionando solo. Automatizamos mensajes, procesos de ventas y atención para que ahorres tiempo: bots de WhatsApp, flujos en n8n, integraciones entre herramientas y sistemas de diseño que mantienen la marca en orden."
           primaryLabel="Contanos qué querés automatizar"
           primaryText={WHATSAPP_TEXTS.systems}
           note="Hacemos todo lo que se pueda conectar por API o por WhatsApp Business."
@@ -100,7 +100,7 @@ export default function Page() {
           locale={LOCALE}
           h2="Qué podemos resolver."
           items={[
-            'Bots de WhatsApp Business con menú, respuestas y derivación a persona.',
+            'Chatbot de WhatsApp para empresas: menú, respuestas y derivación a una persona.',
             'Flujos de atención y venta en n8n (open source, autohospedable).',
             'Integraciones entre CRM, planillas, calendarios y facturación.',
             'Respuesta y seguimiento automático de clientes nuevos.',

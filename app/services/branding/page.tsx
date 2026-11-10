@@ -24,7 +24,7 @@ const SERVICE = getService('branding');
 export const metadata: Metadata = {
   title: 'Diseño de identidad de marca — Somos Kosmos',
   description:
-    'Diseñamos la identidad visual de tu marca: logo, tipografía, color, piezas y guías de uso real. Para pymes, startups y marcas personales que quieren una imagen clara.',
+    'Diseñamos la identidad visual de tu marca: logo, tipografía, color, piezas y manual de marca. Para pymes, startups y marcas personales que quieren que las reconozcan.',
   alternates: {
     canonical: CANONICAL,
     languages: hreflangFor(PATH, true),
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Diseño de identidad de marca · Somos Kosmos',
     description:
-      'Creamos una imagen clara y profesional para que te reconozcan y confíen en vos. Logo, tipografía, color y sistema completo.',
+      'Una identidad de marca para que te reconozcan y confíen en vos. Logo, tipografía, color y sistema completo.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.es,
     type: 'website',
@@ -49,7 +49,7 @@ const FAQ = [
     a: '[CONFIRMAR: tiempo típico]. Depende de la cantidad de puntos de contacto y de la velocidad de feedback. Hacemos 2–3 rondas por entregable para evitar que se eternice.',
   },
   {
-    q: '¿Hacen rebranding si ya tengo una marca?',
+    q: '¿Hacen rebranding de una empresa que ya tiene marca?',
     a: 'Sí. Es un trabajo distinto al de empezar de cero: parte del valor es decidir qué conservar y qué cambiar sin perder reconocimiento. Nude es un ejemplo: refrescamos la identidad sin romper lo que ya funcionaba.',
   },
   {
@@ -91,8 +91,8 @@ export default function Page() {
         <Hero
           locale={LOCALE}
           eyebrow="Servicio · Branding"
-          h1="Creamos una imagen clara y profesional para que te reconozcan y confíen en vos."
-          lead="Diseñamos la identidad visual de tu marca: logo, tipografía, color y recursos propios. Terminamos con una guía corta y usable para que la marca viva igual en cada punto de contacto."
+          h1="Diseño de identidad de marca para que te reconozcan y confíen en vos."
+          lead="Branding para pymes, startups y marcas personales: diseñamos la identidad visual con logo, tipografía, color y recursos propios. Terminamos con un manual de marca corto y usable para que la marca viva igual en cada punto de contacto."
           primaryLabel="Contanos tu marca por WhatsApp"
           primaryText={WHATSAPP_TEXTS.branding}
           note="Diseñar sin estrategia no es una opción."

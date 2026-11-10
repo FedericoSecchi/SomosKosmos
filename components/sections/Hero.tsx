@@ -17,7 +17,7 @@ export function Hero({
 }) {
   return (
     <section className="relative overflow-hidden border-b border-line" data-hero>
-      <div className="container relative pt-8 pb-14 md:py-28">
+      <div className="container relative pt-8 pb-14 md:pt-20 md:pb-28">
         <div className="flex flex-col gap-5 md:gap-6 max-w-4xl">
           <span className="eyebrow">
             <KStar className="w-3 h-3" /> {eyebrow}

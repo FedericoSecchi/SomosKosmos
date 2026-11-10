@@ -4,12 +4,16 @@
 > Reglas: nombre real del negocio (sin keywords agregadas), un perfil por negocio, reseñas sin
 > incentivos. Si el cliente decide romper una regla, va a "Decisiones de riesgo" en ESTADO.md.
 
-## Estado actual (fecha: )
-- ¿Existe y está verificada? · Quién es propietario/administrador:
-- Categoría principal: · Secundarias:
-- Dirección visible u oculta (zona de servicio): · Zona:
-- Rating: ___ (___ reseñas) · Última reseña: · ¿Se responden?:
-- Fotos (cantidad, reales, últimas subidas):
+## Estado actual (fecha: 2026-11-10)
+- ¿Existe y está verificada? **No existe** (diagnóstico del intake, PLAN §3). Propietario: Fede cuando se cree.
+- Categoría principal sugerida: "Diseñador de sitios web" · Secundarias: "Diseñador gráfico",
+  "Agencia de marketing" (solo si se confirman como servicios reales; ver `00-contexto.md`)
+- Dirección: **sin dirección publicable** → perfil de zona de servicio (dirección oculta).
+  Zona: [CONFIRMAR: ciudad publicable o "remoto desde Argentina"] (PLAN §9)
+- Rating / reseñas / fotos: n/a hasta crear la ficha
+- La web ya está lista para enlazarla: schema sin `address`, `areaServed` Argentina + remoto
+  (`lib/site.ts`). Al confirmar ciudad, actualizar NAP en `lib/site.ts` y en la ficha a la vez.
+- Se crea después del merge (PLAN §11), no bloquea el PR.
 
 ## Tareas
 - [ ] Categoría principal = el servicio de la página más importante; secundarias solo reales

@@ -20,15 +20,28 @@ Modo: multipágina
 ## Páginas
 | Slug | Prioridad | Brief | Contenido | Implementada | QA | Hechos OK cliente | Publicada |
 |---|---|---|---|---|---|---|---|
-| home | 1 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| services/websites | 2 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| services/branding | 3 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| services/systems-automation | 4 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| services/content-motion | 5 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| project/[slug] ×11 | 6 | — | — | ⬜ | ⬜ | — | ⬜ |
-| /en/ y /en/services/* | 7 | — | — | ⬜ | ⬜ | — | ⬜ |
-| /brief | 8 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| /privacidad | 9 | — | — | ⬜ | ⬜ | — | ⬜ |
+| home | 1 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| services/websites | 2 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| services/branding | 3 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| services/systems-automation | 4 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| services/content-motion | 5 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| project/[slug] ×11 | 6 | — | — | ✅ | ✅ | — | ⬜ |
+| /en/ y /en/services/* | 7 | — | — | ✅ | ✅ | — | ⬜ |
+| /brief | 8 | ⚠️ | ⚠️ | ✅ | ✅ | ⬜ | ⬜ |
+| /privacidad | 9 | — | — | ✅ | ✅ | — | ⬜ |
+
+⚠️ Brief/Contenido: las páginas se implementaron directo en código (commits 4dda812–68232d9) y los
+`brief.md`/`contenido.md` quedaron como plantilla vacía. El texto vigente está en `app/**/page.tsx`.
+QA de todas las páginas: `seo/qa-cierre.md` (2026-11-10).
+
+## Cierre del plan (2026-11-10)
+- [x] Home: intros con keyword stuffing revertidas, sin "claro"; keywords en title/H1/meta
+- [x] Servicios: principal en H1; kw_coverage 83–100 %; copy_lint 97–98
+- [x] /brief, /privacidad, /en/*: QA OK; `lang="en"` en EN; links EN → casos/brief en ES
+- [x] Enlaces internos: 0 rotos · Redirecciones de §7: stubs en `out/` · Sitemap: 23 canónicas
+- [x] Limpieza: `scripts/generate-sitemap.ts` y `project_state/` eliminados
+- [x] `gbp.md` con lo que se sabe (no existe ficha; se crea post-merge)
+- [ ] PR
 
 Estados: ⬜ pendiente · 🟡 en curso · ✅ aprobado/hecho · ⛔ bloqueado
 
@@ -69,6 +82,14 @@ Ver `PLAN.md § 9` para la lista completa. Resumen:
 - 2026-10-26 — Los 6 thumbnails faltantes muestran placeholder SVG (fondo #222 + estrella K +
   nombre), listado en el PR como `[CONFIRMAR]`.
 - 2026-10-26 — Equipo (Fede, Coti, Fran) no se publica hasta tener fotos reales ([CONFIRMAR]).
+- 2026-11-10 — Home: keyword principal pasa a "estudio de branding y diseño web" (la marca se
+  presenta como estudio). Las variantes "agencia de…" se descartan: solo entraban con keyword stuffing.
+- 2026-11-10 — `<html lang>` de /en/* se corrige con un postbuild (`scripts/set-html-lang.mjs`):
+  dos root layouts rompen el 404 global en `output: 'export'`.
+- 2026-11-10 — Links EN hacia casos, /brief y /privacidad apuntan a la URL ES (`lib/urls.ts`),
+  porque esas secciones no tienen versión EN (PLAN §2).
+- 2026-11-10 — La carpeta local del repo cambió de lugar. Revisado: ningún archivo del repo ni
+  de la skill tiene rutas absolutas, así que no hubo nada que actualizar.
 
 ## Cambios de URL (redirecciones)
 - 2026-10-26 — `/project/ehtexperience` → `/project/ethperience` (meta refresh + canonical;

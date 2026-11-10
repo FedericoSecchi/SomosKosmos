@@ -65,7 +65,7 @@
 ## 5. Páginas
 | Orden | URL | Acción | Keyword principal | Vol. | Persona | Schema | Veredicto SERP |
 |---|---|---|---|---|---|---|---|
-| 1 | / | reescribir | agencia de branding y diseño web | s/d | P1, P2 | Organization, ProfessionalService, WebSite | long-tail + marca |
+| 1 | / | reescribir | estudio de branding y diseño web (antes "agencia…", ver ESTADO 2026-11-10) | s/d | P1, P2 | Organization, ProfessionalService, WebSite | long-tail + marca |
 | 2 | /services/websites | reescribir | diseño de páginas web para pymes | s/d | P1 | Service, FAQPage | long-tail |
 | 3 | /services/branding | reescribir | diseño de identidad de marca | s/d | P1, P3 | Service, FAQPage | long-tail |
 | 4 | /services/systems-automation | reescribir | automatización de whatsapp para negocios | s/d | P1 | Service, FAQPage | atacar ya (verificar) |

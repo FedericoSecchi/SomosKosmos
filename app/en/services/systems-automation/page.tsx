@@ -51,7 +51,7 @@ const FAQ = [
   },
   {
     q: 'Can it be changed later?',
-    a: 'Yes, the flow can be changed after delivery. [CONFIRMAR: how changes are made (client or Kosmos) and whether there is monthly maintenance]',
+    a: 'Yes, the flow can be changed after delivery. We also offer monthly maintenance; we work out the terms for each project.',
   },
   {
     q: 'How much does it cost?',

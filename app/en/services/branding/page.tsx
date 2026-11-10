@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'What do I get at the end of a branding project?',
-    a: 'An identity system: logo, typography, color palette and a brand guide with real-use rules, so anyone on your team (or a vendor) uses the brand the same way. [CONFIRMAR: additional pieces included]',
+    a: 'An identity system: logo, typography, color palette and a brand guide with real-use rules, so anyone on your team (or a vendor) uses the brand the same way. You also get the editable files.',
   },
   {
     q: 'Do you do rebranding if I already have a brand?',
@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: 'Do you deliver editable files?',
-    a: '[CONFIRMAR: whether editable files are delivered and in which formats]',
+    a: 'Yes. At the end of the project you get the editable brand files.',
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Page() {
             'Moodboard with references before designing.',
             'Logo, typography and color palette design.',
             'Brand guide with real-use rules.',
-            '[CONFIRMAR: additional pieces and files delivered]',
+            'Editable brand files.',
           ]}
           note="If you also want us to build the website, we work brand and site in parallel with the same team."
         />

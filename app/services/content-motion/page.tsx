@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Hacen contenido mensual o puntual?',
-    a: 'Podemos armar templates de Canva con tutorial para que vos manejes la frecuencia. [CONFIRMAR: si también producen piezas mensuales y cómo se contratan]',
+    a: 'Las dos cosas. Hacemos piezas mensuales para tus redes, y también podemos armar templates de Canva con tutorial para que vos manejes la frecuencia.',
   },
   {
     q: '¿Qué incluyen los templates de Canva?',
@@ -48,7 +48,7 @@ const FAQ = [
   },
   {
     q: '¿Producen video?',
-    a: 'Sí, fotografía y video para marcas y para turismo, con footage aéreo vía SkyShot. [CONFIRMAR: formatos habituales y zonas donde filman]',
+    a: 'Sí, fotografía y video para marcas y para turismo, con footage aéreo vía SkyShot. La producción con dron depende de que estemos en la zona.',
   },
   {
     q: '¿Y lo de dron?',
@@ -99,7 +99,7 @@ export default function Page() {
           items={[
             'Templates de Canva con tu marca, reutilizables y con tutorial de uso.',
             'Auditoría de redes y propuesta de mejoras.',
-            'Diseño de piezas para redes sociales y campañas.',
+            'Diseño de piezas para redes sociales y campañas, puntuales o mensuales.',
             'Motion graphics para marcas.',
             'Fotografía y video para turismo y marcas.',
             'Video con dron para empresas de turismo (vía SkyShot).',

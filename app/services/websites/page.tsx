@@ -60,7 +60,7 @@ const FAQ = [
   },
   {
     q: '¿Después de la entrega quién se ocupa de los cambios?',
-    a: 'Si querés gestionar el sitio por tu cuenta, lo armamos con un CMS para que edites textos e imágenes. [CONFIRMAR: si ofrecen mantenimiento mensual y en qué condiciones]',
+    a: 'Si querés gestionar el sitio por tu cuenta, lo armamos con un CMS para que edites textos e imágenes. También ofrecemos mantenimiento mensual: las condiciones las vemos según el proyecto.',
   },
 ];
 

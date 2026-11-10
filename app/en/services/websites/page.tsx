@@ -60,7 +60,7 @@ const FAQ = [
   },
   {
     q: 'Who handles changes after launch?',
-    a: 'If you want to manage the site on your own, we build it with a CMS so you can edit text and images. [CONFIRMAR: whether you offer monthly maintenance and on what terms]',
+    a: 'If you want to manage the site on your own, we build it with a CMS so you can edit text and images. We also offer monthly maintenance; we work out the terms for each project.',
   },
 ];
 

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Qué recibo al final del proyecto de branding?',
-    a: 'Un sistema de identidad: logo, tipografía, paleta de color y una guía de marca con reglas de uso real, para que cualquier persona del equipo (o un proveedor) use la marca igual. [CONFIRMAR: piezas adicionales incluidas]',
+    a: 'Un sistema de identidad: logo, tipografía, paleta de color y una guía de marca con reglas de uso real, para que cualquier persona del equipo (o un proveedor) use la marca igual. También te entregamos los archivos editables.',
   },
   {
     q: '¿Hacen rebranding de una empresa que ya tiene marca?',
@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: '¿Entregan los archivos editables?',
-    a: '[CONFIRMAR: si se entregan archivos editables y en qué formatos]',
+    a: 'Sí. Al final del proyecto te entregamos los archivos editables de la marca.',
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Page() {
             'Moodboard con referencias antes de diseñar.',
             'Diseño de logotipo, tipografía y paleta de color.',
             'Guía de marca con reglas de uso real.',
-            '[CONFIRMAR: piezas y archivos adicionales que se entregan]',
+            'Archivos editables de la marca.',
           ]}
           note="Si querés que también hagamos la web, trabajamos marca y sitio en paralelo con el mismo equipo."
         />

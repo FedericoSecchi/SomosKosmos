@@ -43,6 +43,18 @@ proyectos USD 800–3.000 en 2–6 semanas (descripción del proyecto Kosmos en 
 - Pago: transferencia, 50% al comenzar y 50% al finalizar (prop. ARS)
 - Las propuestas dejan claro qué NO incluye (ej. carga masiva de contenido, estrategia de contenido) y qué es escalable después (blog, newsletter, press kit, tienda) (prop. Sofía Watson)
 
+## Hechos confirmados por Fede (10/11/2026)
+- Precios: no hay lista ni "desde". Se cotiza cada proyecto por alcance y el número se pasa en la
+  primera llamada. Se mantiene el pago 50% al comenzar, 50% al entregar.
+- Tiempos: solo se publican los de websites (tabla de servicios). Branding, contenido y
+  automatizaciones no tienen tiempos publicables.
+- Mantenimiento mensual: sí lo ofrecen; las condiciones "lo vemos según el proyecto" (sin detallar).
+- Branding: se entregan los archivos editables (sin listar formatos).
+- Contenido: hacen piezas mensuales.
+- Dron: la producción con dron depende de que estén en la zona.
+- Sin dato y fuera de la web: otras herramientas de automatización además de n8n, formatos de
+  video/dron, ejemplo publicable de automatización, qué se entrega al final de una automatización.
+
 ## Qué NO hace
 - No trabaja con Webflow, Wix ni constructores: todo se hace en código (Fede, 26/10/2026). Nunca
   mencionar Webflow en el sitio.

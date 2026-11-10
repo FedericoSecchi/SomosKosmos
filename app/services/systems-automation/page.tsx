@@ -51,7 +51,7 @@ const FAQ = [
   },
   {
     q: '¿Después se puede cambiar?',
-    a: 'Sí, el flujo se puede modificar después de la entrega. [CONFIRMAR: cómo se hacen los cambios (lo edita el cliente o Kosmos) y si hay mantenimiento mensual]',
+    a: 'Sí, el flujo se puede modificar después de la entrega. También ofrecemos mantenimiento mensual: las condiciones las vemos según el proyecto.',
   },
   {
     q: '¿Cuánto cuesta?',

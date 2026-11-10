@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'Do you work monthly or one-off?',
-    a: 'We can build Canva templates with a tutorial so you handle the cadence. [CONFIRMAR: whether you also produce monthly pieces and how they are hired]',
+    a: 'Both. We produce monthly pieces for your social channels, and we can also build Canva templates with a tutorial so you handle the cadence.',
   },
   {
     q: 'What do the templates include?',
@@ -48,7 +48,7 @@ const FAQ = [
   },
   {
     q: 'Do you produce video?',
-    a: 'Yes, photo and video for brands and tourism, with aerial footage via SkyShot. [CONFIRMAR: usual formats and where you shoot]',
+    a: 'Yes, photo and video for brands and tourism, with aerial footage via SkyShot. Drone production depends on us being in the area.',
   },
   {
     q: 'And the drone part?',
@@ -99,7 +99,7 @@ export default function Page() {
           items={[
             'Canva templates with your brand, reusable and with a usage tutorial.',
             'Social audit and improvement proposal.',
-            'Design of pieces for social and campaigns.',
+            'Design of pieces for social and campaigns, one-off or monthly.',
             'Motion graphics for brands.',
             'Photography and video for tourism and brands.',
             'Drone video for tourism businesses (via SkyShot).',

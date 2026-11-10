@@ -23,5 +23,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "legacy-vite", "scripts", "out", "dist", "project_state", "DEPLOYMENT.md"]
+  "exclude": ["node_modules", "scripts", "out", "dist"]
 }

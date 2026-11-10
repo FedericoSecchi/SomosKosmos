@@ -5,6 +5,8 @@ Snapshot del repo en `main` (último commit 77ec6cb), tomado al crear la rama `k
 > 2026-10-26: el árbol Vite se renombró a `legacy-vite/` para que Next.js no lo escanee como
 > Pages Router. Las rutas de abajo apuntan al original pre-rename; dentro del repo buscalas en
 > `legacy-vite/…` (ej. `legacy-vite/data/projects.ts`, `legacy-vite/i18n/locales/es.ts`).
+> 2026-11-10: `legacy-vite/` se borró del repo. Para consultarlo: `git show 3624a5d:legacy-vite/data/projects.ts`
+> (o cualquier archivo, con el mismo commit).
 
 ## Rutas del router (`src/App.tsx`)
 - `/` → `pages/Index.tsx`

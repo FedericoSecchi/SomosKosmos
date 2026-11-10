@@ -185,7 +185,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 | Ciudad publicable | schema, footer | pendiente |
 | 3–5 testimonios con nombre | home, servicios | pendiente |
 | Fotos reales de equipo y proceso | home (hero, equipo) | pendiente |
-| Thumbnails de ETHperience, DeltaRowing, Fede García, MareBoats, SkyShot, Pancito | home, casos | pendiente |
+| Thumbnails de ETHperience, DeltaRowing, Fede García, MareBoats, SkyShot, Pancito | home, casos | ✅ captura del sitio real a 1280×800 en WebP (`public/projects/<slug>/thumb.webp`, 10/11/2026); se reemplazan si llegan imágenes del caso |
 | Nombre exacto "DeltaRowing" | caso | pendiente |
 | Links de Instagram, LinkedIn, Behance | footer, schema `sameAs` | pendiente |
 | Mostrar equipo con nombres | home | pendiente |

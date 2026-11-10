@@ -38,7 +38,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       locale: SITE.ogLocale.es,
       type: 'article',
       images: project.image
-        ? [{ url: project.image, width: 1200, height: 900, alt: project.name }]
+        ? [{ url: project.image, alt: project.name }]
         : [{ url: SITE.ogImage }],
     },
   };
@@ -110,11 +110,6 @@ export default function ProjectCasePage({ params }: { params: { slug: string } }
             </aside>
             <div className="prose-like text-fg">
               <p className="text-xl md:text-2xl leading-relaxed">{project.summary}</p>
-              {project.needsThumbnail ? (
-                <p className="mt-6 text-sm text-fg-muted">
-                  [CONFIRMAR: thumbnail definitivo del caso. Mientras tanto se muestra el placeholder de marca.]
-                </p>
-              ) : null}
             </div>
           </div>
         </section>

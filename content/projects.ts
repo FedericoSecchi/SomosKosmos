@@ -11,7 +11,6 @@ export interface ProjectCase {
   gallery?: string[];
   featured?: boolean;
   hiddenFromSitemap?: boolean;
-  needsThumbnail?: boolean;
   nameEN?: string;
   oneLineEN?: string;
   summaryEN?: string;
@@ -133,7 +132,7 @@ export const projects: ProjectCase[] = [
     summary:
       'Diseñamos y desarrollamos el sitio web de ETHperience, una plataforma enfocada en experiencias y eventos tech.',
     externalUrl: 'https://ethperience.com/',
-    needsThumbnail: true,
+    image: '/projects/ethperience/thumb.webp',
     nameEN: 'ETHperience',
     oneLineEN: 'Website for a tech experiences and events platform.',
     summaryEN:
@@ -147,7 +146,7 @@ export const projects: ProjectCase[] = [
     summary:
       'Trabajamos la identidad de marca y la presencia digital de DeltaRowing, un proyecto vinculado al deporte y a experiencias en el agua.',
     externalUrl: 'https://deltarowingadventure.com/',
-    needsThumbnail: true,
+    image: '/projects/deltarowling/thumb.webp',
     nameEN: 'DeltaRowing',
     oneLineEN: 'Brand identity and digital presence for a sport and water project.',
     summaryEN:
@@ -161,7 +160,7 @@ export const projects: ProjectCase[] = [
     summary:
       'Hicimos el sitio web personal de Fede García, donde muestra su trabajo y sus proyectos creativos.',
     externalUrl: 'https://www.fedegarcia.com/',
-    needsThumbnail: true,
+    image: '/projects/fede-garcia/thumb.webp',
     nameEN: 'Fede García',
     oneLineEN: 'Personal website showcasing work and creative projects.',
     summaryEN:
@@ -175,7 +174,7 @@ export const projects: ProjectCase[] = [
     summary:
       'Hicimos el sitio web de MareBoats, una empresa enfocada en paseos en barco y experiencias náuticas.',
     externalUrl: 'https://mareboatshvar.com/',
-    needsThumbnail: true,
+    image: '/projects/mareboats/thumb.webp',
     nameEN: 'MareBoats',
     oneLineEN: 'Website for a boating and nautical experiences company.',
     summaryEN:
@@ -189,7 +188,7 @@ export const projects: ProjectCase[] = [
     summary:
       'SkyShot es un proyecto de contenido aéreo con dron enfocado en turismo, naturaleza y relato de marca.',
     externalUrl: 'https://skyshot.space/',
-    needsThumbnail: true,
+    image: '/projects/skyshot/thumb.webp',
     nameEN: 'SkyShot',
     oneLineEN: 'Aerial drone media for tourism, nature and brand storytelling.',
     summaryEN:
@@ -203,7 +202,7 @@ export const projects: ProjectCase[] = [
     summary:
       'Diseñamos la identidad de marca y la presencia digital de Pancito, un proyecto de comida artesanal.',
     externalUrl: 'https://pancito.shop/',
-    needsThumbnail: true,
+    image: '/projects/pancito/thumb.webp',
     nameEN: 'Pancito',
     oneLineEN: 'Brand identity and digital presence for an artisanal food project.',
     summaryEN:

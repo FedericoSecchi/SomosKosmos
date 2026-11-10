@@ -152,7 +152,7 @@ proyectos USD 800–3.000 en 2–6 semanas (descripción del proyecto Kosmos en 
 - [ ] Ciudad publicable o "remoto desde Argentina"
 - [ ] 3–5 testimonios con nombre
 - [ ] Fotos reales del equipo y del proceso (reemplazan las 3 fotos stock actuales)
-- [ ] Thumbnails reales de los 6 proyectos sin imagen
+- [x] Thumbnails de los 6 proyectos sin imagen: captura del sitio real a 1280×800 (10/11/2026); reemplazables por imágenes del caso
 - [ ] Links reales de Instagram, LinkedIn y Behance/Dribbble
 - [ ] SVG de stickers (ojitos, smiley, estrellas) y logo, si no están en el repo
 - [ ] Propiedad de GA4 de somoskosmos.com

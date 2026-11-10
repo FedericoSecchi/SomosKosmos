@@ -21,15 +21,9 @@ export function ProjectThumb({ project }: { project: ProjectCase }) {
         aria-hidden="true"
         className="absolute inset-0 grid-lines opacity-60"
       />
-      <div className="relative flex flex-col items-center gap-3 p-6 text-center">
-        <KStar className="w-10 h-10 text-accent" />
-        <span className="font-display font-bold uppercase tracking-wide text-base">
-          {project.name}
-        </span>
-        <span className="text-xs text-fg-muted uppercase tracking-widest">
-          Thumbnail pendiente
-        </span>
-      </div>
+      {/* Placeholder de marca, sin texto visible (casos sin imagen ni sitio online). */}
+      <KStar className="relative w-10 h-10 text-accent" />
+      <span className="sr-only">{project.name}</span>
     </div>
   );
 }

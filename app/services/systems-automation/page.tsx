@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Qué pueden automatizar?',
-    a: 'Respuestas y seguimiento de clientes por WhatsApp, carga de datos entre sistemas (CRM, planillas, facturación), reservas y confirmaciones, envío de newsletters, generación de reportes y cualquier flujo que hoy hagas a mano y se repita. Hacemos todo lo que se pueda conectar por API o por WhatsApp Business.',
+    a: 'Respuestas y seguimiento de clientes por WhatsApp, procesos de venta, integraciones entre las herramientas que ya usás y cualquier flujo que hoy hagas a mano y se repita. Hacemos todo lo que se pueda conectar por API o por WhatsApp Business.',
   },
   {
     q: '¿Hace falta tener algo antes de empezar?',
@@ -49,11 +49,11 @@ const FAQ = [
   },
   {
     q: '¿Hacen las automatizaciones con n8n o con otra herramienta?',
-    a: 'Usamos n8n cuando tiene sentido (open source, se autohospeda, se puede migrar). Para integraciones específicas también usamos la API de WhatsApp, OpenAI/Claude si hace falta un paso de IA, y lo que requiera el proyecto. Trabajamos sobre tu infraestructura, no sobre la nuestra.',
+    a: 'Los flujos los armamos en n8n y los bots, sobre WhatsApp. Para cada integración usamos lo que pida el proyecto. [CONFIRMAR: otras herramientas que usan habitualmente]',
   },
   {
     q: '¿Después se puede cambiar?',
-    a: 'Sí. Dejamos el flujo documentado y, si querés, un tablero simple para que modifiques respuestas y mensajes sin tocar código. Si lo preferís, nos quedamos con el mantenimiento mensual.',
+    a: 'Sí, el flujo se puede modificar después de la entrega. [CONFIRMAR: cómo se hacen los cambios (lo edita el cliente o Kosmos) y si hay mantenimiento mensual]',
   },
   {
     q: '¿Cuánto cuesta?',
@@ -101,26 +101,24 @@ export default function Page() {
           h2="Qué podemos resolver."
           items={[
             'Chatbot de WhatsApp para empresas: menú, respuestas y derivación a una persona.',
-            'Flujos de atención y venta en n8n (open source, autohospedable).',
+            'Flujos de atención y venta en n8n.',
             'Integraciones entre CRM, planillas, calendarios y facturación.',
             'Respuesta y seguimiento automático de clientes nuevos.',
             'Confirmaciones de reservas, pagos y recordatorios.',
-            'Envío de reportes mensuales por mail o Slack.',
             'Carga de datos de redes/formularios al CRM.',
-            'Automatizaciones con IA cuando aportan (resúmenes, clasificación de leads).',
-            'Sistemas de diseño en Figma para que las piezas salgan iguales.',
+            'Sistemas de diseño para que las piezas salgan iguales.',
           ]}
           note="Casos puntuales (ejemplos propios) se agregan acá cuando el cliente autoriza mostrarlos [CONFIRMAR: ejemplo publicable]."
         />
         <Process
           locale={LOCALE}
           h2="Cómo lo hacemos."
-          intro="Hacemos lo mínimo que funcione primero, lo probamos con datos reales y después escalamos. Nada de sistemas grandes que nadie usa."
+          intro="Arrancamos por el proceso que más tiempo te come y después sumamos. 2–3 rondas de feedback por entregable."
           steps={[
             { title: '01 · Mapeo', text: 'Vemos qué hacés hoy a mano y por dónde se pierde tiempo.' },
-            { title: '02 · MVP', text: 'Armamos la versión mínima útil del flujo y la activamos.' },
-            { title: '03 · Pruebas', text: 'Datos reales durante 1–2 semanas, ajustes y mejoras.' },
-            { title: '04 · Entrega', text: 'Documentación, panel de control y traspaso al equipo.' },
+            { title: '02 · Primer flujo', text: 'Armamos el flujo que más tiempo te ahorra y lo activamos.' },
+            { title: '03 · Pruebas', text: 'Lo probamos y ajustamos. [CONFIRMAR: duración de la etapa de pruebas]' },
+            { title: '04 · Entrega', text: 'Traspaso al equipo. [CONFIRMAR: qué se entrega al final]' },
           ]}
           closing="Menos drama. Más progreso."
         />
@@ -128,8 +126,8 @@ export default function Page() {
           locale={LOCALE}
           h2="Cuánto cuesta."
           priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre un flujo chico (bot con 3–4 respuestas y una integración). Sistemas más grandes se cotizan por alcance."
-          payment="Pago en transferencia: 50% al comenzar, 50% al entregar. Hay opción de mantenimiento mensual después."
+          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Sistemas más grandes se cotizan por alcance."
+          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
           primaryLabel="Pedí tu “desde”"
           primaryText={WHATSAPP_TEXTS.systems}
         />

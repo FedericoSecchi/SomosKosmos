@@ -78,7 +78,7 @@ export default function HomePage() {
             { title: '01 · Brief', text: 'Cuestionario corto para entender negocio, objetivos y lo que ya probaste.' },
             { title: '02 · Moodboard', text: 'Referencias y dirección antes de abrir Figma. Alineación por escrito.' },
             { title: '03 · Diseño y desarrollo', text: 'Marca y sitio en paralelo. 2–3 rondas de feedback por entregable.' },
-            { title: '04 · Ajustes y publicación', text: 'Testing, carga, dominio y QA. Te dejamos todo documentado.' },
+            { title: '04 · Ajustes y publicación', text: 'QA, dominio y publicación.' },
           ]}
           closing="Menos drama. Más progreso."
         />

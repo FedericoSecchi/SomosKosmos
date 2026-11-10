@@ -42,27 +42,27 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Cuánto tarda una web?',
-    a: 'Una landing bien hecha tarda entre 1 y 4 semanas, un sitio corporativo de 5 a 7 páginas entre 2 y 3 semanas, y un sitio con CMS para gestionar contenido entre 3 y 4 semanas. Depende de que tengas los textos y las fotos listas (si no, lo coordinamos).',
+    a: 'Una landing tarda entre 1 y 4 semanas, un sitio de 7 páginas entre 2 y 3 semanas y un sitio de artista entre 3 y 4 semanas. Depende de que tengas los textos y las fotos listos.',
   },
   {
     q: '¿Qué incluye el servicio de web?',
-    a: 'Arquitectura de contenido, diseño UX/UI a medida, desarrollo responsive, SEO on-page base, formularios, integración con CMS si hace falta, QA en varios dispositivos y publicación con dominio. Te dejamos todo documentado para que podás editar lo que cambia seguido.',
+    a: 'Arquitectura de contenido, diseño UX/UI a medida, desarrollo responsive, SEO on-page base, formularios, integración con CMS si hace falta, QA en varios dispositivos y publicación con dominio.',
   },
   {
-    q: '¿Trabajan con WordPress, Webflow o Wix?',
-    a: 'No. Hacemos todo en código (Next.js), sin plantillas ni constructores. El resultado es más rápido, más legible para Google y más fácil de escalar que una web montada sobre un builder.',
+    q: '¿Trabajan con Wix u otros constructores?',
+    a: 'No. Hacemos todo en código propio, sin plantillas ni constructores. El resultado es un sitio rápido, que Google lee y que se puede escalar.',
   },
   {
     q: '¿Cuánto cuesta una página web?',
-    a: 'Cotizamos cada proyecto por alcance: una landing no es lo mismo que un sitio con reservas o un catálogo de productos. Te pasamos el "desde" por WhatsApp con una llamada corta o un cuestionario de 5 preguntas.',
+    a: 'Cotizamos cada proyecto por alcance: una landing no es lo mismo que un sitio con reservas o un catálogo de productos. Te pasamos el "desde" por WhatsApp.',
   },
   {
     q: '¿Cómo es el pago?',
-    a: 'Trabajamos con transferencia: 50% al comenzar el proyecto y 50% al entregar. Para proyectos largos acordamos pagos intermedios por hito.',
+    a: 'Trabajamos con transferencia: 50% al comenzar el proyecto y 50% al entregar.',
   },
   {
     q: '¿Después de la entrega quién se ocupa de los cambios?',
-    a: 'Si querés gestionar el sitio por tu cuenta, te dejamos un CMS liviano y un instructivo corto. Si preferís delegarlo, ofrecemos mantenimiento mensual.',
+    a: 'Si querés gestionar el sitio por tu cuenta, lo armamos con un CMS para que edites textos e imágenes. [CONFIRMAR: si ofrecen mantenimiento mensual y en qué condiciones]',
   },
 ];
 
@@ -101,34 +101,33 @@ export default function Page() {
           locale={LOCALE}
           h2="Qué incluye tu web."
           items={[
-            'Reunión de brief y cuestionario para entender el negocio.',
-            'Arquitectura de contenido y wireframes antes de diseñar.',
-            'Diseño UX/UI a medida (sin templates), con sistema reutilizable.',
-            'Desarrollo responsive en código (Next.js), rápido y accesible.',
+            'Brief con cuestionario para entender el negocio.',
+            'Arquitectura de contenido antes de diseñar.',
+            'Diseño UX/UI a medida, sin templates.',
+            'Desarrollo responsive en código propio.',
             'SEO on-page base: titles, descripciones, hreflang, schema y sitemap.',
-            'CMS liviano para editar textos, imágenes y entradas sin tocar código.',
-            'Formularios de contacto y conexión con WhatsApp.',
-            'QA en varios dispositivos y navegadores antes de publicar.',
-            'Dominio, hosting y publicación guiada.',
-            'Documentación corta de cómo mantener el sitio.',
+            'CMS para editar textos e imágenes sin tocar código.',
+            'Formularios de contacto.',
+            'QA en varios dispositivos antes de publicar.',
+            'Dominio y publicación.',
           ]}
-          note="Lo que no entra por default: estrategia editorial, carga masiva de contenido y ecommerce con cientos de productos. Se cotizan aparte si hacen falta."
+          note="Lo que no entra: estrategia de contenido y carga masiva de contenido. Blog, newsletter, press kit o tienda se pueden sumar después."
         />
         <FeaturedWork
           locale={LOCALE}
           h2="Webs que hicimos."
-          intro="Páginas web para empresas de turismo como MareBoats y DeltaRowing, y para marcas de cosmética, deporte, web3 y marca personal. Mismo foco: que se lea rápido y guíe a la acción."
+          intro="Páginas web para empresas de turismo como MareBoats y DeltaRowing, y para proyectos de bienestar, web3, eventos tech y marca personal. Mismo foco: que se lea rápido y guíe a la acción."
           slugs={['calmo', 'the-red-guild', 'mareboats', 'ethperience', 'fede-garcia', 'deltarowling']}
         />
         <Process
           locale={LOCALE}
           h2="Cómo trabajamos."
-          intro="Sin vueltas infinitas. Sin desaparecer a mitad del proyecto. 2–3 rondas de feedback por entregable y entregas por hito."
+          intro="Sin vueltas infinitas. Sin desaparecer a mitad del proyecto. 2–3 rondas de feedback por entregable."
           steps={[
-            { title: '01 · Brief', text: 'Cuestionario corto para entender negocio, objetivos y referencias.' },
-            { title: '02 · Moodboard y arquitectura', text: 'Referencias visuales y mapa de la web antes de abrir Figma.' },
-            { title: '03 · Diseño y desarrollo', text: 'Diseño UX/UI y desarrollo en paralelo. Prototipos navegables.' },
-            { title: '04 · QA y publicación', text: 'Testing en dispositivos, carga de contenido, dominio y publicación.' },
+            { title: '01 · Brief', text: 'Cuestionario para entender negocio, objetivos y referencias.' },
+            { title: '02 · Moodboard', text: 'Referencias visuales y arquitectura de la web antes de diseñar.' },
+            { title: '03 · Diseño y desarrollo', text: 'Diseño UX/UI y desarrollo en código, con 2–3 rondas de feedback.' },
+            { title: '04 · Ajustes y publicación', text: 'QA en dispositivos, dominio y publicación.' },
           ]}
           closing="Menos drama. Más progreso."
         />

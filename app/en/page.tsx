@@ -75,7 +75,7 @@ export default function HomeEN() {
             { title: '01 · Brief', text: 'A short questionnaire to understand business, goals and what you tried.' },
             { title: '02 · Moodboard', text: 'References and direction before opening Figma. Alignment in writing.' },
             { title: '03 · Design and dev', text: 'Brand and site in parallel. 2–3 rounds of feedback per deliverable.' },
-            { title: '04 · QA and launch', text: 'Testing, content, domain and QA. Everything documented.' },
+            { title: '04 · QA and launch', text: 'QA, domain and launch.' },
           ]}
           closing="Less drama. More progress."
         />

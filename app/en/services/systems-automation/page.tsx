@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'What can you automate?',
-    a: 'Customer replies and follow-up on WhatsApp, data syncing across systems (CRM, spreadsheets, invoicing), bookings and confirmations, newsletter sending, report generation and any flow you do manually that repeats. We handle anything that can be connected via API or WhatsApp Business.',
+    a: 'Customer replies and follow-up on WhatsApp, sales processes, integrations between the tools you already use and any flow you do manually that repeats. We handle anything that can be connected via API or WhatsApp Business.',
   },
   {
     q: 'Do I need to have anything ready?',
@@ -49,15 +49,15 @@ const FAQ = [
   },
   {
     q: 'Do you use n8n or something else?',
-    a: 'We use n8n when it makes sense (open source, self-hosted, portable). For specific integrations we also use the WhatsApp API, OpenAI/Claude if an AI step is needed, and whatever the project requires. We work on your infrastructure, not ours.',
+    a: 'We build flows in n8n and bots on WhatsApp. For each integration we use whatever the project needs. [CONFIRMAR: other tools you use regularly]',
   },
   {
     q: 'Can it be changed later?',
-    a: "Yes. We leave the flow documented and, if you want, a simple dashboard so you can edit replies and messages without touching code. If you prefer, we stay on monthly maintenance.",
+    a: 'Yes, the flow can be changed after delivery. [CONFIRMAR: how changes are made (client or Kosmos) and whether there is monthly maintenance]',
   },
   {
     q: 'How much does it cost?',
-    a: "We quote by scope. A WhatsApp bot with 3 simple flows isn't the same as a system connected to your CRM that automates bookings and invoicing. We share the starting price after a short call.",
+    a: "We quote by scope. A WhatsApp bot with 3 simple flows isn't the same as a system connected to your CRM that automates bookings and invoicing. We share the starting price on WhatsApp.",
   },
   {
     q: 'What is a design system and why do you offer it together?',
@@ -100,27 +100,25 @@ export default function Page() {
           locale={LOCALE}
           h2="What we can solve."
           items={[
-            'WhatsApp Business bots with menu, replies and handoff to a human.',
-            'Support and sales flows in n8n (open source, self-hosted).',
+            'WhatsApp chatbot for businesses: menu, replies and handoff to a human.',
+            'Support and sales flows in n8n.',
             'Integrations between CRM, spreadsheets, calendars and invoicing.',
             'Automatic reply and follow-up for new customers.',
             'Booking, payment and reminder confirmations.',
-            'Monthly reports via email or Slack.',
             'Social/form data pushed into your CRM.',
-            'AI automations when they help (summaries, lead classification).',
-            'Figma design systems so every piece ships consistently.',
+            'Design systems so every piece ships consistently.',
           ]}
           note="Specific case studies (our own) are added here when a client authorizes showing them [CONFIRMAR: publishable example]."
         />
         <Process
           locale={LOCALE}
           h2="How we do it."
-          intro="We ship the minimum that works first, test it with real data and then scale. No big systems nobody uses."
+          intro="We start with the process that eats the most time and build from there. 2–3 feedback rounds per deliverable."
           steps={[
             { title: '01 · Mapping', text: 'See what you do by hand today and where time is lost.' },
-            { title: '02 · MVP', text: 'Build the minimum useful version of the flow and turn it on.' },
-            { title: '03 · Testing', text: 'Real data for 1–2 weeks, adjustments and improvements.' },
-            { title: '04 · Handoff', text: 'Documentation, dashboard and team handover.' },
+            { title: '02 · First flow', text: 'Build the flow that saves you the most time and turn it on.' },
+            { title: '03 · Testing', text: 'We test it and adjust. [CONFIRMAR: length of the testing stage]' },
+            { title: '04 · Handoff', text: 'Handover to your team. [CONFIRMAR: what is delivered at the end]' },
           ]}
           closing="Less drama. More progress."
         />
@@ -128,8 +126,8 @@ export default function Page() {
           locale={LOCALE}
           h2="How much it costs."
           priceFrom="[CONFIRMAR]"
-          detail="The starting price covers a small flow (bot with 3–4 replies and one integration). Larger systems are quoted by scope."
-          payment="Bank transfer: 50% at kickoff, 50% at delivery. Monthly maintenance is available afterwards."
+          detail="The starting price covers [CONFIRMAR: scope of the entry price]. Larger systems are quoted by scope."
+          payment="Bank transfer: 50% at kickoff, 50% at delivery."
           primaryLabel="Ask for your starting price"
           primaryText={WHATSAPP_TEXTS.systemsEN}
         />

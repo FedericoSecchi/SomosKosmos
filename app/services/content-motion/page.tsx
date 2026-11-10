@@ -42,27 +42,27 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Hacen contenido mensual o puntual?',
-    a: 'Ambos. Podemos armar los templates y entregártelos para que vos manejes la frecuencia, o producir las piezas mensuales como pack. Lo discutimos según el presupuesto y quién administra las redes.',
+    a: 'Podemos armar templates de Canva con tutorial para que vos manejes la frecuencia. [CONFIRMAR: si también producen piezas mensuales y cómo se contratan]',
   },
   {
     q: '¿Qué incluyen los templates de Canva?',
-    a: 'Un set de 15–25 plantillas reutilizables (posteos, stories, reels de arranque, carruseles) basadas en tu identidad, con guías de uso para que cualquier persona las edite sin romper la marca.',
+    a: 'Un set de más de 20 plantillas reutilizables basadas en tu identidad, con un tutorial para que cualquier persona las edite sin romper la marca.',
   },
   {
     q: '¿Producen video?',
-    a: 'Sí, fotografía y video para turismo, marcas y eventos: reels, piezas para campaña, aftermovies y material de producto. Trabajamos en Argentina y donde haga falta.',
+    a: 'Sí, fotografía y video para marcas y para turismo, con footage aéreo vía SkyShot. [CONFIRMAR: formatos habituales y zonas donde filman]',
   },
   {
     q: '¿Y lo de dron?',
-    a: 'La producción aérea la hacemos a través de SkyShot (skyshot.space), el proyecto hermano de Kosmos. Ideal para turismo, inmuebles y destinos.',
+    a: 'La producción aérea la hacemos con SkyShot (skyshot.space), nuestro proyecto de contenido con dron, enfocado en turismo, naturaleza y relato de marca.',
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Depende del alcance. Un set de templates sale distinto que una producción de video con dron en un hotel. Te pasamos el "desde" después de una llamada corta.',
+    a: 'Depende del alcance. Un set de templates sale distinto que una producción de video con dron. Te pasamos el "desde" por WhatsApp.',
   },
   {
     q: '¿Pueden auditar nuestras redes antes?',
-    a: 'Sí. Hacemos auditoría de redes y propuesta de mejora como paso previo si no sabés dónde conviene invertir. Es un entregable corto que después se descuenta si avanzás con contenido.',
+    a: 'Sí. Hacemos auditoría de redes y propuesta de mejora como paso previo si no sabés dónde conviene invertir.',
   },
 ];
 
@@ -95,26 +95,25 @@ export default function Page() {
           lead="Templates reutilizables, motion, fotografía y video. Producción con dron propia a través de SkyShot. Para marcas que quieren sostener presencia sin depender de un diseñador freelance distinto por mes."
           primaryLabel="Pedí tu propuesta de contenido"
           primaryText={WHATSAPP_TEXTS.content}
-          note="Si no sabés por dónde empezar, hacemos una auditoría corta de redes."
+          note="Si no sabés por dónde empezar, arrancamos con una auditoría de redes."
         />
         <Includes
           locale={LOCALE}
           h2="Qué podemos producir."
           items={[
-            'Templates de Canva (o Figma) con tu marca, reutilizables y con tutorial de uso.',
-            'Auditoría de redes con hallazgos y propuesta de mejora.',
-            'Diseño mensual de piezas para redes sociales y campañas.',
-            'Motion graphics para marcas: reels, intros y campañas digitales.',
-            'Fotografía y video para marca, producto o destino.',
-            'Video con dron para empresas de turismo e inmuebles (vía SkyShot).',
-            'Refresh de decks y materiales comerciales.',
-            'Materiales de campaña por hitos (lanzamiento, temporada, evento).',
+            'Templates de Canva con tu marca, reutilizables y con tutorial de uso.',
+            'Auditoría de redes y propuesta de mejoras.',
+            'Diseño de piezas para redes sociales y campañas.',
+            'Motion graphics para marcas.',
+            'Fotografía y video para turismo y marcas.',
+            'Video con dron para empresas de turismo (vía SkyShot).',
+            'Refresh de decks.',
           ]}
         />
         <FeaturedWork
           locale={LOCALE}
           h2="Trabajos de contenido y audiovisual."
-          intro="Dron, foto y motion para marcas y destinos. Más proyectos en producción."
+          intro="Dron, foto y motion para marcas y destinos."
           slugs={['skyshot', 'calmo', 'nude', 'the-red-guild']}
         />
         <Process
@@ -123,9 +122,9 @@ export default function Page() {
           intro="Primero definimos qué querés que pase (más seguidores, más consultas, más ventas). Después pensamos las piezas."
           steps={[
             { title: '01 · Auditoría', text: 'Qué tenés hoy, qué funciona y qué conviene cambiar.' },
-            { title: '02 · Dirección', text: 'Dirección de arte, tono y plan de piezas por mes.' },
+            { title: '02 · Dirección', text: 'Dirección de arte, tono y plan de piezas.' },
             { title: '03 · Producción', text: 'Diseño, motion, foto y video según el plan.' },
-            { title: '04 · Entrega', text: 'Piezas listas para publicar, con calendario sugerido.' },
+            { title: '04 · Entrega', text: 'Piezas listas para publicar.' },
           ]}
           closing="Diseñamos universos."
         />
@@ -133,8 +132,8 @@ export default function Page() {
           locale={LOCALE}
           h2="Cuánto cuesta."
           priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre un pack mensual acotado o un set de templates. Producción audiovisual (video, dron, foto en locación) se cotiza por rodaje."
-          payment="Mensual o por proyecto. Pago en transferencia: 50% al comenzar, 50% al entregar."
+          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada, ej. set de templates]. Producción audiovisual (video, dron, foto) se cotiza por proyecto."
+          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
           primaryLabel="Pedí tu “desde”"
           primaryText={WHATSAPP_TEXTS.content}
         />

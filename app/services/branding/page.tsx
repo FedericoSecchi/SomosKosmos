@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Qué recibo al final del proyecto de branding?',
-    a: 'Un sistema completo de identidad: logo en todas sus versiones, tipografía principal y secundaria, paleta de color, íconos o recursos gráficos propios, piezas de ejemplo para redes y una guía de marca con reglas de uso para que cualquier persona del equipo (o un proveedor) use la marca igual.',
+    a: 'Un sistema de identidad: logo, tipografía, paleta de color y una guía de marca con reglas de uso real, para que cualquier persona del equipo (o un proveedor) use la marca igual. [CONFIRMAR: piezas adicionales incluidas]',
   },
   {
     q: '¿Cuánto tarda un proceso de branding?',
@@ -50,7 +50,7 @@ const FAQ = [
   },
   {
     q: '¿Hacen rebranding de una empresa que ya tiene marca?',
-    a: 'Sí. Es un trabajo distinto al de empezar de cero: parte del valor es decidir qué conservar y qué cambiar sin perder reconocimiento. Nude es un ejemplo: refrescamos la identidad sin romper lo que ya funcionaba.',
+    a: 'Sí. Es un trabajo distinto al de empezar de cero: parte del valor es decidir qué conservar y qué cambiar sin perder reconocimiento. Nude es un ejemplo: rediseño de marca y web para una marca natural de cuidado de la piel.',
   },
   {
     q: '¿Puedo contratar branding y web juntos?',
@@ -58,11 +58,11 @@ const FAQ = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Cotizamos cada proyecto por alcance (puntos de contacto, idiomas, cantidad de piezas). Te pasamos el "desde" por WhatsApp después de una llamada corta o un cuestionario de 5 preguntas.',
+    a: 'Cotizamos cada proyecto por alcance (puntos de contacto, idiomas, cantidad de piezas). Te pasamos el "desde" por WhatsApp.',
   },
   {
     q: '¿Entregan los archivos editables?',
-    a: 'Sí. Dejamos los archivos de Figma, los vectores (SVG/PDF) y la guía de marca en PDF para que puedas seguir trabajando con cualquier equipo creativo después.',
+    a: '[CONFIRMAR: si se entregan archivos editables y en qué formatos]',
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Page() {
           locale={LOCALE}
           eyebrow="Servicio · Branding"
           h1="Diseño de identidad de marca para que te reconozcan y confíen en vos."
-          lead="Branding para pymes, startups y marcas personales: diseñamos la identidad visual con logo, tipografía, color y recursos propios. Terminamos con un manual de marca corto y usable para que la marca viva igual en cada punto de contacto."
+          lead="Branding para pymes, startups y marcas personales: diseñamos la identidad visual con logo, tipografía, color y recursos propios. Terminamos con un manual de marca para uso real, para que la marca viva igual en cada punto de contacto."
           primaryLabel="Contanos tu marca por WhatsApp"
           primaryText={WHATSAPP_TEXTS.branding}
           note="Diseñar sin estrategia no es una opción."
@@ -101,33 +101,29 @@ export default function Page() {
           locale={LOCALE}
           h2="Qué incluye tu identidad de marca."
           items={[
-            'Reunión de brief y cuestionario de posicionamiento.',
-            'Moodboard visual y referencias validadas antes de diseñar.',
-            'Diseño de logotipo e isotipo con variantes de uso.',
-            'Tipografías principal y secundaria con reglas de combinación.',
-            'Paleta de color con usos primarios y secundarios.',
-            'Recursos gráficos propios: íconos, patrones, stickers.',
-            'Piezas de ejemplo para redes, decks y papelería básica.',
-            'Guía de marca en PDF con reglas de uso real.',
-            'Archivos editables (Figma, SVG, PDF, PNG) listos para usar.',
+            'Brief con cuestionario para entender el negocio.',
+            'Moodboard con referencias antes de diseñar.',
+            'Diseño de logotipo, tipografía y paleta de color.',
+            'Guía de marca con reglas de uso real.',
+            '[CONFIRMAR: piezas y archivos adicionales que se entregan]',
           ]}
           note="Si querés que también hagamos la web, trabajamos marca y sitio en paralelo con el mismo equipo."
         />
         <FeaturedWork
           locale={LOCALE}
           h2="Marcas que diseñamos."
-          intro="Seguridad web3, cosmética natural, bienestar y gastronomía artesanal. Distintos rubros, mismo cuidado."
+          intro="Seguridad cripto, cuidado de la piel, bienestar y comida artesanal. Distintos rubros, mismo cuidado."
           slugs={['security-alliance', 'nude', 'orbita', 'pancito', 'calmo', 'the-red-guild']}
         />
         <Process
           locale={LOCALE}
           h2="Cómo trabajamos tu marca."
-          intro="Trabajamos por hitos. Cada etapa tiene 2–3 rondas de feedback y una fecha de cierre acordada."
+          intro="Cada entregable tiene 2–3 rondas de feedback."
           steps={[
-            { title: '01 · Brief y estrategia', text: 'Entender el negocio, el cliente y el territorio competitivo.' },
-            { title: '02 · Moodboard', text: 'Dirección visual, referencias y tono validados por escrito.' },
-            { title: '03 · Diseño del sistema', text: 'Logo, tipografía, color, recursos y piezas de ejemplo.' },
-            { title: '04 · Guía y entrega', text: 'Guía de marca, archivos editables y reunión de lanzamiento.' },
+            { title: '01 · Brief', text: 'Cuestionario para entender el negocio, el cliente y la competencia.' },
+            { title: '02 · Moodboard', text: 'Dirección visual y referencias antes de diseñar.' },
+            { title: '03 · Diseño del sistema', text: 'Logo, tipografía y color.' },
+            { title: '04 · Guía y entrega', text: 'Guía de marca con reglas de uso real.' },
           ]}
           closing="Ser uno más no es una opción."
         />
@@ -135,7 +131,7 @@ export default function Page() {
           locale={LOCALE}
           h2="Cuánto cuesta tu identidad."
           priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre marca para un negocio chico con hasta 5 puntos de contacto. Rebranding, marcas con varias líneas y sistemas más grandes se cotizan aparte."
+          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Rebranding y sistemas más grandes se cotizan por alcance."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
           primaryLabel="Pedí tu “desde”"
           primaryText={WHATSAPP_TEXTS.branding}

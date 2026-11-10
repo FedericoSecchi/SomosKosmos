@@ -42,27 +42,27 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'Do you work monthly or one-off?',
-    a: 'Both. We can build the templates and hand them over so you handle the cadence, or produce the monthly pieces as a pack. We discuss it based on budget and who runs the social accounts.',
+    a: 'We can build Canva templates with a tutorial so you handle the cadence. [CONFIRMAR: whether you also produce monthly pieces and how they are hired]',
   },
   {
     q: 'What do the templates include?',
-    a: 'A set of 15–25 reusable templates (posts, stories, reel intros, carousels) based on your identity, with usage guidelines so anyone can edit them without breaking the brand.',
+    a: 'A set of 20+ reusable templates based on your identity, with a tutorial so anyone can edit them without breaking the brand.',
   },
   {
     q: 'Do you produce video?',
-    a: 'Yes, photo and video. Reels, campaign pieces, event aftermovies and product material. We work in Argentina and wherever needed.',
+    a: 'Yes, photo and video for brands and tourism, with aerial footage via SkyShot. [CONFIRMAR: usual formats and where you shoot]',
   },
   {
     q: 'And the drone part?',
-    a: 'Aerial production is handled through SkyShot (skyshot.space), the sister project of Kosmos. Ideal for tourism, real estate and destinations.',
+    a: 'Aerial production is handled through SkyShot (skyshot.space), our drone media project focused on tourism, nature and brand storytelling.',
   },
   {
     q: 'How much does it cost?',
-    a: "It depends on scope. A template set isn't the same as a video shoot with drone at a hotel. We share the starting price after a short call.",
+    a: "It depends on scope. A template set isn't the same as a drone video shoot. We share the starting price on WhatsApp.",
   },
   {
     q: 'Can you audit our socials first?',
-    a: "Yes. We offer a social audit and improvement proposal as a first step if you don't know where to invest. It's a short deliverable that's discounted if you go ahead with content afterwards.",
+    a: "Yes. We offer a social audit and improvement proposal as a first step if you don't know where to invest.",
   },
 ];
 
@@ -95,26 +95,25 @@ export default function Page() {
           lead="Reusable templates, motion, photography and video. In-house drone production through SkyShot. For brands that want to keep presence without depending on a different freelance designer every month."
           primaryLabel="Ask for your content proposal"
           primaryText={WHATSAPP_TEXTS.contentEN}
-          note="If you don't know where to start, we run a short social audit."
+          note="If you don't know where to start, we begin with a social audit."
         />
         <Includes
           locale={LOCALE}
           h2="What we can produce."
           items={[
-            'Set of reusable Canva/Figma templates with usage tutorial.',
-            'Social audit with findings and improvement proposal.',
-            'Monthly design of pieces for social and campaigns.',
-            'Motion graphics for reels, intros and digital campaigns.',
-            'Photography and video for brand, product or destination.',
-            'Drone production (via SkyShot) for tourism and real estate.',
-            'Refresh of decks and sales materials.',
-            'Milestone campaign materials (launch, season, event).',
+            'Canva templates with your brand, reusable and with a usage tutorial.',
+            'Social audit and improvement proposal.',
+            'Design of pieces for social and campaigns.',
+            'Motion graphics for brands.',
+            'Photography and video for tourism and brands.',
+            'Drone video for tourism businesses (via SkyShot).',
+            'Deck refresh.',
           ]}
         />
         <FeaturedWork
           locale={LOCALE}
           h2="Content and video work."
-          intro="Drone, photo and motion for brands and destinations. More projects in production."
+          intro="Drone, photo and motion for brands and destinations."
           slugs={['skyshot', 'calmo', 'nude', 'the-red-guild']}
         />
         <Process
@@ -123,9 +122,9 @@ export default function Page() {
           intro="First we define what you want to happen (more followers, more inquiries, more sales). Then we design the pieces."
           steps={[
             { title: '01 · Audit', text: "What you have today, what works and what's worth changing." },
-            { title: '02 · Direction', text: 'Art direction, tone and monthly content plan.' },
+            { title: '02 · Direction', text: 'Art direction, tone and content plan.' },
             { title: '03 · Production', text: 'Design, motion, photo and video according to the plan.' },
-            { title: '04 · Delivery', text: 'Pieces ready to publish with a suggested calendar.' },
+            { title: '04 · Delivery', text: 'Pieces ready to publish.' },
           ]}
           closing="We design universes."
         />
@@ -133,8 +132,8 @@ export default function Page() {
           locale={LOCALE}
           h2="How much it costs."
           priceFrom="[CONFIRMAR]"
-          detail="The starting price covers a scoped monthly pack or a template set. Audiovisual production (video, drone, on-location photo) is quoted per shoot."
-          payment="Monthly or per project. Bank transfer: 50% at kickoff, 50% at delivery."
+          detail="The starting price covers [CONFIRMAR: scope of the entry price, e.g. a template set]. Audiovisual production (video, drone, photo) is quoted per project."
+          payment="Bank transfer: 50% at kickoff, 50% at delivery."
           primaryLabel="Ask for your starting price"
           primaryText={WHATSAPP_TEXTS.contentEN}
         />

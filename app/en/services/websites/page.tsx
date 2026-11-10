@@ -42,27 +42,27 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'How long does a website take?',
-    a: 'A well-made landing takes 1 to 4 weeks, a 5–7 page business site 2–3 weeks, and a site with a CMS 3–4 weeks. It depends on having copy and photos ready (if not, we coordinate it).',
+    a: 'A landing takes 1 to 4 weeks, a 7-page site 2–3 weeks and an artist website 3–4 weeks. It depends on having copy and photos ready.',
   },
   {
     q: "What's included?",
-    a: 'Content architecture, custom UX/UI design, responsive development, baseline on-page SEO, forms, CMS integration if needed, QA across devices, and launch with domain. We leave everything documented so you can edit what changes often.',
+    a: 'Content architecture, custom UX/UI design, responsive development, baseline on-page SEO, forms, CMS integration if needed, QA across devices, and launch with domain.',
   },
   {
-    q: 'Do you work with WordPress, Webflow or Wix?',
-    a: 'No. We build everything in code (Next.js), without templates or builders. The result is faster, more readable for Google and easier to scale than a website on top of a builder.',
+    q: 'Do you work with Wix or other site builders?',
+    a: 'No. We build everything in our own code, without templates or builders. The result is a fast site that Google can read and that can scale.',
   },
   {
     q: 'How much does it cost?',
-    a: "We quote every project by scope: a landing isn't the same as a site with bookings or a product catalog. We share the starting price on WhatsApp after a short call or a 5-question brief.",
+    a: "We quote every project by scope: a landing isn't the same as a site with bookings or a product catalog. We share the starting price on WhatsApp.",
   },
   {
     q: 'How does payment work?',
-    a: 'Bank transfer: 50% at kickoff and 50% at delivery. For longer projects we agree on intermediate milestone payments.',
+    a: 'Bank transfer: 50% at kickoff and 50% at delivery.',
   },
   {
     q: 'Who handles changes after launch?',
-    a: 'If you want to manage the site on your own, we leave a lightweight CMS and a short guide. If you prefer to delegate, we offer monthly maintenance.',
+    a: 'If you want to manage the site on your own, we build it with a CMS so you can edit text and images. [CONFIRMAR: whether you offer monthly maintenance and on what terms]',
   },
 ];
 
@@ -101,34 +101,33 @@ export default function Page() {
           locale={LOCALE}
           h2="What's included in your website."
           items={[
-            'Brief meeting and questionnaire to understand your business.',
-            'Content architecture and wireframes before designing.',
-            'Custom UX/UI design (no templates), with a reusable system.',
-            'Responsive development in code (Next.js), fast and accessible.',
+            'Brief with a questionnaire to understand your business.',
+            'Content architecture before designing.',
+            'Custom UX/UI design, no templates.',
+            'Responsive development in our own code.',
             'On-page SEO baseline: titles, descriptions, hreflang, schema and sitemap.',
-            'Lightweight CMS to edit texts, images and entries without touching code.',
-            'Contact forms and WhatsApp integration.',
-            'QA across devices and browsers before publishing.',
-            'Domain, hosting and guided launch.',
-            'Short documentation on how to maintain the site.',
+            'CMS to edit text and images without touching code.',
+            'Contact forms.',
+            'QA across devices before publishing.',
+            'Domain and launch.',
           ]}
-          note="Not included by default: editorial strategy, bulk content loading and large ecommerce. Quoted separately if needed."
+          note="Not included: content strategy and bulk content loading. A blog, newsletter, press kit or store can be added later."
         />
         <FeaturedWork
           locale={LOCALE}
           h2="Websites we built."
-          intro="Tourism, cosmetics, sports, web3 and personal brand. Same focus: fast reading, clear action."
+          intro="Tourism, wellness, web3, tech events and personal brand. Same focus: fast reading, clear action."
           slugs={['calmo', 'the-red-guild', 'mareboats', 'ethperience', 'fede-garcia', 'deltarowling']}
         />
         <Process
           locale={LOCALE}
           h2="How we work."
-          intro="No endless rounds. No disappearing mid-project. 2–3 feedback rounds per deliverable and milestone-based delivery."
+          intro="No endless rounds. No disappearing mid-project. 2–3 feedback rounds per deliverable."
           steps={[
-            { title: '01 · Brief', text: 'Short questionnaire to understand business, goals and references.' },
-            { title: '02 · Moodboard and architecture', text: 'Visual references and site map before opening Figma.' },
-            { title: '03 · Design and development', text: 'UX/UI design and development in parallel. Clickable prototypes.' },
-            { title: '04 · QA and launch', text: 'Device testing, content loading, domain and publishing.' },
+            { title: '01 · Brief', text: 'Questionnaire to understand business, goals and references.' },
+            { title: '02 · Moodboard', text: 'Visual references and site architecture before designing.' },
+            { title: '03 · Design and development', text: 'UX/UI design and development in code, with 2–3 feedback rounds.' },
+            { title: '04 · Adjustments and launch', text: 'Device QA, domain and publishing.' },
           ]}
           closing="Less drama. More progress."
         />
@@ -136,7 +135,7 @@ export default function Page() {
           locale={LOCALE}
           h2="How much it costs."
           priceFrom="[CONFIRMAR]"
-          detail="We quote every project by scope. A landing starts below a corporate site with a CMS; a site with bookings or integrations sits above. We'll share the exact starting price in the first message."
+          detail="We quote every project by scope. A landing page for a single-service business starts below a corporate site with a CMS; a site with bookings or integrations sits above. We'll share the exact starting price in the first message."
           payment="Bank transfer: 50% at kickoff, 50% at delivery."
           primaryLabel="Ask for your starting price"
           primaryText={WHATSAPP_TEXTS.websitesEN}

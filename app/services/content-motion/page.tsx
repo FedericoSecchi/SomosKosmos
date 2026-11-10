@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Depende del alcance. Un set de templates sale distinto que una producción de video con dron. Te pasamos el "desde" por WhatsApp.',
+    a: 'Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada.',
   },
   {
     q: '¿Pueden auditar nuestras redes antes?',
@@ -127,9 +127,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="Cuánto cuesta."
-          priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada, ej. set de templates]. Producción audiovisual (video, dron, foto) se cotiza por proyecto."
-          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre contenido." items={FAQ} />
         <ClosingCta

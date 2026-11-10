@@ -81,7 +81,7 @@ export default function HomePage() {
         <ClosingCta
           locale={LOCALE}
           h2="Del caos al Kosmos."
-          lead="Contanos qué estás necesitando. Te pasamos el “desde” y los próximos pasos en el mismo mensaje."
+          lead="Contanos qué estás necesitando. En la primera llamada vemos el alcance y te pasamos el número."
         />
       </main>
       <Footer locale={LOCALE} />

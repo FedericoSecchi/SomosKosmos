@@ -124,7 +124,7 @@ export default function ProjectCasePage({ params }: { params: { slug: string } }
         <ClosingCta
           locale={LOCALE}
           h2={`¿Querés algo parecido a ${project.name}?`}
-          lead={`Trabajamos ${project.services.join(' + ')} con el mismo equipo. Contanos tu proyecto y te pasamos el "desde".`}
+          lead={`Trabajamos ${project.services.join(' + ')} con el mismo equipo. Contanos tu proyecto en una llamada de 20 minutos.`}
         />
         <NextProject locale={LOCALE} next={next} />
       </main>

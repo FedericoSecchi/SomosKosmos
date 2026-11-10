@@ -78,7 +78,7 @@ export default function HomeEN() {
         <ClosingCta
           locale={LOCALE}
           h2="From chaos to Kosmos."
-          lead="Tell us what you need. We'll share the starting price and the next steps in the same reply."
+          lead="Tell us what you need. On the first call we go over the scope and give you the number."
         />
       </main>
       <Footer locale={LOCALE} />

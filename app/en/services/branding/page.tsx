@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: 'How much does it cost?',
-    a: 'We quote every project by scope (touchpoints, languages, number of pieces). We share the starting price on WhatsApp.',
+    a: "We quote every project by scope. We'll give you the number on the first call.",
   },
   {
     q: 'Do you deliver editable files?',
@@ -126,9 +126,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="How much your identity costs."
-          priceFrom="[CONFIRMAR]"
-          detail="The starting price covers [CONFIRMAR: scope of the entry price]. Rebranding and larger systems are quoted by scope."
-          payment="Bank transfer: 50% at kickoff, 50% at delivery."
         />
         <Faq locale={LOCALE} h2="FAQ about branding." items={FAQ} />
         <ClosingCta

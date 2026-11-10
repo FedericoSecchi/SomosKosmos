@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Cotizamos cada proyecto por alcance (puntos de contacto, idiomas, cantidad de piezas). Te pasamos el "desde" por WhatsApp.',
+    a: 'Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada.',
   },
   {
     q: '¿Entregan los archivos editables?',
@@ -126,9 +126,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="Cuánto cuesta tu identidad."
-          priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Rebranding y sistemas más grandes se cotizan por alcance."
-          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre branding." items={FAQ} />
         <ClosingCta

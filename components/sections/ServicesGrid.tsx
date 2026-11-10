@@ -35,10 +35,7 @@ export function ServicesGrid({
                     {locale === 'es' ? s.teaser : s.teaserEN}
                   </p>
                 </div>
-                <div className="mt-5 flex items-center justify-between text-xs font-display uppercase tracking-wide">
-                  <span className="text-fg-muted">
-                    {locale === 'es' ? s.priceFrom : s.priceFromEN}
-                  </span>
+                <div className="mt-5 flex items-center justify-end text-xs font-display uppercase tracking-wide">
                   <span className="text-accent group-hover:translate-x-1 transition-transform">
                     {locale === 'es' ? 'Ver →' : 'View →'}
                   </span>

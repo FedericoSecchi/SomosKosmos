@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Website design for small businesses — Somos Kosmos',
     description:
-      'Hand-coded sites, no templates. Custom UX/UI, baseline SEO, forms, CMS and QA. Starting price shared on WhatsApp.',
+      'Hand-coded sites, no templates. Custom UX/UI, baseline SEO, forms, CMS and QA. We quote every project by scope.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.en,
     type: 'website',
@@ -52,7 +52,7 @@ const FAQ = [
   },
   {
     q: 'How much does it cost?',
-    a: "We quote every project by scope: a landing isn't the same as a site with bookings or a product catalog. We share the starting price on WhatsApp.",
+    a: "We quote every project by scope. We'll give you the number on the first call.",
   },
   {
     q: 'How does payment work?',
@@ -91,7 +91,7 @@ export default function Page() {
           eyebrow="Service · Websites"
           h1="We build websites that explain what you do, organize your info and help people choose you."
           lead="Hand-coded landings and custom websites, no templates or builders. UX/UI design, baseline SEO, forms and CMS if needed. We deliver in 1–4 weeks with 2–3 rounds of feedback."
-          note="You'll get the starting price in our first reply."
+          note="We quote by scope: you'll get the number on the first call."
         />
         <Includes
           locale={LOCALE}
@@ -130,9 +130,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="How much it costs."
-          priceFrom="[CONFIRMAR]"
-          detail="We quote every project by scope. A landing page for a single-service business starts below a corporate site with a CMS; a site with bookings or integrations sits above. We'll share the exact starting price in the first message."
-          payment="Bank transfer: 50% at kickoff, 50% at delivery."
         />
         <Faq locale={LOCALE} h2="FAQ about our websites." items={FAQ} />
         <ClosingCta

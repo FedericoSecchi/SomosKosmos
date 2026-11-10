@@ -56,7 +56,7 @@ const FAQ = [
   },
   {
     q: 'How much does it cost?',
-    a: "It depends on scope. A template set isn't the same as a drone video shoot. We share the starting price on WhatsApp.",
+    a: "We quote every project by scope. We'll give you the number on the first call.",
   },
   {
     q: 'Can you audit our socials first?',
@@ -127,9 +127,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="How much it costs."
-          priceFrom="[CONFIRMAR]"
-          detail="The starting price covers [CONFIRMAR: scope of the entry price, e.g. a template set]. Audiovisual production (video, drone, photo) is quoted per project."
-          payment="Bank transfer: 50% at kickoff, 50% at delivery."
         />
         <Faq locale={LOCALE} h2="FAQ about content." items={FAQ} />
         <ClosingCta

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Diseño de páginas web para pymes — Somos Kosmos',
     description:
-      'Sitios en código, sin templates. Diseño UX/UI a medida, SEO base, formularios, CMS y QA. "Desde" por WhatsApp.',
+      'Sitios en código, sin templates. Diseño UX/UI a medida, SEO base, formularios, CMS y QA. Cotizamos cada proyecto por alcance.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.es,
     type: 'website',
@@ -52,7 +52,7 @@ const FAQ = [
   },
   {
     q: '¿Cuánto cuesta una página web?',
-    a: 'Cotizamos cada proyecto por alcance: una landing no es lo mismo que un sitio con reservas o un catálogo de productos. Te pasamos el "desde" por WhatsApp.',
+    a: 'Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada.',
   },
   {
     q: '¿Cómo es el pago?',
@@ -91,7 +91,7 @@ export default function Page() {
           eyebrow="Servicio · Websites"
           h1="Diseño de páginas web para pymes: sitios que explican lo que hacés y ayudan a que te elijan."
           lead="Diseño web a medida, en código propio, sin plantillas ni constructores. Landings y sitios con UX/UI, SEO base, formularios y CMS si hace falta. Entregamos en 1–4 semanas con 2–3 rondas de feedback."
-          note="Te pasamos el “desde” en la primera respuesta."
+          note="Cotizamos por alcance: te pasamos el número en la primera llamada."
         />
         <Includes
           locale={LOCALE}
@@ -130,15 +130,12 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="Cuánto cuesta."
-          priceFrom="[CONFIRMAR]"
-          detail="Cotizamos cada proyecto por alcance. Una landing page para un negocio con un solo servicio arranca abajo de un sitio corporativo con CMS; un sitio con reservas o integraciones queda arriba. Te pasamos el número en el primer mensaje."
-          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre nuestras webs." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="¿Hablamos de tu web?"
-          lead="¿Necesitás una página web para tu negocio? Contanos qué hacés y para qué querés usar el sitio. Te respondemos con alcance, plazos y el “desde”."
+          lead="¿Necesitás una página web para tu negocio? Contanos qué hacés y para qué querés usar el sitio. En la primera llamada vemos alcance, plazos y número."
         />
       </main>
       <Footer locale={LOCALE} />

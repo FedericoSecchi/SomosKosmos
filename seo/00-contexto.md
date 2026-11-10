@@ -136,7 +136,7 @@ proyectos USD 800–3.000 en 2–6 semanas (descripción del proyecto Kosmos en 
 
 ## Pendientes para pedir
 - [x] ~~Número de WhatsApp de ventas~~: descartado, el CTA es Calendly + email (Fede, 10/11/2026)
-- [ ] Precios "desde" por servicio, en ARS y USD (o regla de moneda)
+- [x] ~~Precios "desde"~~: no hay lista; se cotiza por alcance en la primera llamada (Fede, 10/11/2026)
 - [ ] Ciudad publicable o "remoto desde Argentina"
 - [ ] 3–5 testimonios con nombre
 - [ ] Fotos reales del equipo y del proceso (reemplazan las 3 fotos stock actuales)

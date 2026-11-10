@@ -139,7 +139,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 | Público | Pymes de cualquier rubro, sin nicho; rubros como casos dentro de servicios | Fede, 25/10/2026 |
 | Diseño | Identidad real: #222222 + #6FE23C, Syne en títulos, Space Grotesk en texto, stickers de marca, grilla fina | Fede, 25/10/2026 |
 | CTA | Principal en todo el sitio: "Agendá una llamada de 20 min" (Calendly). Secundario: "Escribinos a hello@somoskosmos.com" (mailto). Sin WhatsApp (no hay número ni quién responda) y sin botón flotante. Antes: WhatsApp prellenado + Calendly (Fede, 25/10/2026) | Fede, 10/11/2026 |
-| Precio | "Desde" visible por servicio | Fede, 25/10/2026 |
+| Precio | Sin lista de precios ni "desde". Cada bloque "Cuánto cuesta": "Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada." + "50% al comenzar, 50% al entregar". Antes: "desde" visible por servicio (Fede, 25/10/2026) | Fede, 10/11/2026 |
 | Nombre | "Somos Kosmos" en todo el sitio, title y schema | Claude (consistencia con dominio y marca) |
 | SEO programático | Se eliminan ~280 páginas generadas; quedan stubs de redirección | Claude (regla 2), 26/10/2026 |
 | Tecnología mencionada | Solo código; nunca Webflow ni constructores | Fede, 26/10/2026 |
@@ -179,7 +179,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 |---|---|---|
 | Número de WhatsApp de ventas | — | ❌ descartado: no hay número ni quién responda; el CTA pasa a Calendly + email (Fede, 10/11/2026) |
 | Link de Calendly (evento de 20 min) | CTA principal | ✅ creado 26/10/2026 |
-| Precio "desde" por servicio (ARS y USD) | servicios, home, FAQ | pendiente |
+| Precio "desde" por servicio (ARS y USD) | — | ❌ descartado: se cotiza por alcance en la primera llamada (Fede, 10/11/2026) |
 | Alcance de Sistemas & Automatizaciones | `/services/systems-automation` | ✅ "hacemos todo" (Fede, 26/10) |
 | Ejemplo concreto de automatización publicable | `/services/systems-automation` | pendiente |
 | Ciudad publicable | schema, footer | pendiente |

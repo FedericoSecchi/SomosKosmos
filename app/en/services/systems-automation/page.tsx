@@ -55,7 +55,7 @@ const FAQ = [
   },
   {
     q: 'How much does it cost?',
-    a: "We quote by scope. A WhatsApp bot with 3 simple flows isn't the same as a system connected to your CRM that automates bookings and invoicing. We share the starting price on WhatsApp.",
+    a: "We quote every project by scope. We'll give you the number on the first call.",
   },
   {
     q: 'What is a design system and why do you offer it together?',
@@ -121,9 +121,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="How much it costs."
-          priceFrom="[CONFIRMAR]"
-          detail="The starting price covers [CONFIRMAR: scope of the entry price]. Larger systems are quoted by scope."
-          payment="Bank transfer: 50% at kickoff, 50% at delivery."
         />
         <Faq locale={LOCALE} h2="FAQ about automation." items={FAQ} />
         <ClosingCta

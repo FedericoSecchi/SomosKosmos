@@ -10,8 +10,6 @@ export interface ServiceMeta {
   taglineEN: string;
   teaser: string;
   teaserEN: string;
-  priceFrom: string;
-  priceFromEN: string;
 }
 
 export const services: ServiceMeta[] = [
@@ -29,8 +27,6 @@ export const services: ServiceMeta[] = [
       'Landings y sitios a medida, en código propio. Diseño, SEO base y publicación en 1–4 semanas.',
     teaserEN:
       'Landings and custom websites, hand-coded. Design, baseline SEO and publishing in 1–4 weeks.',
-    priceFrom: 'Desde [CONFIRMAR: ARS/USD]',
-    priceFromEN: 'From [CONFIRMAR: USD]',
   },
   {
     slug: 'branding',
@@ -46,8 +42,6 @@ export const services: ServiceMeta[] = [
       'Logo, tipografía, color y guías para que la marca viva igual en cada punto de contacto.',
     teaserEN:
       'Logo, typography, color and guidelines so the brand lives the same across every touchpoint.',
-    priceFrom: 'Desde [CONFIRMAR: ARS/USD]',
-    priceFromEN: 'From [CONFIRMAR: USD]',
   },
   {
     slug: 'systems-automation',
@@ -61,8 +55,6 @@ export const services: ServiceMeta[] = [
       'Automatizamos mensajes, ventas y procesos: bots de WhatsApp, flujos en n8n e integraciones.',
     teaserEN:
       'We automate messages, sales and workflows: WhatsApp bots, n8n flows and integrations.',
-    priceFrom: 'Desde [CONFIRMAR: ARS/USD]',
-    priceFromEN: 'From [CONFIRMAR: USD]',
   },
   {
     slug: 'content-motion',
@@ -78,8 +70,6 @@ export const services: ServiceMeta[] = [
       'Templates reutilizables, motion, fotografía y video. Dron propio con SkyShot.',
     teaserEN:
       'Reusable templates, motion, photography and video. In-house drone with SkyShot.',
-    priceFrom: 'Desde [CONFIRMAR: ARS/USD]',
-    priceFromEN: 'From [CONFIRMAR: USD]',
   },
 ];
 

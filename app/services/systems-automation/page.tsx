@@ -55,7 +55,7 @@ const FAQ = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Cotizamos por alcance. Un bot de WhatsApp con 3 flujos simples no cuesta lo mismo que un sistema conectado al CRM que automatiza reservas y facturación. Te pasamos el "desde" después de una llamada corta.',
+    a: 'Cotizamos cada proyecto por alcance. Te pasamos el número en la primera llamada.',
   },
   {
     q: '¿Qué es un sistema de diseño y por qué lo ofrecen junto?',
@@ -121,9 +121,6 @@ export default function Page() {
         <Pricing
           locale={LOCALE}
           h2="Cuánto cuesta."
-          priceFrom="[CONFIRMAR]"
-          detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Sistemas más grandes se cotizan por alcance."
-          payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre automatizaciones." items={FAQ} />
         <ClosingCta

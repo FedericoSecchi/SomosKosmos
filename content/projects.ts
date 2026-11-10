@@ -22,9 +22,9 @@ export const projects: ProjectCase[] = [
     slug: 'security-alliance',
     name: 'Security Alliance',
     services: ['branding'],
-    oneLine: 'Identidad modular y sistema de marca para una alianza global de seguridad cripto.',
+    oneLine: 'Identidad de marca y sistema de diseño modular para una alianza global de seguridad cripto.',
     summary:
-      'Diseñamos la identidad de Security Alliance y un sistema modular que ordena una red de equipos de seguridad web3. Logo, tipografía, color, plantillas y guías para que la marca escale sin perder foco.',
+      'Diseñamos la identidad de marca y un sistema de diseño modular para Security Alliance, una alianza global de seguridad cripto.',
     image: '/projects/security-alliance/hero.jpg',
     gallery: [
       '/projects/security-alliance/gallery-1.jpg',
@@ -35,17 +35,17 @@ export const projects: ProjectCase[] = [
     externalUrl: 'https://securityalliance.org/',
     featured: true,
     nameEN: 'Security Alliance',
-    oneLineEN: 'Modular identity and brand system for a global crypto security alliance.',
+    oneLineEN: 'Brand identity and modular design system for a global crypto security alliance.',
     summaryEN:
-      'We designed the identity of Security Alliance and a modular system that organizes a network of web3 security teams. Logo, typography, color, templates and guidelines so the brand can scale without losing focus.',
+      'We created the brand identity and a modular design system for Security Alliance, a global crypto security alliance.',
   },
   {
     slug: 'the-red-guild',
     name: 'The Red Guild',
     services: ['branding', 'websites'],
-    oneLine: 'Identidad y sitio para una guild de seguridad: foco, oficio y comunidad.',
+    oneLine: 'Identidad visual y experiencia web para The Red Guild.',
     summary:
-      'Trabajamos la identidad y el sitio de The Red Guild, un colectivo de seguridad web3. Imagen con carácter, bloques claros para explicar su trabajo y una web rápida que se lee en todos los dispositivos.',
+      'Trabajamos la identidad visual y la experiencia web de The Red Guild.',
     image: '/projects/the-red-guild/hero.jpg',
     gallery: [
       '/projects/the-red-guild/gallery-1.jpg',
@@ -58,17 +58,17 @@ export const projects: ProjectCase[] = [
     externalUrl: 'https://theredguild.org/',
     featured: true,
     nameEN: 'The Red Guild',
-    oneLineEN: 'Identity and website for a security guild: focus, craft and community.',
+    oneLineEN: 'Visual identity and web experience for The Red Guild.',
     summaryEN:
-      'We worked the identity and the website of The Red Guild, a web3 security collective. A bold visual system, clear blocks to explain their work and a fast website that reads on every device.',
+      'We worked on the visual identity and the web experience of The Red Guild.',
   },
   {
     slug: 'orbita',
     name: 'Orbita',
     services: ['branding'],
-    oneLine: 'Identidad y lenguaje visual para una propuesta digital en órbita.',
+    oneLine: 'Marca y experiencia digital para Orbita.',
     summary:
-      'Creamos la marca de Orbita con un sistema de piezas listo para redes, decks y producto. Tipografía con personalidad, paleta sobria y recursos gráficos que se reutilizan sin perder consistencia.',
+      'Diseñamos la marca de Orbita y su experiencia digital.',
     image: '/projects/orbita/orbita-hero.png',
     gallery: [
       '/projects/orbita/orbita-01.png',
@@ -80,17 +80,17 @@ export const projects: ProjectCase[] = [
     ],
     featured: true,
     nameEN: 'Orbita',
-    oneLineEN: 'Identity and visual language for a digital brand in orbit.',
+    oneLineEN: 'Brand and digital experience for Orbita.',
     summaryEN:
-      'We built the Orbita brand with a system ready for social, decks and product. Typography with personality, a quiet palette and graphic resources that reuse without losing consistency.',
+      'We designed the Orbita brand and its digital experience.',
   },
   {
     slug: 'nude',
     name: 'Nude',
     services: ['branding', 'websites'],
-    oneLine: 'Rebranding y web para una marca de cosmética natural.',
+    oneLine: 'Rediseño de marca y web para una marca natural de cuidado de la piel.',
     summary:
-      'Rediseñamos la identidad de Nude y rehicimos su web con foco en el producto, textura y claridad. Imagen de marca más cuidada, ficha de producto que vende y un sistema simple para sumar lanzamientos.',
+      'Rediseñamos la marca y la web de Nude, una marca natural de cuidado de la piel.',
     image: '/projects/nude/hero.png',
     gallery: [
       '/projects/nude/grid-01.png',
@@ -98,17 +98,17 @@ export const projects: ProjectCase[] = [
     ],
     externalUrl: 'https://nudecosmetica.com/',
     nameEN: 'Nude',
-    oneLineEN: 'Rebranding and website for a natural cosmetics brand.',
+    oneLineEN: 'Brand and web redesign for a natural skincare brand.',
     summaryEN:
-      'We redesigned the Nude identity and rebuilt the website around the product, texture and clarity. A more considered brand image, a product page that sells and a simple system to add launches.',
+      'We redesigned the brand and the website of Nude, a natural skincare brand.',
   },
   {
     slug: 'calmo',
     name: 'Calmo',
     services: ['branding', 'websites'],
-    oneLine: 'Marca y sitio para una propuesta de bienestar y descanso.',
+    oneLine: 'Identidad visual y sitio web para un proyecto de bienestar.',
     summary:
-      'Diseñamos la identidad de Calmo y su web: dirección fotográfica, tipografía amable y un flujo claro para que la gente entienda el servicio y reserve. Menos ruido, más calma.',
+      'Diseñamos la identidad visual y el sitio web de Calmo, un proyecto enfocado en el bienestar y en experiencias de calma.',
     image: '/projects/calmo/hero.png',
     gallery: [
       '/projects/calmo/gallery-1.png',
@@ -121,93 +121,93 @@ export const projects: ProjectCase[] = [
     externalUrl: 'https://calmo.fit/',
     featured: true,
     nameEN: 'Calmo',
-    oneLineEN: 'Brand and website for a wellness and rest proposal.',
+    oneLineEN: 'Visual identity and website for a wellbeing project.',
     summaryEN:
-      'We designed the Calmo identity and its website: photo direction, friendly typography and a clear flow so people understand the service and book. Less noise, more calm.',
+      'We designed the visual identity and the website for Calmo, a project focused on wellbeing and calm experiences.',
   },
   {
     slug: 'ethperience',
     name: 'ETHperience',
     services: ['websites'],
-    oneLine: 'Sitio para una plataforma de experiencias y eventos tech.',
+    oneLine: 'Sitio web para una plataforma de experiencias y eventos tech.',
     summary:
-      'Hicimos la web de ETHperience con foco en programa, speakers y venue. Estructura rápida, legible y fácil de actualizar para cada edición.',
+      'Diseñamos y desarrollamos el sitio web de ETHperience, una plataforma enfocada en experiencias y eventos tech.',
     externalUrl: 'https://ethperience.com/',
     needsThumbnail: true,
     nameEN: 'ETHperience',
     oneLineEN: 'Website for a tech experiences and events platform.',
     summaryEN:
-      "We built the ETHperience website around program, speakers and venue. A fast, readable structure that's easy to update for each edition.",
+      'We designed and developed the website for ETHperience, a platform focused on tech experiences and events.',
   },
   {
     slug: 'deltarowling',
     name: 'DeltaRowing',
     services: ['branding', 'websites'],
-    oneLine: 'Marca y web para una experiencia de remo y aventura.',
+    oneLine: 'Identidad de marca y presencia digital para un proyecto de deporte y agua.',
     summary:
-      'Trabajamos la identidad y la web de DeltaRowing (dominio deltarowingadventure.com). Imagen que transmite deporte y naturaleza, y un sitio que explica la experiencia y permite reservar.',
+      'Trabajamos la identidad de marca y la presencia digital de DeltaRowing, un proyecto vinculado al deporte y a experiencias en el agua.',
     externalUrl: 'https://deltarowingadventure.com/',
     needsThumbnail: true,
     nameEN: 'DeltaRowing',
-    oneLineEN: 'Brand and website for a rowing and adventure experience.',
+    oneLineEN: 'Brand identity and digital presence for a sport and water project.',
     summaryEN:
-      'We worked the identity and the website for DeltaRowing (deltarowingadventure.com). A brand that reads as sport and nature, and a site that explains the experience and lets people book.',
+      'We worked on the brand identity and digital presence for DeltaRowing, a project connected to sport and water experiences.',
   },
   {
     slug: 'fede-garcia',
     name: 'Fede García',
     services: ['websites'],
-    oneLine: 'Sitio personal para un artista: foco en obra y recorrido.',
+    oneLine: 'Sitio web personal para mostrar trabajo y proyectos creativos.',
     summary:
-      'Diseñamos y desarrollamos la web personal de Fede García. Un lugar propio para mostrar la obra, el recorrido y los contactos profesionales, con un ritmo que respeta el trabajo.',
+      'Hicimos el sitio web personal de Fede García, donde muestra su trabajo y sus proyectos creativos.',
     externalUrl: 'https://www.fedegarcia.com/',
     needsThumbnail: true,
     nameEN: 'Fede García',
-    oneLineEN: 'Personal site for an artist: focus on work and career.',
+    oneLineEN: 'Personal website showcasing work and creative projects.',
     summaryEN:
-      "We designed and developed Fede García's personal website. A space of his own to showcase the work, the trajectory and the professional contacts, with a rhythm that respects the art.",
+      'We built the personal website of Fede García, showcasing his work and creative projects.',
   },
   {
     slug: 'mareboats',
     name: 'MareBoats',
     services: ['websites'],
-    oneLine: 'Web para una experiencia náutica en Hvar.',
+    oneLine: 'Sitio web para una empresa de experiencias náuticas.',
     summary:
-      'Hicimos la web de MareBoats, una empresa náutica en Croacia. Catálogo de embarcaciones, precios y reserva en un sitio liviano que vende en varios idiomas.',
+      'Hicimos el sitio web de MareBoats, una empresa enfocada en paseos en barco y experiencias náuticas.',
     externalUrl: 'https://mareboatshvar.com/',
     needsThumbnail: true,
     nameEN: 'MareBoats',
-    oneLineEN: 'Website for a nautical experience in Hvar.',
+    oneLineEN: 'Website for a boating and nautical experiences company.',
     summaryEN:
-      'We built the MareBoats website, a nautical company in Croatia. Fleet, pricing and booking in a lightweight site that sells across languages.',
+      'We built the website for MareBoats, a company focused on boating and nautical experiences.',
   },
   {
     slug: 'skyshot',
     name: 'SkyShot',
     services: ['content-motion'],
-    oneLine: 'Producción audiovisual con dron para marcas y destinos.',
+    oneLine: 'Contenido aéreo con dron para turismo, naturaleza y marcas.',
     summary:
-      'SkyShot es el proyecto hermano de Kosmos para producción con dron. Cuando una marca necesita footage aéreo, fotos de altura o cobertura outdoor, lo resolvemos ahí.',
+      'SkyShot es un proyecto de contenido aéreo con dron enfocado en turismo, naturaleza y relato de marca.',
     externalUrl: 'https://skyshot.space/',
     needsThumbnail: true,
     nameEN: 'SkyShot',
-    oneLineEN: 'Drone media production for brands and destinations.',
+    oneLineEN: 'Aerial drone media for tourism, nature and brand storytelling.',
     summaryEN:
-      'SkyShot is the sister project of Kosmos for drone production. When a brand needs aerial footage, altitude photography or outdoor coverage, we solve it there.',
+      'SkyShot is an aerial drone media project focused on tourism, nature and brand storytelling.',
   },
   {
     slug: 'pancito',
     name: 'Pancito',
     services: ['branding'],
-    oneLine: 'Identidad para un proyecto gastronómico artesanal.',
+    oneLine: 'Identidad de marca y presencia digital para un proyecto de comida artesanal.',
     summary:
-      'Diseñamos la marca de Pancito, un proyecto gastronómico artesanal. Logo con personalidad, paleta cálida y piezas listas para carta, redes y packaging.',
+      'Diseñamos la identidad de marca y la presencia digital de Pancito, un proyecto de comida artesanal.',
     externalUrl: 'https://pancito.shop/',
     needsThumbnail: true,
     nameEN: 'Pancito',
-    oneLineEN: 'Identity for an artisanal food project.',
+    oneLineEN: 'Brand identity and digital presence for an artisanal food project.',
     summaryEN:
-      'We designed the Pancito brand, an artisanal food project. A logo with personality, a warm palette and ready-to-use pieces for menu, social and packaging.',
+      'We designed the brand identity and digital presence for Pancito, an artisanal food project.',
   },
 ];
 

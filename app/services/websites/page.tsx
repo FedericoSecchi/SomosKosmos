@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Servicio · Websites"
           h1="Diseño de páginas web para pymes: sitios que explican lo que hacés y ayudan a que te elijan."
           lead="Diseño web a medida, en código propio, sin plantillas ni constructores. Landings y sitios con UX/UI, SEO base, formularios y CMS si hace falta. Entregamos en 1–4 semanas con 2–3 rondas de feedback."
-          primaryLabel="Contanos tu web por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.websites}
           note="Te pasamos el “desde” en la primera respuesta."
         />
         <Includes
@@ -137,20 +133,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="Cotizamos cada proyecto por alcance. Una landing page para un negocio con un solo servicio arranca abajo de un sitio corporativo con CMS; un sitio con reservas o integraciones queda arriba. Te pasamos el número en el primer mensaje."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
-          primaryLabel="Pedí tu “desde”"
-          primaryText={WHATSAPP_TEXTS.websites}
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre nuestras webs." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="¿Hablamos de tu web?"
           lead="¿Necesitás una página web para tu negocio? Contanos qué hacés y para qué querés usar el sitio. Te respondemos con alcance, plazos y el “desde”."
-          primaryLabel="Contanos tu web por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.websites}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.websites} />
     </>
   );
 }

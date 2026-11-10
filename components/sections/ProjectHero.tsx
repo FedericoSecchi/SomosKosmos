@@ -6,13 +6,9 @@ import { ProjectThumb } from '../ProjectThumb';
 export function ProjectHero({
   locale,
   project,
-  primaryLabel,
-  primaryText,
 }: {
   locale: Locale;
   project: ProjectCase;
-  primaryLabel: string;
-  primaryText: string;
 }) {
   const name = locale === 'es' ? project.name : (project.nameEN ?? project.name);
   const oneLine = locale === 'es' ? project.oneLine : (project.oneLineEN ?? project.oneLine);
@@ -25,7 +21,7 @@ export function ProjectHero({
           <h1 className="font-display text-5xl md:text-7xl leading-[0.95]">{name}</h1>
           <p className="text-fg-muted text-lg md:text-xl max-w-xl">{oneLine}</p>
           <div className="mt-2">
-            <CtaRow locale={locale} primaryLabel={primaryLabel} primaryText={primaryText} />
+            <CtaRow locale={locale} />
           </div>
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-line bg-surface">

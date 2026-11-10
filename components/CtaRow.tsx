@@ -1,42 +1,42 @@
 import { SITE, type Locale } from '@/lib/site';
-import { whatsappUrl } from '@/lib/whatsapp';
+
+// CTA único del sitio: principal = llamada de 20 min en Calendly, secundario = email.
+// data-event es el nombre del evento de medición (calendly_click / email_click), ver seo/medicion.md.
+export const CTA_LABELS = {
+  es: { call: 'Agendá una llamada de 20 min', email: `Escribinos a ${SITE.email}` },
+  en: { call: 'Book a 20-min call', email: `Email us at ${SITE.email}` },
+} as const;
 
 export function CtaRow({
   locale,
-  primaryLabel,
-  primaryText,
-  secondaryLabel,
   note,
   align = 'start',
 }: {
   locale: Locale;
-  primaryLabel: string;
-  primaryText: string;
-  secondaryLabel?: string;
   note?: string;
   align?: 'start' | 'center';
 }) {
-  const defaultSecondary = locale === 'es' ? 'Agendá una llamada de 20 min' : 'Book a 20-min call';
+  const labels = CTA_LABELS[locale];
   return (
     <div className={`flex flex-col gap-3 ${align === 'center' ? 'items-center text-center' : 'items-start'}`}>
       <div className="flex flex-wrap gap-3">
-        <a
-          href={whatsappUrl(primaryText)}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-cta="whatsapp"
-          className="btn-primary"
-        >
-          {primaryLabel}
-        </a>
         <a
           href={SITE.calendlyUrl}
           target="_blank"
           rel="noopener noreferrer"
           data-cta="calendly"
-          className="btn-ghost"
+          data-event="calendly_click"
+          className="btn-primary"
         >
-          {secondaryLabel ?? defaultSecondary}
+          {labels.call}
+        </a>
+        <a
+          href={`mailto:${SITE.email}`}
+          data-cta="email"
+          data-event="email_click"
+          className="btn-ghost break-all"
+        >
+          {labels.email}
         </a>
       </div>
       {note ? <p className="text-sm text-fg-muted">{note}</p> : null}

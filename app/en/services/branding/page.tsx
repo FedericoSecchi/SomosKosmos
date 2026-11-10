@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Service · Branding"
           h1="Brand identity design so people recognize and trust you."
           lead="Branding for small businesses, startups and personal brands: we design the visual identity with logo, typography and color. We finish with a real-use brand guide so the brand lives the same across every touchpoint."
-          primaryLabel="Tell us about your brand on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.brandingEN}
           note="Designing without strategy is not an option."
         />
         <Includes
@@ -133,20 +129,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="The starting price covers [CONFIRMAR: scope of the entry price]. Rebranding and larger systems are quoted by scope."
           payment="Bank transfer: 50% at kickoff, 50% at delivery."
-          primaryLabel="Ask for your starting price"
-          primaryText={WHATSAPP_TEXTS.brandingEN}
         />
         <Faq locale={LOCALE} h2="FAQ about branding." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="Shall we talk about your brand?"
           lead="Tell us what you have today (if anything) and where you want to go. We'll come back with a concrete proposal."
-          primaryLabel="Tell us about your brand on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.brandingEN}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.brandingEN} />
     </>
   );
 }

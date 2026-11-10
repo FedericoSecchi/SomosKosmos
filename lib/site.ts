@@ -8,9 +8,7 @@ export const SITE = {
   ogImage: '/branding/og-image.jpg',
   email: 'hello@somoskosmos.com',
 
-  // [CONFIRMAR: número E.164 de WhatsApp y quién responde]. Sin número: wa.me sin phone deja al
-  // usuario elegir el chat; el prellenado funciona igual.
-  whatsappPhone: '',
+  // CTA principal: llamada de 20 min (Calendly). Secundario: email. Sin WhatsApp (Fede, 10/11/2026).
   calendlyUrl: 'https://calendly.com/federico-secchimarino/llamada-de-proyecto-somos-kosmos',
 
   defaultLocale: 'es' as const,

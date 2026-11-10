@@ -14,12 +14,14 @@
 - Ubicación: Argentina (Fede). Ciudad publicable: [CONFIRMAR: ciudad / "remoto desde Argentina"].
   No hay ficha de Google Business Profile de Kosmos (Windsor: la única ficha conectada es MareBoats).
 - Web: https://somoskosmos.com · Email: hello@somoskosmos.com (web)
-- WhatsApp de ventas: [CONFIRMAR: número E.164 y quién responde]
+- WhatsApp de ventas: no hay (no hay número ni quién responda). No se publica WhatsApp como canal (Fede, 10/11/2026)
 - Agenda: https://calendly.com/federico-secchimarino/llamada-de-proyecto-somos-kosmos (20 min,
   Google Meet, lunes a jueves 9–18 hora Argentina; creado 26/10/2026)
 - Idiomas y mercados: español (Argentina/LatAm, precios en ARS) e inglés (clientes de EE.UU. y
   otros, precios en USD) (prop.: propuestas en ARS y en USD; web con botón EN)
-- Canal de conversión principal: WhatsApp prellenado; secundario: agendar llamada (Fede, intake 25/10/2026)
+- Canal de conversión principal: "Agendá una llamada de 20 min" (Calendly); secundario: "Escribinos a
+  hello@somoskosmos.com" (mailto). Medición: `calendly_click` y `email_click` (Fede, 10/11/2026;
+  reemplaza WhatsApp prellenado + llamada del intake 25/10/2026)
 
 ## Qué hace (servicios reales)
 | Servicio | Descripción breve | Alcance / tiempos | Precio "desde" publicable | Qué incluye | Fuente |
@@ -112,7 +114,7 @@ proyectos USD 800–3.000 en 2–6 semanas (descripción del proyecto Kosmos en 
   - "Una selección de clientes, colaboradores y proyectos que hemos ayudado a construir" →
     "Marcas con las que trabajamos."
   - "Contanos en qué estás trabajando y vemos cómo podemos ayudarte" + botón "ESCRIBINOS" (mailto) →
-    "Contanos tu proyecto por WhatsApp. Te respondemos [CONFIRMAR: en cuánto tiempo]."
+    "Agendá una llamada de 20 min" + "Escribinos a hello@somoskosmos.com" (10/11/2026)
 
 ## Identidad visual (marca)
 - Fondo #222222, acento verde neón #6FE23C, texto claro off-white [verificar valor exacto en Figma o en
@@ -133,7 +135,7 @@ proyectos USD 800–3.000 en 2–6 semanas (descripción del proyecto Kosmos en 
   Pygma Diseño Web Córdoba (vía Sortlist)
 
 ## Pendientes para pedir
-- [ ] Número de WhatsApp de ventas, quién responde y en cuánto tiempo
+- [x] ~~Número de WhatsApp de ventas~~: descartado, el CTA es Calendly + email (Fede, 10/11/2026)
 - [ ] Precios "desde" por servicio, en ARS y USD (o regla de moneda)
 - [ ] Ciudad publicable o "remoto desde Argentina"
 - [ ] 3–5 testimonios con nombre

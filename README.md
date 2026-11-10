@@ -39,8 +39,8 @@ npm run build
 | Páginas | `app/` (ES en la raíz, EN en `app/en/`) |
 | Casos | `content/projects.ts` → `app/project/[slug]` |
 | Servicios (datos) | `content/services.ts` |
-| Datos del negocio (NAP, WhatsApp, Calendly) | `lib/site.ts` |
-| Textos prellenados de WhatsApp | `lib/whatsapp.ts` |
+| Datos del negocio (email, Calendly) | `lib/site.ts` |
+| CTA del sitio (llamada de 20 min + email) | `components/CtaRow.tsx` |
 | Sitemap y robots | `app/sitemap.ts`, `app/robots.ts` |
 | Redirecciones de URLs viejas (stubs HTML) | `public/project/**`, `public/topic/**` |
 | Plan SEO, estado y QA | `seo/` (`PLAN.md`, `ESTADO.md`, `qa-cierre.md`) |

@@ -7,16 +7,12 @@ export function Hero({
   eyebrow,
   h1,
   lead,
-  primaryLabel,
-  primaryText,
   note,
 }: {
   locale: Locale;
   eyebrow: string;
   h1: string;
   lead: string;
-  primaryLabel: string;
-  primaryText: string;
   note?: string;
 }) {
   return (
@@ -31,8 +27,6 @@ export function Hero({
           <div className="mt-2">
             <CtaRow
               locale={locale}
-              primaryLabel={primaryLabel}
-              primaryText={primaryText}
               note={note}
             />
           </div>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Service · Websites"
           h1="We build websites that explain what you do, organize your info and help people choose you."
           lead="Hand-coded landings and custom websites, no templates or builders. UX/UI design, baseline SEO, forms and CMS if needed. We deliver in 1–4 weeks with 2–3 rounds of feedback."
-          primaryLabel="Tell us about your website on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.websitesEN}
           note="You'll get the starting price in our first reply."
         />
         <Includes
@@ -137,20 +133,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="We quote every project by scope. A landing page for a single-service business starts below a corporate site with a CMS; a site with bookings or integrations sits above. We'll share the exact starting price in the first message."
           payment="Bank transfer: 50% at kickoff, 50% at delivery."
-          primaryLabel="Ask for your starting price"
-          primaryText={WHATSAPP_TEXTS.websitesEN}
         />
         <Faq locale={LOCALE} h2="FAQ about our websites." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="Shall we talk about your website?"
           lead="Tell us what your business is and what you want the site to do. We'll come back with a clear proposal."
-          primaryLabel="Tell us about your website on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.websitesEN}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.websitesEN} />
     </>
   );
 }

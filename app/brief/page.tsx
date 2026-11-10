@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { CtaRow } from '@/components/CtaRow';
 import { KStar } from '@/components/KStar';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 
@@ -17,14 +15,14 @@ const CANONICAL = pathFor(LOCALE, PATH);
 export const metadata: Metadata = {
   title: 'Iniciar un proyecto',
   description:
-    'Contanos tu proyecto por WhatsApp o agendá una llamada de 20 minutos. Te pasamos el "desde" y los próximos pasos en el mismo mensaje.',
+    'Agendá una llamada de 20 minutos o escribinos a hello@somoskosmos.com. Cotizamos cada proyecto por alcance y te pasamos el número en la primera llamada.',
   alternates: {
     canonical: CANONICAL,
     languages: hreflangFor(PATH, false),
   },
   openGraph: {
     title: 'Iniciar un proyecto — Somos Kosmos',
-    description: 'WhatsApp, llamada agendada o email. Vos elegís el canal.',
+    description: 'Una llamada de 20 minutos o un email. Vos elegís.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.es,
     type: 'website',
@@ -41,12 +39,8 @@ const QUESTIONS = [
 
 const CHANNELS = [
   {
-    title: 'WhatsApp',
-    detail: 'La forma más rápida. Te respondemos [CONFIRMAR: tiempo de respuesta] en horario laboral.',
-  },
-  {
     title: 'Agendá una llamada',
-    detail: 'Un slot de 20 minutos por Google Meet. Lunes a jueves, 9–18 ART.',
+    detail: '20 minutos por Google Meet, de lunes a jueves de 9 a 18 (hora Argentina). Elegís el horario en Calendly.',
   },
   {
     title: 'Email',
@@ -73,14 +67,12 @@ export default function BriefPage() {
                 Contanos qué estás necesitando.
               </h1>
               <p className="text-fg-muted text-lg md:text-xl max-w-2xl">
-                Elegí el canal que te quede más cómodo. Si ya tenés las respuestas abajo, mejor:
-                vamos directo al “desde” y a los próximos pasos.
+                Agendá una llamada de 20 minutos o escribinos. Si ya tenés las respuestas de abajo,
+                mejor: vamos directo al alcance y a los próximos pasos.
               </p>
               <div className="mt-2">
                 <CtaRow
                   locale={LOCALE}
-                  primaryLabel="Escribinos por WhatsApp"
-                  primaryText={WHATSAPP_TEXTS.brief}
                 />
               </div>
             </div>
@@ -90,7 +82,7 @@ export default function BriefPage() {
         <section className="section">
           <div className="container">
             <h2 className="text-3xl md:text-5xl mb-10">Cómo te podemos escuchar.</h2>
-            <ul className="grid gap-5 md:grid-cols-3">
+            <ul className="grid gap-5 md:grid-cols-2">
               {CHANNELS.map((c) => (
                 <li key={c.title} className="card">
                   <div>
@@ -134,8 +126,6 @@ export default function BriefPage() {
               </p>
               <CtaRow
                 locale={LOCALE}
-                primaryLabel="Escribinos por WhatsApp"
-                primaryText={WHATSAPP_TEXTS.brief}
                 note="Preferimos un hola corto que un formulario largo."
               />
             </div>
@@ -143,7 +133,6 @@ export default function BriefPage() {
         </section>
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.brief} />
     </>
   );
 }

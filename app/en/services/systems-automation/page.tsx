@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { Process } from '@/components/sections/Process';
@@ -10,7 +9,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -92,8 +90,6 @@ export default function Page() {
           eyebrow="Service · Systems & Automation"
           h1="Your business, running on its own."
           lead="We automate messages, sales and processes so you save time. WhatsApp bots, n8n flows, integrations between tools and design systems that keep the brand in order."
-          primaryLabel="Tell us what you want to automate"
-          primaryText={WHATSAPP_TEXTS.systemsEN}
           note="We handle anything that can be connected via API or WhatsApp Business."
         />
         <Includes
@@ -128,20 +124,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="The starting price covers [CONFIRMAR: scope of the entry price]. Larger systems are quoted by scope."
           payment="Bank transfer: 50% at kickoff, 50% at delivery."
-          primaryLabel="Ask for your starting price"
-          primaryText={WHATSAPP_TEXTS.systemsEN}
         />
         <Faq locale={LOCALE} h2="FAQ about automation." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="What do you want to stop doing by hand?"
           lead="Tell us the process that eats most of your time. We'll say if it can be automated and how much it costs."
-          primaryLabel="Tell us what you want to automate"
-          primaryText={WHATSAPP_TEXTS.systemsEN}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.systemsEN} />
     </>
   );
 }

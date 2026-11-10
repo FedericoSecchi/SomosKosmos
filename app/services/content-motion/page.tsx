@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Servicio · Contenido & Motion"
           h1="Contenido para redes sociales de marcas: piezas y campañas pensadas para atraer y generar resultados."
           lead="Templates reutilizables, motion, fotografía y video. Producción con dron propia a través de SkyShot. Para marcas que quieren sostener presencia sin depender de un diseñador freelance distinto por mes."
-          primaryLabel="Pedí tu propuesta de contenido"
-          primaryText={WHATSAPP_TEXTS.content}
           note="Si no sabés por dónde empezar, arrancamos con una auditoría de redes."
         />
         <Includes
@@ -134,20 +130,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada, ej. set de templates]. Producción audiovisual (video, dron, foto) se cotiza por proyecto."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
-          primaryLabel="Pedí tu “desde”"
-          primaryText={WHATSAPP_TEXTS.content}
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre contenido." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="¿Qué contenido te está faltando?"
           lead="Contanos para qué lo necesitás: lanzamiento, campaña, temporada o rutina mensual. Te armamos la propuesta."
-          primaryLabel="Pedí tu propuesta de contenido"
-          primaryText={WHATSAPP_TEXTS.content}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.content} />
     </>
   );
 }

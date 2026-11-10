@@ -75,7 +75,7 @@
 | 8 | /brief | reescribir | — | — | P1, P2 | — | — |
 | 9 | /privacidad | nueva | — | — | — | — | — |
 
-/brief existe hoy (botón mailto). Pasa a ser la página de contacto: WhatsApp prellenado + Calendly +
+/brief existe hoy (botón mailto). Pasa a ser la página de contacto: llamada de 20 min (Calendly) +
 email, con las 4–5 preguntas que conviene traer resueltas (qué necesitás, para cuándo, referencias,
 presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del header.
 
@@ -85,7 +85,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 - Estructura (bloques en orden):
   1. Hero: H1 con la keyword en lenguaje natural (ej. "Branding y diseño web para pymes que quieren
      que las elijan" — validar con copy_lint) + bajada con "Convertimos tu marca en un sistema que
-     funciona." + CTA WhatsApp + link secundario "Agendá una llamada"
+     funciona." + CTA "Agendá una llamada de 20 min" + secundario por email
   2. Logos de clientes (una sola vez, como imágenes con alt; sin H3)
   3. Servicios: 4 tarjetas con el copy de marca (contexto) + "desde" + link a cada página
   4. Casos destacados: 4 (uno por servicio) con thumbnail real
@@ -93,10 +93,11 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
      "Sin vueltas infinitas. Sin desaparecer a mitad del proyecto." + 2–3 rondas + 50/50
   6. Testimonios ([CONFIRMAR]; si no hay, el bloque no se renderiza)
   7. Equipo con fotos reales ([CONFIRMAR]; sin fotos stock)
-  8. Cierre: "Del caos al Kosmos" + CTA WhatsApp
-- CTA principal: "Escribinos por WhatsApp" · microcopy: "Te respondemos [CONFIRMAR: tiempo]" ·
-  WhatsApp prellenado: "Hola Kosmos! Vengo de la web. Tengo un proyecto de [marca/web/contenido/automatización] para [mi negocio]."
-- CTA secundario: "Agendá una llamada de 20 min" → https://calendly.com/federico-secchimarino/llamada-de-proyecto-somos-kosmos
+  8. Cierre: "Del caos al Kosmos" + CTA
+- CTA principal (todo el sitio, 10/11/2026): "Agendá una llamada de 20 min" →
+  https://calendly.com/federico-secchimarino/llamada-de-proyecto-somos-kosmos · microcopy: "Llamada por
+  Google Meet, de lunes a jueves de 9 a 18 (hora Argentina)."
+- CTA secundario: "Escribinos a hello@somoskosmos.com" (mailto)
 - Notas de competencia: SERP genérica tomada por directorios; diferenciar con hechos (tiempos, rondas,
   equipo completo, dron) y portfolio real, no con adjetivos.
 
@@ -107,14 +108,14 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
   elijan." + CTA · qué incluye (lista real de las propuestas) · tipos: landing / sitio / sitio con CMS
   con tiempos reales · casos por rubro (turismo: MareBoats, DeltaRowing; marcas: Nude, Calmo; personal:
   Fede García; web3: ETHperience, The Red Guild) · proceso · "desde" · FAQ · CTA final
-- CTA: "Contanos tu web por WhatsApp" · prellenado: "Hola Kosmos! Necesito una web para [negocio]."
+- CTA: el del sitio (llamada de 20 min + email)
 
 ### services/branding — detalle
 - Intención: crear o renovar la identidad de un negocio.
 - Estructura: hero con "Creamos una imagen clara y profesional para que te reconozcan y confíen en vos."
   · qué incluye · casos (Security Alliance, Orbita, Pancito, Nude) · combinación branding + web ·
   proceso · "desde" · FAQ · CTA
-- CTA: "Contanos tu marca por WhatsApp" · prellenado: "Hola Kosmos! Quiero trabajar la marca de [negocio]."
+- CTA: el del sitio (llamada de 20 min + email)
 
 ### services/systems-automation — detalle
 - Intención: dejar de responder y cargar todo a mano.
@@ -122,14 +123,14 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
   en n8n, integraciones entre herramientas, respuestas y seguimiento de ventas; confirmado por Fede,
   26/10/2026) · quién lo hace (Fran, si se publica el equipo) · ejemplo concreto [CONFIRMAR] ·
   sistemas de diseño · "desde" · FAQ · CTA
-- CTA: "Contanos qué querés automatizar" · prellenado: "Hola Kosmos! Quiero automatizar [proceso]."
+- CTA: el del sitio (llamada de 20 min + email)
 
 ### services/content-motion — detalle
 - Intención: tener contenido de marca constante y producción audiovisual.
 - Estructura: hero con "Piezas para redes y campañas pensadas para atraer y generar resultados." ·
   qué incluye (templates de Canva + tutorial, auditoría de redes, motion, foto y video) · dron con
   SkyShot (enlace a https://skyshot.space) · casos · "desde" · FAQ · CTA
-- CTA: "Pedí tu propuesta de contenido" · prellenado: "Hola Kosmos! Quiero contenido para [marca]."
+- CTA: el del sitio (llamada de 20 min + email)
 
 ## 6. Decisiones tomadas
 | Decisión | Elección | Quién / cuándo |
@@ -137,7 +138,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 | Tipo de trabajo | D — sitio nuevo en Next.js SSG, mismas rutas | Claude (regla 5 de la skill), 25/10/2026 |
 | Público | Pymes de cualquier rubro, sin nicho; rubros como casos dentro de servicios | Fede, 25/10/2026 |
 | Diseño | Identidad real: #222222 + #6FE23C, Syne en títulos, Space Grotesk en texto, stickers de marca, grilla fina | Fede, 25/10/2026 |
-| CTA | WhatsApp prellenado (principal) + Calendly 20 min (secundario) | Fede, 25/10/2026 |
+| CTA | Principal en todo el sitio: "Agendá una llamada de 20 min" (Calendly). Secundario: "Escribinos a hello@somoskosmos.com" (mailto). Sin WhatsApp (no hay número ni quién responda) y sin botón flotante. Antes: WhatsApp prellenado + Calendly (Fede, 25/10/2026) | Fede, 10/11/2026 |
 | Precio | "Desde" visible por servicio | Fede, 25/10/2026 |
 | Nombre | "Somos Kosmos" en todo el sitio, title y schema | Claude (consistencia con dominio y marca) |
 | SEO programático | Se eliminan ~280 páginas generadas; quedan stubs de redirección | Claude (regla 2), 26/10/2026 |
@@ -176,8 +177,8 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 ## 9. Pendientes del cliente → `[CONFIRMAR]`
 | Dato | Dónde impacta | Estado |
 |---|---|---|
-| Número de WhatsApp de ventas, quién responde y tiempo de respuesta | CTA de todas las páginas, `lib/site.ts` | pendiente |
-| Link de Calendly (evento de 20 min) | CTA secundario | ✅ creado 26/10/2026 |
+| Número de WhatsApp de ventas | — | ❌ descartado: no hay número ni quién responda; el CTA pasa a Calendly + email (Fede, 10/11/2026) |
+| Link de Calendly (evento de 20 min) | CTA principal | ✅ creado 26/10/2026 |
 | Precio "desde" por servicio (ARS y USD) | servicios, home, FAQ | pendiente |
 | Alcance de Sistemas & Automatizaciones | `/services/systems-automation` | ✅ "hacemos todo" (Fede, 26/10) |
 | Ejemplo concreto de automatización publicable | `/services/systems-automation` | pendiente |
@@ -204,7 +205,7 @@ presupuesto aproximado). `noindex` no: es la URL a la que apuntan los CTA del he
 ## 11. Después del merge (medición)
 - Search Console (ya existe `sc-domain:somoskosmos.com`): enviar sitemap, pedir indexación de servicios
 - Bing Webmaster Tools
-- GA4: evento clave `whatsapp_click` y `calendly_click`
+- GA4: eventos clave `calendly_click` y `email_click` (los links llevan `data-event` con ese nombre)
 - Crear ficha de Google Business Profile si hay dirección o como área de servicio (`seo/gbp.md`)
 - Perfiles en Sortlist y Clutch apuntando a la web (los directorios ya ganan la SERP genérica)
 - Revisión a las 4, 8 y 12 semanas

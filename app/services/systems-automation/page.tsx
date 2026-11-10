@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { Process } from '@/components/sections/Process';
@@ -10,7 +9,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -92,8 +90,6 @@ export default function Page() {
           eyebrow="Servicio · Sistemas & Automatizaciones"
           h1="Automatización de WhatsApp para negocios que quieren dejar de responder todo a mano."
           lead="Tu negocio funcionando solo. Automatizamos mensajes, procesos de ventas y atención para que ahorres tiempo: bots de WhatsApp, flujos en n8n, integraciones entre herramientas y sistemas de diseño que mantienen la marca en orden."
-          primaryLabel="Contanos qué querés automatizar"
-          primaryText={WHATSAPP_TEXTS.systems}
           note="Hacemos todo lo que se pueda conectar por API o por WhatsApp Business."
         />
         <Includes
@@ -128,20 +124,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Sistemas más grandes se cotizan por alcance."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
-          primaryLabel="Pedí tu “desde”"
-          primaryText={WHATSAPP_TEXTS.systems}
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre automatizaciones." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="¿Qué querés dejar de hacer a mano?"
           lead="Contanos el proceso que más tiempo te come. Te decimos si se puede automatizar y cuánto cuesta."
-          primaryLabel="Contanos qué querés automatizar"
-          primaryText={WHATSAPP_TEXTS.systems}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.systems} />
     </>
   );
 }

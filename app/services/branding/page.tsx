@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Servicio · Branding"
           h1="Diseño de identidad de marca para que te reconozcan y confíen en vos."
           lead="Branding para pymes, startups y marcas personales: diseñamos la identidad visual con logo, tipografía, color y recursos propios. Terminamos con un manual de marca para uso real, para que la marca viva igual en cada punto de contacto."
-          primaryLabel="Contanos tu marca por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.branding}
           note="Diseñar sin estrategia no es una opción."
         />
         <Includes
@@ -133,20 +129,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="El “desde” cubre [CONFIRMAR: alcance del precio de entrada]. Rebranding y sistemas más grandes se cotizan por alcance."
           payment="Pago en transferencia: 50% al comenzar, 50% al entregar."
-          primaryLabel="Pedí tu “desde”"
-          primaryText={WHATSAPP_TEXTS.branding}
         />
         <Faq locale={LOCALE} h2="Preguntas frecuentes sobre branding." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="¿Hablamos de tu marca?"
           lead="Contanos qué tenés hoy (si tenés algo) y a dónde querés llegar. Te respondemos con una propuesta concreta."
-          primaryLabel="Contanos tu marca por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.branding}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.branding} />
     </>
   );
 }

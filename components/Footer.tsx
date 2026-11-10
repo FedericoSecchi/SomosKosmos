@@ -45,7 +45,7 @@ export function Footer({ locale }: { locale: Locale }) {
           </div>
           <p className="text-fg-muted text-sm max-w-xs">{c.legal}</p>
           <p className="text-fg-muted text-sm mt-4">
-            <a href={`mailto:${SITE.email}`} className="hover:text-accent transition-colors">
+            <a href={`mailto:${SITE.email}`} data-event="email_click" className="hover:text-accent transition-colors">
               {SITE.email}
             </a>
           </p>
@@ -64,7 +64,7 @@ export function Footer({ locale }: { locale: Locale }) {
           <ul className="space-y-2 text-sm">
             <li><Link href={pathFor(locale, ['brief'])} className="hover:text-accent">{c.brief}</Link></li>
             <li><Link href={pathFor('es', ['privacidad'])} className="hover:text-accent">{c.privacy}</Link></li>
-            <li><a href={SITE.calendlyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Calendly</a></li>
+            <li><a href={SITE.calendlyUrl} target="_blank" rel="noopener noreferrer" data-event="calendly_click" className="hover:text-accent">{locale === 'es' ? 'Agendá una llamada' : 'Book a call'}</a></li>
           </ul>
         </div>
         <div>

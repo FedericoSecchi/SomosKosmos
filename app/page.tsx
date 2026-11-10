@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { ServicesGrid } from '@/components/sections/ServicesGrid';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -10,7 +9,6 @@ import { Clients } from '@/components/sections/Clients';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 
@@ -54,9 +52,7 @@ export default function HomePage() {
           eyebrow="Estudio creativo · Argentina"
           h1="Estudio de branding y diseño web para pymes que quieren que las elijan."
           lead="Somos Kosmos: una agencia creativa chica con base en Argentina. Convertimos tu marca en un sistema que funciona. Un mismo equipo resuelve identidad, sitio, contenido y automatizaciones, con tiempos y rondas definidas."
-          primaryLabel="Escribinos por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.home}
-          note="Te respondemos [CONFIRMAR: tiempo] en horario laboral."
+          note="Llamada por Google Meet, de lunes a jueves de 9 a 18 (hora Argentina)."
         />
         <Clients locale={LOCALE} h2="Marcas con las que trabajamos." />
         <ServicesGrid
@@ -86,12 +82,9 @@ export default function HomePage() {
           locale={LOCALE}
           h2="Del caos al Kosmos."
           lead="Contanos qué estás necesitando. Te pasamos el “desde” y los próximos pasos en el mismo mensaje."
-          primaryLabel="Escribinos por WhatsApp"
-          primaryText={WHATSAPP_TEXTS.home}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.home} />
     </>
   );
 }

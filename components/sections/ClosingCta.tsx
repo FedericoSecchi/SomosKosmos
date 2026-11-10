@@ -5,15 +5,11 @@ export function ClosingCta({
   locale,
   h2,
   lead,
-  primaryLabel,
-  primaryText,
   note,
 }: {
   locale: Locale;
   h2: string;
   lead?: string;
-  primaryLabel: string;
-  primaryText: string;
   note?: string;
 }) {
   return (
@@ -24,8 +20,6 @@ export function ClosingCta({
           {lead ? <p className="text-fg-muted max-w-2xl text-lg">{lead}</p> : null}
           <CtaRow
             locale={locale}
-            primaryLabel={primaryLabel}
-            primaryText={primaryText}
             note={note}
           />
         </div>

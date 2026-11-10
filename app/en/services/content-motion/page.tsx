@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { Includes } from '@/components/sections/Includes';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -11,7 +10,6 @@ import { Faq } from '@/components/sections/Faq';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { getService } from '@/content/services';
@@ -93,8 +91,6 @@ export default function Page() {
           eyebrow="Service · Content & Motion"
           h1="Social and campaign pieces designed to attract attention and move the needle."
           lead="Reusable templates, motion, photography and video. In-house drone production through SkyShot. For brands that want to keep presence without depending on a different freelance designer every month."
-          primaryLabel="Ask for your content proposal"
-          primaryText={WHATSAPP_TEXTS.contentEN}
           note="If you don't know where to start, we begin with a social audit."
         />
         <Includes
@@ -134,20 +130,15 @@ export default function Page() {
           priceFrom="[CONFIRMAR]"
           detail="The starting price covers [CONFIRMAR: scope of the entry price, e.g. a template set]. Audiovisual production (video, drone, photo) is quoted per project."
           payment="Bank transfer: 50% at kickoff, 50% at delivery."
-          primaryLabel="Ask for your starting price"
-          primaryText={WHATSAPP_TEXTS.contentEN}
         />
         <Faq locale={LOCALE} h2="FAQ about content." items={FAQ} />
         <ClosingCta
           locale={LOCALE}
           h2="What content are you missing?"
           lead="Tell us what you need it for: launch, campaign, season or monthly routine. We'll put together the proposal."
-          primaryLabel="Ask for your content proposal"
-          primaryText={WHATSAPP_TEXTS.contentEN}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.contentEN} />
     </>
   );
 }

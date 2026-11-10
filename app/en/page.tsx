@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { Hero } from '@/components/sections/Hero';
 import { ServicesGrid } from '@/components/sections/ServicesGrid';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
@@ -10,7 +9,6 @@ import { Clients } from '@/components/sections/Clients';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor, hreflangFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 
@@ -51,9 +49,7 @@ export default function HomeEN() {
           eyebrow="Branding · Web · Content · Automation"
           h1="Branding and web design for businesses that want to be picked."
           lead="We turn your brand into a system that works. One team handles identity, website, content and automation, with clear timelines and defined rounds. From chaos to Kosmos."
-          primaryLabel="Message us on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.homeEN}
-          note="We reply [CONFIRMAR: response time] during business hours."
+          note="Google Meet call, Monday to Thursday, 9am–6pm Argentina time."
         />
         <Clients locale={LOCALE} h2="Brands we work with." />
         <ServicesGrid
@@ -83,12 +79,9 @@ export default function HomeEN() {
           locale={LOCALE}
           h2="From chaos to Kosmos."
           lead="Tell us what you need. We'll share the starting price and the next steps in the same reply."
-          primaryLabel="Message us on WhatsApp"
-          primaryText={WHATSAPP_TEXTS.homeEN}
         />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS.homeEN} />
     </>
   );
 }

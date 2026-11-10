@@ -3,14 +3,12 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyCta } from '@/components/StickyCta';
 import { ProjectHero } from '@/components/sections/ProjectHero';
 import { ProjectGallery } from '@/components/sections/ProjectGallery';
 import { NextProject } from '@/components/sections/NextProject';
 import { ClosingCta } from '@/components/sections/ClosingCta';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, creativeWorkSchema } from '@/lib/schema';
-import { WHATSAPP_TEXTS } from '@/lib/whatsapp';
 import { absoluteUrl, pathFor } from '@/lib/urls';
 import { SITE } from '@/lib/site';
 import { projects, getProject } from '@/content/projects';
@@ -53,7 +51,6 @@ export default function ProjectCasePage({ params }: { params: { slug: string } }
   const idx = projects.findIndex((p) => p.slug === project.slug);
   const nextIdx = (idx + 1) % projects.length;
   const next = projects[nextIdx]!;
-  const serviceSlug = project.services[0] ?? 'websites';
   const canonical = pathFor(LOCALE, path);
 
   return (
@@ -78,8 +75,6 @@ export default function ProjectCasePage({ params }: { params: { slug: string } }
         <ProjectHero
           locale={LOCALE}
           project={project}
-          primaryLabel="Quiero algo así"
-          primaryText={`Hola Kosmos! Vi el caso de ${project.name} en la web y me interesa trabajar algo parecido.`}
         />
         <section className="section">
           <div className="container grid gap-10 md:grid-cols-[1fr_1.6fr] md:items-start">
@@ -130,13 +125,10 @@ export default function ProjectCasePage({ params }: { params: { slug: string } }
           locale={LOCALE}
           h2={`¿Querés algo parecido a ${project.name}?`}
           lead={`Trabajamos ${project.services.join(' + ')} con el mismo equipo. Contanos tu proyecto y te pasamos el "desde".`}
-          primaryLabel="Escribinos por WhatsApp"
-          primaryText={`Hola Kosmos! Vi el caso de ${project.name} y quiero trabajar algo similar para mi negocio.`}
         />
         <NextProject locale={LOCALE} next={next} />
       </main>
       <Footer locale={LOCALE} />
-      <StickyCta locale={LOCALE} text={WHATSAPP_TEXTS[serviceSlug === 'branding' ? 'branding' : serviceSlug === 'content-motion' ? 'content' : serviceSlug === 'systems-automation' ? 'systems' : 'websites']} />
     </>
   );
 }

@@ -7,16 +7,12 @@ export function Pricing({
   priceFrom,
   detail,
   payment,
-  primaryLabel,
-  primaryText,
 }: {
   locale: Locale;
   h2: string;
   priceFrom: string;
   detail?: string;
   payment?: string;
-  primaryLabel: string;
-  primaryText: string;
 }) {
   return (
     <section className="section" id="pricing">
@@ -37,8 +33,6 @@ export function Pricing({
             </p>
             <CtaRow
               locale={locale}
-              primaryLabel={primaryLabel}
-              primaryText={primaryText}
             />
           </div>
         </div>

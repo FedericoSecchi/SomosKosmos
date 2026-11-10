@@ -28,13 +28,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!project) return {};
   const path = ['project', project.slug];
   const canonical = pathFor(LOCALE, path);
-  const title = `${project.name} — Caso de estudio`;
+  const title = `${project.name}: caso de estudio`;
   return {
     title,
     description: project.summary,
     alternates: { canonical },
     openGraph: {
-      title,
+      title: `${title} — Somos Kosmos`,
       description: project.oneLine,
       url: absoluteUrl(canonical),
       locale: SITE.ogLocale.es,

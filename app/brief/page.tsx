@@ -15,7 +15,7 @@ const PATH = ['brief'];
 const CANONICAL = pathFor(LOCALE, PATH);
 
 export const metadata: Metadata = {
-  title: 'Iniciar un proyecto — Somos Kosmos',
+  title: 'Iniciar un proyecto',
   description:
     'Contanos tu proyecto por WhatsApp o agendá una llamada de 20 minutos. Te pasamos el "desde" y los próximos pasos en el mismo mensaje.',
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, false),
   },
   openGraph: {
-    title: 'Iniciar un proyecto · Somos Kosmos',
+    title: 'Iniciar un proyecto — Somos Kosmos',
     description: 'WhatsApp, llamada agendada o email. Vos elegís el canal.',
     url: absoluteUrl(CANONICAL),
     locale: SITE.ogLocale.es,

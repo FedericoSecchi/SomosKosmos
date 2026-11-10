@@ -8,7 +8,7 @@ import { pathFor } from '@/lib/urls';
 const LOCALE = 'es' as const;
 
 export const metadata: Metadata = {
-  title: 'Política de privacidad — Somos Kosmos',
+  title: 'Política de privacidad',
   description:
     'Cómo tratamos los datos que recibimos cuando nos escribís por WhatsApp, email o agendás una llamada.',
   alternates: { canonical: pathFor(LOCALE, ['privacidad']) },

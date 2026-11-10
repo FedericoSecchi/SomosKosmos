@@ -19,7 +19,7 @@ const PATH: string[] = [];
 const CANONICAL = pathFor(LOCALE, PATH);
 
 export const metadata: Metadata = {
-  title: 'Somos Kosmos — Branding and web design for small businesses',
+  title: 'Branding and web design studio for small businesses',
   description:
     'Creative studio that turns your brand into a system that works: branding, hand-coded websites, content and automation. From chaos to Kosmos.',
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Somos Kosmos — Branding and web design studio',
+    title: 'Branding and web design studio — Somos Kosmos',
     description:
       'One team solves brand, website, content and automation. No endless rounds. No disappearing mid-project.',
     url: absoluteUrl(CANONICAL),

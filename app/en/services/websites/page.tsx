@@ -22,7 +22,7 @@ const CANONICAL = pathFor(LOCALE, PATH);
 const SERVICE = getService('websites');
 
 export const metadata: Metadata = {
-  title: 'Website design for small businesses — Somos Kosmos',
+  title: 'Website design for small businesses',
   description:
     'Hand-coded websites: landings, business sites and pages for tourism or retail. Design, baseline SEO and launch in 1–4 weeks.',
   alternates: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Website design for small businesses · Somos Kosmos',
+    title: 'Website design for small businesses — Somos Kosmos',
     description:
       'Hand-coded sites, no templates. Custom UX/UI, baseline SEO, forms, CMS and QA. Starting price shared on WhatsApp.',
     url: absoluteUrl(CANONICAL),

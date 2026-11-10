@@ -22,7 +22,7 @@ const CANONICAL = pathFor(LOCALE, PATH);
 const SERVICE = getService('branding');
 
 export const metadata: Metadata = {
-  title: 'Brand identity design — Somos Kosmos',
+  title: 'Brand identity design',
   description:
     "We design your brand's visual identity: logo, typography, color, pieces and real-use guidelines. For small businesses, startups and personal brands.",
   alternates: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Brand identity design · Somos Kosmos',
+    title: 'Brand identity design — Somos Kosmos',
     description:
       'A brand identity so people recognize and trust you. Logo, typography, color and the full system.',
     url: absoluteUrl(CANONICAL),

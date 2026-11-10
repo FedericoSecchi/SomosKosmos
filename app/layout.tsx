@@ -27,8 +27,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Somos Kosmos — Branding y diseño web para pymes',
-    template: '%s · Somos Kosmos',
+    default: 'Branding y diseño web para pymes — Somos Kosmos',
+    template: '%s — Somos Kosmos',
   },
   description:
     'Estudio creativo que convierte tu marca en un sistema que funciona: branding, sitios en código, contenido y automatizaciones. Del caos al Kosmos.',

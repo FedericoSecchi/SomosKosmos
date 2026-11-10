@@ -21,7 +21,7 @@ const CANONICAL = pathFor(LOCALE, PATH);
 const SERVICE = getService('systems-automation');
 
 export const metadata: Metadata = {
-  title: 'Automatización de WhatsApp y procesos para negocios — Somos Kosmos',
+  title: 'Automatización de WhatsApp y procesos para negocios',
   description:
     'Automatizamos mensajes, ventas y procesos de atención: bots de WhatsApp, flujos en n8n e integraciones. Para pymes que quieren dejar de responder y cargar todo a mano.',
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Automatización de WhatsApp y procesos · Somos Kosmos',
+    title: 'Automatización de WhatsApp y procesos — Somos Kosmos',
     description:
       'Tu negocio funcionando solo. Bots de WhatsApp, flujos en n8n, integraciones y seguimiento automático de ventas.',
     url: absoluteUrl(CANONICAL),

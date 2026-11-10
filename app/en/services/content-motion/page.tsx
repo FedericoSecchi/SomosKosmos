@@ -22,7 +22,7 @@ const CANONICAL = pathFor(LOCALE, PATH);
 const SERVICE = getService('content-motion');
 
 export const metadata: Metadata = {
-  title: 'Social content and video production — Somos Kosmos',
+  title: 'Social content and video production',
   description:
     'Social templates, motion, photography and video for brands and travel destinations. In-house drone production through SkyShot.',
   alternates: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     languages: hreflangFor(PATH, true),
   },
   openGraph: {
-    title: 'Social content and video production · Somos Kosmos',
+    title: 'Social content and video production — Somos Kosmos',
     description:
       'Social and campaign pieces designed to attract attention and move the needle. Reusable templates, motion, photo and video. In-house drone with SkyShot.',
     url: absoluteUrl(CANONICAL),

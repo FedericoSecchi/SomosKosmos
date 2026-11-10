@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: '¿Cuánto tarda una web?',
-    a: 'Una landing tarda entre 1 y 4 semanas, un sitio de 7 páginas entre 2 y 3 semanas y un sitio de artista entre 3 y 4 semanas. Depende de que tengas los textos y las fotos listos.',
+    a: 'Una landing page para un negocio tarda entre 1 y 4 semanas, un sitio de 7 páginas entre 2 y 3 semanas y un sitio de artista entre 3 y 4 semanas. Depende de que tengas los textos y las fotos listos.',
   },
   {
     q: '¿Qué incluye el servicio de web?',
